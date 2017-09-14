@@ -1,0 +1,36 @@
+uuid: 9b352ab0-b208-478a-a0c0-b9638e6afc34
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_monthly
+field_name: field_monthly
+entity_type: user
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 0
+      label: 1000-2000
+    -
+      value: 1
+      label: 2000-5000
+    -
+      value: 2
+      label: 5000-10000
+    -
+      value: 3
+      label: 10000-20000
+    -
+      value: 4
+      label: 'more than 20000'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

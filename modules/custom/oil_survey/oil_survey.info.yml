@@ -1,0 +1,4 @@
+name: Oil survey 
+core: 8.x
+package: Custom modules
+type: module

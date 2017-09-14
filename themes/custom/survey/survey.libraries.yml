@@ -1,0 +1,22 @@
+global-lib:
+  css:
+    theme:
+      stylesheets/survey.style.css: {}
+
+  js:
+    js/survey.script.js: {}
+    
+    
+bootstrap:
+  css:
+    theme:
+      stylesheets/bootstrap.min.css: {}
+      
+  js:
+    js/bootstrap.min.js: {}
+ 
+   
+
+  dependencies:
+    - core/drupal.ajax
+    - core/jquery

@@ -1,0 +1,20 @@
+uuid: 9533283b-03d1-485c-9e38-3f157d6473d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - bartik
+id: userregistrationform
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: formblock_user_register
+settings:
+  id: formblock_user_register
+  label: 'User registration form'
+  provider: user
+  label_display: visible
+visibility: {  }

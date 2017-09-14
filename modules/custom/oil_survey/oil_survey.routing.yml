@@ -1,0 +1,7 @@
+question.form:
+  path: '/questionary'
+  defaults:
+    _form: '\Drupal\oil_survey\Form\QuestionForm'
+    _title: 'Questionary'
+  requirements:
+    _permission: 'access content'

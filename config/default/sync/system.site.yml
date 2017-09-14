@@ -1,0 +1,15 @@
+uuid: 7f209f85-8fa8-44b7-8c0d-a8015f266024
+name: 'Lorem Survey'
+mail: hello@com.ua
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo
+mail_notification: ''

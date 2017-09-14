@@ -1,0 +1,21 @@
+uuid: d9ea7869-7cb5-429d-bc1f-189b20da45ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_monthly
+  module:
+    - options
+    - user
+id: user.user.field_monthly
+field_name: field_monthly
+entity_type: user
+bundle: user
+label: 'Monthly income:'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

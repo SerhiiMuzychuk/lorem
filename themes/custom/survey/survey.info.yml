@@ -1,0 +1,15 @@
+name: Survey
+description: 'Custom theme'
+core: 8.x
+type: theme
+
+libraries:
+  - survey/global-lib
+  - survey/bootstrap
+  - core/drupal.ajax
+
+regions:
+  header: 'Header'
+  help: 'Help'
+  content: 'Content'
+  footer: 'Footer'
