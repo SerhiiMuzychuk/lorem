@@ -1,0 +1,13 @@
+<?php
+
+
+function survey_theme($existing, $type, $theme, $path) {
+  return [
+    'question_form' => [
+      'render element' => 'form',
+    ],
+
+
+  ];
+}
+

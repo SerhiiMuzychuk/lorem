@@ -1,0 +1,26 @@
+uuid: 552d54f4-a8c5-413b-a357-3075d32874ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - survey
+id: survey_userregistrationform
+theme: survey
+region: content
+weight: 0
+provider: null
+plugin: formblock_user_register
+settings:
+  id: formblock_user_register
+  label: 'User registration form'
+  provider: user
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

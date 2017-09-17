@@ -2,9 +2,11 @@ global-lib:
   css:
     theme:
       stylesheets/survey.style.css: {}
+      stylesheets/survey.question.css: {}
 
   js:
     js/survey.script.js: {}
+    js/wizard.js: {}
     
     
 bootstrap:
@@ -14,6 +16,9 @@ bootstrap:
       
   js:
     js/bootstrap.min.js: {}
+    js/bootstrap-toggle.min.js: {}
+    js/jquery.bootstrap.wizard.js: {}
+    js/jquery.bootstrap.wizard.min.js: {}
  
    
 

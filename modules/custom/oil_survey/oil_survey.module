@@ -1,0 +1,25 @@
+<?php
+
+use Drupal\Core\Url;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Form\FormBase;
+use Drupal\Component\Utility\UrlHelper;
+
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\node\Entity\Node;
+// "Implements... etc."
+
+
+
+function oil_survey_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+	
+	if ($form_id == 'user_register_form') {
+	  $form['actions']['submit']['#submit'][] = 'oil_survey_contact_submit';
+	}
+}
+
+function oil_survey_contact_submit($form, \Drupal\Core\Form\FormStateInterface &$form_state) {
+  $url = Url::fromUri('http://drupalvm.dev/questionary');
+  $form_state->setRedirectUrl($url);
+}

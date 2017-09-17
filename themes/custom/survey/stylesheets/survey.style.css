@@ -1,0 +1,7 @@
+main {
+	margin-left: 30px;
+}
+
+.has-error input[type="radio"] {
+  outline: 1px solid @state-danger-text;
+}

@@ -1,0 +1,22 @@
+uuid: 88644248-3ed1-4cbe-a825-2142c6b2cbd7
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - survey
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: survey_powered
+theme: survey
+region: header
+weight: -8
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

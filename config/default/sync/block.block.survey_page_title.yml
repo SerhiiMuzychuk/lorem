@@ -1,0 +1,20 @@
+uuid: efc6560d-0559-485d-81f3-2821b622700f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - survey
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: survey_page_title
+theme: survey
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

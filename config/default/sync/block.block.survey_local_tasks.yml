@@ -1,0 +1,22 @@
+uuid: 4e7b32ec-7a23-4d35-932e-94cd48a1509b
+langcode: en
+status: false
+dependencies:
+  theme:
+    - survey
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: survey_local_tasks
+theme: survey
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

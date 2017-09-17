@@ -1,0 +1,129 @@
+{{ form.form_build_id }}
+{{ form.form_token }}
+{{ form.form_id }}
+{{ form.subject }}
+{{ form.message }}
+
+<div class="plugin-form-pass">
+</div>
+
+
+<div id="rootwizard">
+  <div class="navbar">
+  <a href="{{ base_url }}" id="wLogo">Lorem Survey</a>
+
+    <div class="navbar-inner">
+      <div class="container">
+  <ul>
+    <li><a href="#tab1" data-toggle="tab">First</a></li>
+    <li><a href="#tab2" data-toggle="tab">Second</a></li>
+    <li><a href="#tab3" data-toggle="tab">Third</a></li>
+    <li><a href="#tab4" data-toggle="tab">Forth</a></li>
+    <li><a href="#tab5" data-toggle="tab">Fifth</a></li>
+  </ul>
+   </div>
+    </div>
+  </div>
+    <div id="bar" class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+    </div>
+  <div class="tab-content">
+      <div class="tab-pane" id="tab1">
+        <p id="wizard-steps"><strong>1</strong>/5</p>
+        <h2 class="text-center">Awesome! Just a few more questions.</h2>
+        <div class="row">
+          <div class="form">
+            {{ form.question1 }}
+            {{ form.question2 }}
+            {{ form.question3 }}
+          <h4>Rank the following factors in order of importance to your operation: </h1>
+            {{ form.mytable }}
+           	{{ form.question5 }}
+        </div>
+         
+        </div>
+         <div class="footer-wizard">
+    <ul class="pager wizard">
+      <li class="previous first" style="display:none;"><a href="#">First</a></li>
+      <li id="back" class="previous"><a href="#">Back</a></li>
+      <li class="next last" style="display:none;"><a href="#">Last</a></li>
+        <li class="next"><a href="#">Next</a></li>
+        
+      <!-- <li class="submit-form"><a href="#">Register</a></li> -->
+    </ul>
+    </div>
+      </div>
+      <div class="tab-pane" id="tab2">
+        <p id="wizard-steps"><strong>2</strong>/5</p>
+        <h2 class="text-center"> Awesome! Just a few more questions.</h2>
+        <div class="row">
+          <div class="form">
+            {{ form.question6 }}
+            {{ form.question7 }}
+            {{ form.question8 }}
+            {{ form.question9 }}
+            {{ form.question10 }}
+          </div>
+
+        </div>
+         <div class="footer-wizard">
+    <ul class="pager wizard">
+      <li class="previous first" style="display:none;"><a href="#">First</a></li>
+      <li id="back" class="previous"><a href="#">Back</a></li>
+      <li class="next last" style="display:none;"><a href="#">Last</a></li>
+        <li class="next"><a href="#">Next</a></li>
+        
+      <!-- <li class="submit-form"><a href="#">Register</a></li> -->
+    </ul>
+    </div>
+      </div>
+    <div class="tab-pane" id="tab3">
+      <p id="wizard-steps"><strong>3</strong>/5</p>
+      <h2 class="text-center"> Awesome! Just a few more questions.</h2>
+      <div class="row">
+        <div name='name' id="name" class="form">
+          {{ form.question11 }}
+          {{ form.question12 }}
+          {{ form.question13 }}
+          {{ form.question14 }}
+          {{ form.question15 }}
+           <!-- <div class="alert1-danger">Please enter your Last Name</div> -->
+        </div>
+      </div>
+      <div class="footer-wizard">
+    <ul class="pager wizard">
+      <li class="previous first" style="display:none;"><a href="#">First</a></li>
+      <li id="back" class="previous"><a href="#">Back</a></li>
+      <li class="next last" style="display:none;"><a href="#">Last</a></li>
+        <li class="next"><a href="#">Next</a></li>
+        
+      <!-- <li class="submit-form"><a href="#">Register</a></li> -->
+    </ul>
+    </div>
+    </div>
+    <div class="tab-pane" id="tab4">
+      <p id="wizard-steps"><strong>4</strong>/5</p>
+      <h2 class="text-center">Awesome! Just a few more questions.</h2>
+      <div class="row">
+        <div class="form">
+          {{ form.question16 }}
+          {{ form.question17 }}
+          {{ form.question18 }}
+          {{ form.question19 }}
+          {{ form.question20 }}
+        </div>
+      </div>
+      <div class="footer-wizard">
+    <ul class="pager wizard">
+      <li class="previous first" style="display:none;"><a href="#">First</a></li>
+      <li id="back" class="previous"><a href="#">Back</a></li>
+      <li class="next last" style="display:none;"><a href="#">Last</a></li>
+        <li class="next" style="display: none;"><a href="#">Next</a></li>
+        {{ form.actions.submit }}
+      <!-- <li class="submit-form"><a href="#">Register</a></li> -->
+    </ul>
+    </div>
+    </div>
+    
+  </div>
+</div>
