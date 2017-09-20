@@ -1,0 +1,26 @@
+uuid: 5e301ab0-6023-4e43-b56f-b30fa562e00e
+langcode: en
+status: true
+dependencies:
+  module:
+    - oil_survey
+    - system
+  theme:
+    - survey
+id: contentblock
+theme: survey
+region: content
+weight: 0
+provider: null
+plugin: content_block
+settings:
+  id: content_block
+  label: 'Content block'
+  provider: oil_survey
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

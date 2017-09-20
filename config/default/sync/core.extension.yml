@@ -11,6 +11,7 @@ module:
   config: 0
   contact: 0
   contextual: 0
+  ctools: 0
   datetime: 0
   dblog: 0
   devel: 0
@@ -25,12 +26,15 @@ module:
   help: 0
   history: 0
   image: 0
+  kint: 0
   link: 0
   menu_ui: 0
   node: 0
   oil_survey: 0
   options: 0
   page_cache: 0
+  page_manager: 0
+  page_manager_ui: 0
   path: 0
   quickedit: 0
   rdf: 0

@@ -1,0 +1,35 @@
+uuid: a0a6202e-07a2-45ca-8cf1-c98b1b53b264
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.frontpage_content.body
+    - field.field.node.frontpage_content.field_image_front
+    - node.type.frontpage_content
+  module:
+    - image
+    - text
+    - user
+id: node.frontpage_content.default
+targetEntityType: node
+bundle: frontpage_content
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image_front:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  links: true

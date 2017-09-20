@@ -662,7 +662,7 @@ input[type="text"], input[type="password"] {
   cursor: pointer;
   margin: 10px 1px;
   background-color: #5a2ef7 !important;
-  font-size: 22px;
+  font-size: 14px;
   padding: 8px 30px;
   border-radius: 3px;
 }

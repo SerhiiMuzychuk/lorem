@@ -1,0 +1,31 @@
+uuid: e6b26215-7d25-44d5-bb6d-87f40ad22d6d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d8f448d7-3f6e-4ae3-86f6-9388d29f593b'
+  module:
+    - block_content
+    - system
+  theme:
+    - survey
+id: about
+theme: survey
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:d8f448d7-3f6e-4ae3-86f6-9388d29f593b'
+settings:
+  id: 'block_content:d8f448d7-3f6e-4ae3-86f6-9388d29f593b'
+  label: About
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /about
+    negate: false
+    context_mapping: {  }

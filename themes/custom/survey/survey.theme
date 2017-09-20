@@ -11,3 +11,14 @@ function survey_theme($existing, $type, $theme, $path) {
   ];
 }
 
+function survey_preprocess_page(&$variables) {
+  /** @var User $account */
+  
+  
+  $user = user_load(\Drupal::currentUser()->id())->get('field_full_name')->value;
+  $variables['userfullname'] = $user;
+  // $account = $variables['elements']['#user'];
+  // kint($account->get('field_full_name')->value);
+  // $variables['username'] = $hello = $account->get('field_full_name')->value;
+}
+

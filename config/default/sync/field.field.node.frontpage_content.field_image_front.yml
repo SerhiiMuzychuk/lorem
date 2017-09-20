@@ -1,0 +1,38 @@
+uuid: 80533968-7136-4c72-99a6-6df3672e8b78
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_front
+    - node.type.frontpage_content
+  module:
+    - image
+id: node.frontpage_content.field_image_front
+field_name: field_image_front
+entity_type: node
+bundle: frontpage_content
+label: image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 212e02b5-5c8e-41d8-9fb6-0283d5575fd2
+    alt: oil
+    title: ''
+    width: 800
+    height: 527
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -8,7 +8,12 @@ use Drupal\Component\Utility\UrlHelper;
 use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\node\Entity\Node;
-// "Implements... etc."
+use Drupal\Core\Mail\MailManagerInterface;
+use Drupal\Component\Utility\SafeMarkup;
+use Drupal\Component\Utility\Html;
+
+
+
 
 
 
@@ -16,10 +21,45 @@ function oil_survey_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $for
 	
 	if ($form_id == 'user_register_form') {
 	  $form['actions']['submit']['#submit'][] = 'oil_survey_contact_submit';
+	  $form['actions']['submit']['#value'] = t('Next step');
 	}
+	
 }
 
 function oil_survey_contact_submit($form, \Drupal\Core\Form\FormStateInterface &$form_state) {
   $url = Url::fromUri('http://drupalvm.dev/questionary');
   $form_state->setRedirectUrl($url);
+}
+
+
+function oil_survey_theme($existing, $type, $theme, $path) {
+  // if (!\Drupal::currentUser()->id()) {
+  //   $form = Drupal::formBuilder()->getForm(Drupal\user\Form\UserLoginForm::class) ; 
+  //   $render = Drupal::service('renderer');
+  //   $variables['login_form'] = $render->renderPlain($form);
+    
+  // }
+  return array(
+
+    'top_header_block' => array(
+      'variables' => array(
+        'items' => null,
+        ),
+      'template' => 'top_header_block',
+    ),         
+    
+    'hslider_block' => array(
+      'variables' => array(
+        'items' => null,
+      ),
+      'template' => 'hslider_block',
+    ),
+
+    'footer_block' => array(
+      'variables' => array(
+        'items' => null,
+      ),
+      'template' => 'footer_block',
+    ),
+  );
 }

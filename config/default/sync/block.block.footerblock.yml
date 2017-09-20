@@ -1,0 +1,20 @@
+uuid: e5a9ba5c-558b-4b81-bf48-d4f1c840309b
+langcode: en
+status: true
+dependencies:
+  module:
+    - oil_survey
+  theme:
+    - survey
+id: footerblock
+theme: survey
+region: footer
+weight: 0
+provider: null
+plugin: footer_block
+settings:
+  id: footer_block
+  label: 'Footer block'
+  provider: oil_survey
+  label_display: '0'
+visibility: {  }

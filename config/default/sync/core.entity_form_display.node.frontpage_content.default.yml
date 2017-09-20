@@ -1,0 +1,48 @@
+uuid: 935f7cb0-9794-45db-9ef7-1f211a5c08f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.frontpage_content.body
+    - field.field.node.frontpage_content.field_image_front
+    - image.style.large
+    - node.type.frontpage_content
+  module:
+    - image
+    - text
+id: node.frontpage_content.default
+targetEntityType: node
+bundle: frontpage_content
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_image_front:
+    weight: 2
+    settings:
+      preview_image_style: large
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

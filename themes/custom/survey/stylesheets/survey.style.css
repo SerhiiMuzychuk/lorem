@@ -5,3 +5,73 @@ main {
 .has-error input[type="radio"] {
   outline: 1px solid @state-danger-text;
 }
+
+#edit-question5-0.has-error {
+	color: red;
+}
+
+#edit-question10--wrapper {
+	display: none;
+}
+
+#edit-question10--wrapper.active {
+	display: block;
+}
+
+#edit-question21--wrapper {
+	display: none;
+}
+
+.site-slogan {
+	position: absolute;
+	top: 130px;
+	opacity: 0.9;
+	color: white;
+}
+
+.site-name {
+	font-size: 70px;
+	color: white;
+	position: absolute;
+	top: 30px;
+}
+
+.main-frontpage-block td.views-field:nth-child(1) > a:nth-child(1) {
+	font-size: 30px;
+	color: black;
+}
+
+.site-logo img {
+	max-height: 230px;
+	height: 230px;
+	min-width: 100%;
+}
+
+.main-frontpage-block td.views-field:nth-child(2) {
+	float: left;
+	margin-left: 20px;
+}
+
+.main-frontpage-block {
+	margin-top: 50px;
+}
+
+
+#edit-question13--wrapper {
+	display: none;
+}
+
+#edit-question13--wrapper.open {
+	display: block;
+	height: auto;
+}
+
+
+
+
+
+
+
+
+
+

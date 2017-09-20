@@ -1,0 +1,30 @@
+uuid: 0f920292-04a8-447f-9a43-b1eadbec8505
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.frontpage_main_content
+  module:
+    - system
+    - views
+  theme:
+    - survey
+id: views_block__frontpage_main_content_block_1
+theme: survey
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:frontpage_main_content-block_1'
+settings:
+  id: 'views_block:frontpage_main_content-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
