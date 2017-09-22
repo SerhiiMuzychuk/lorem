@@ -1,0 +1,31 @@
+uuid: c0186807-9ab5-49e5-88c4-1e53c2a275da
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c7b4f0ca-3bc4-4583-986b-19234b5559c0'
+  module:
+    - block_content
+    - system
+  theme:
+    - survey
+id: frontpage
+theme: survey
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:c7b4f0ca-3bc4-4583-986b-19234b5559c0'
+settings:
+  id: 'block_content:c7b4f0ca-3bc4-4583-986b-19234b5559c0'
+  label: Frontpage
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

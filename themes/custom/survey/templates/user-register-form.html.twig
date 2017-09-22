@@ -1,0 +1,27 @@
+
+{{ form.form_build_id }}
+{{ form.form_token }}
+{{ form.form_id }}
+{{ form.subject }}
+{{ form.message }}
+<div class="container">
+  <div class="personal-info">
+    <p class="pers">Personal info</p>
+    {{ form.field_full_name }}
+    {{ form.field_company }}
+    {{ form.field_city }}
+    {{ form.field_monthly }}
+  </div>
+  <div class="account-info">
+    <p class="acc">Account info</p>
+    <div class="account-mail">
+      {{ form.account.mail }}
+    </div>
+    <div class="account-pass">
+      {{ form.account.pass }}
+    </div>
+  </div>
+  <div class="subm-reg">
+    {{ form.actions.submit }}
+  </div>
+</div>

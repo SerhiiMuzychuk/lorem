@@ -23,8 +23,8 @@ content:
     third_party_settings: {  }
     region: content
   field_image_front:
-    weight: 1
-    label: hidden
+    weight: 2
+    label: above
     settings:
       image_style: ''
       image_link: ''

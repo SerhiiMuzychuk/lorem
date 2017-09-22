@@ -3,8 +3,12 @@
 namespace Drupal\oil_survey\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
+use Drupal\node\Entity\Node;
+use Drupal\file\Entity\File;
+use Drupal\image\Entity\ImageStyle;
 use Drupal\Core\core\modules\user\src\Form;
 use \Drupal\Core\Form\FormBase;
+use Drupal\block\Entity\Block;
 
 /**
  * Implement block with brand
@@ -20,10 +24,20 @@ class TopheaderBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
+    $menu = Block::load('footer');
+    $prod_menu = \Drupal::entityTypeManager()->getViewBuilder('block')->view($menu);
+
+    $block = Block::load('sitebranding');
+    $prod_block = \Drupal::entityTypeManager()->getViewBuilder('block')->view($block);
+
     $front_page = \Drupal::service('path.matcher')->isFrontPage();
     return array(
       '#theme' => 'top_header_block',
-      '#items' => array('front_page' => $front_page),
+      '#items' => array(
+        'front_page' => $front_page,
+        'branding' => $prod_block,
+        'footer' => $prod_menu,
+      ),
       // '#logs' => array('log_form' => $log_form),
     );
   }

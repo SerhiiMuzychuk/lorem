@@ -1,1 +1,8 @@
+front_page:
+  label: Front
+  category: My Layouts
+  template: layout/front-page
+  regions:
+    top:
+      label: One
 

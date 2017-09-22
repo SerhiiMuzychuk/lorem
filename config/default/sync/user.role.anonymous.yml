@@ -11,6 +11,11 @@ is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
+  - 'access kint'
   - 'access site-wide contact form'
+  - 'access user profiles'
   - 'search content'
   - 'use text format restricted_html'
+  - 'view all revisions'
+  - 'view frontpage_content revisions'
+  - 'view own unpublished content'

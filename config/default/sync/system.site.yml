@@ -1,11 +1,11 @@
 uuid: 7f209f85-8fa8-44b7-8c0d-a8015f266024
 name: 'Oil Compare'
-mail: hello@com.ua
+mail: serhii.muzychuk1992@gmail.com
 slogan: 'Motor oils today are blended using base oils composed of petroleum-based hydrocarbons, that means organic compounds consisting o'
 page:
   403: ''
   404: ''
-  front: /node
+  front: /frontpage
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

@@ -16,4 +16,11 @@ oil_survey.resultpage:
   requirements:
     # Мы будем показывать страницу только тем, у кого есть права на просмотр
     # содержимого.
-    _permission: 'view content'
+    _permission: 'access content'
+background.form:
+  path: '/back'
+  defaults:
+    _form: '\Drupal\oil_survey\Form\BackgroundForm'
+    _title: 'Questionary'
+  requirements:
+    _permission: 'access content'

@@ -38,40 +38,43 @@ class ResultController extends ControllerBase {
     $output = array();
 
    $result = \Drupal::request()->query->get('query');
-   // if ($ == 0) {
-   //  $output['#markup'] = 'The best choice for you will be Fuelstat resinae PLUS, Immunoassay Device group, Rapid SPEED OF TEST'
-   // }
+   if ($result == 0) {
+    $output = 'The best choice for you will be Fuelstat resinae PLUS, Immunoassay Device group, Rapid SPEED OF TEST';
+   }
 
    if ($result == 1) {
-    $output['#markup'] = 'The best choice for you will be Luminultra, ATP Measurement Tool type, Rapid SPEED OF TEST. However, do not forget about that Luminultra should be kept refigerated at all times';
+    $output = 'The best choice for you will be Luminultra, ATP Measurement Tool type, Rapid SPEED OF TEST. However, do not forget about that Luminultra should be kept refigerated at all times';
    }
 
    if ($result == 2) {
-    $output['#markup'] = 'The best choice for you will be San-Ai Biochecker, Growth/Culture based Method type, Standard SPEED OF TEST';
+    $output = 'The best choice for you will be San-Ai Biochecker, Growth/Culture based Method type, Standard SPEED OF TEST';
    }
 
    if ($result == 3) {
-    $output['#markup'] = 'The best choice for you will be Fuelsnap, ATP Measurement Tool type, Rapid SPEED OF TEST. However, do not forget about that Fuelsnap should be kept refigerated at all times';
+    $output = 'The best choice for you will be Fuelsnap, ATP Measurement Tool type, Rapid SPEED OF TEST. However, do not forget about that Fuelsnap should be kept refigerated at all times';
    }
 
    if ($result == 4) {
-    $output['#markup'] = 'The best choice for you will be MicrobMonitor2, Growth/Culture based Method type, Standard SPEED OF TEST';
+    $output = 'The best choice for you will be MicrobMonitor2, Growth/Culture based Method type, Standard SPEED OF TEST';
    }
 
    if ($result == 5) {
-    $output['#markup'] = 'The best choice for you will be HY-LiTE, ATP Measurement Tool type, Rapid SPEED OF TEST. However, do not forget about that HY-LiTE should be kept refigerated at all times';
+    $output = 'The best choice for you will be HY-LiTE, ATP Measurement Tool type, Rapid SPEED OF TEST. However, do not forget about that HY-LiTE should be kept refigerated at all times';
    }
 
    if ($result == 6) {
-    $output['#markup'] = 'The best choice for you will be Easicult Combi, Growth/Culture based Method group, Standard SPEED OF TEST';
+    $output = t('The best choice for you will be Easicult Combi, Growth/Culture based Method group, Standard SPEED OF TEST');
    }
 
    if ($result == 7) {
-    $output['#markup'] = 'The best choice for you will be IP385, Growth/Culture based Method group, Standard SPEED OF TEST';
+    $output = t('The best choice for you will be IP385, Growth/Culture based Method group, Standard SPEED OF TEST');
    }
    
 
-    return $output;
+    return array(
+      '#theme' => 'page_result',
+      '#text' =>  $output, 
+    );
   }
 
 }

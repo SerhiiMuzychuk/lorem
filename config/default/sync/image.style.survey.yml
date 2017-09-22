@@ -1,0 +1,14 @@
+uuid: e33d1818-4fbd-4c8d-9922-cf3d202bc6ff
+langcode: en
+status: true
+dependencies: {  }
+name: survey
+label: survey
+effects:
+  a5f446f0-fe74-42e8-b4a8-59809714c7bb:
+    uuid: a5f446f0-fe74-42e8-b4a8-59809714c7bb
+    id: image_resize
+    weight: 1
+    data:
+      width: 400
+      height: 280

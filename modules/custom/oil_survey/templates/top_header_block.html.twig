@@ -1,23 +1,12 @@
-{% set site_name = 'Whooosh' %}
+
 
 {# Header block #}
-{% if items.front_page %}
-  <div class="container">
-{% else %}
-  <div class="container-fluid">
-{% endif %}
-  <div class="row">
-    <div class="col-md-12">
-      <div class="navbar-header">
-        <a  href="{{ url('<front>') }}" class="navbar-brand pull-left">
-          <img src="{{ file_url(directory) }}/images/logo_wh.png" title="Oil Compare"/>
-        </a>
-      </div>
-      <div class="navbar-text pull-right">
-        <a href="#block-simpleblockexample">Sign up</a>
-        <span>/</span>
-        <a href="/user/login" class="use-ajax" data-dialog-type="modal">Login</a>
-      </div>
-    </div> 
+<div class="container"> 
+  <div class="logo-header">
+    {{ items.branding }}
   </div>
-</div> {# ./Header block #}
+  <div class="header-menu">
+    {{ items.footer }}
+  </div>      
+</div>
+{# ./Header block #}

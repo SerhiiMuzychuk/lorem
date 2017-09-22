@@ -1,0 +1,14 @@
+uuid: 984bfc25-d617-47e6-9a0e-dd6ec4fc610d
+langcode: en
+status: true
+dependencies: {  }
+name: background
+label: background
+effects:
+  5511969e-0160-4210-a615-55dad54a6f01:
+    uuid: 5511969e-0160-4210-a615-55dad54a6f01
+    id: image_resize
+    weight: 1
+    data:
+      width: 1920
+      height: 1080

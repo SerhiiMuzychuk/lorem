@@ -663,7 +663,7 @@ input[type="text"], input[type="password"] {
   margin: 10px 1px;
   background-color: #5a2ef7 !important;
   font-size: 14px;
-  padding: 8px 30px;
+  padding: 5px 22px;
   border-radius: 3px;
 }
 
@@ -1262,4 +1262,67 @@ body > div > main > div > div > div:nth-child(1) > div > ul > li:nth-child(1) {
 
 body > div > main > div > div > div:nth-child(1) > div > ul > li:nth-child(2) {
   display: none;
+}
+
+.pers {
+  font-size: 22px;
+}
+
+.acc {
+  font-size: 22px;
+}
+
+#block-footerblock {
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f7f7f7;
+}
+
+.hello {
+  font-size: 11px;
+  color: #cccfd2;
+  width: 100%;
+  float: left;
+}
+
+#block-footer ul li {
+  list-style: none;
+  width: 40px;
+  margin-left: 40px;
+  display: inline-block;
+  float: left;
+}
+
+#block-footer ul {
+  margin-left: -80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#block-footer ul li a {
+  color: black;
+
 }
