@@ -10,7 +10,7 @@ dependencies:
     - image.style.thumbnail
   module:
     - image
-    - link
+    - link_class
     - text
 _core:
   default_config_hash: e1Nu5xXAuF_QplbBUhQBPLnYWvHtDX0MkZnpuCiY8uM
@@ -41,8 +41,11 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
+      link_class_mode: manual
+      link_class_force: ''
+      link_class_select: ''
     third_party_settings: {  }
-    type: link_default
+    type: link_class_field_widget
     region: content
   info:
     type: string_textfield

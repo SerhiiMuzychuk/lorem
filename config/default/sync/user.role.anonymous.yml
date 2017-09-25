@@ -9,13 +9,12 @@ label: 'Anonymous user'
 weight: 0
 is_admin: false
 permissions:
-  - 'access comments'
   - 'access content'
+  - 'access content overview'
   - 'access kint'
   - 'access site-wide contact form'
-  - 'access user profiles'
-  - 'search content'
+  - 'access user contact forms'
+  - 'switch users'
   - 'use text format restricted_html'
   - 'view all revisions'
-  - 'view frontpage_content revisions'
-  - 'view own unpublished content'
+  - 'view page revisions'

@@ -31,12 +31,19 @@ class TopheaderBlock extends BlockBase {
     $prod_block = \Drupal::entityTypeManager()->getViewBuilder('block')->view($block);
 
     $front_page = \Drupal::service('path.matcher')->isFrontPage();
+    $val = \Drupal::state()->get('image');  
+    $file = \Drupal\file\Entity\File::load($val[0]);
+    $file->setPermanent();
+    $file->save();
+    $path = $file->getFileUri();
+    $url = \Drupal\image\Entity\ImageStyle::load('background')->buildUrl($path);
     return array(
       '#theme' => 'top_header_block',
       '#items' => array(
         'front_page' => $front_page,
         'branding' => $prod_block,
         'footer' => $prod_menu,
+        'background' => $url,
       ),
       // '#logs' => array('log_form' => $log_form),
     );

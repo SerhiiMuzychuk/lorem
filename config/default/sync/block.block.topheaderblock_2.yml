@@ -4,7 +4,6 @@ status: true
 dependencies:
   module:
     - oil_survey
-    - system
   theme:
     - survey
 id: topheaderblock_2
@@ -18,9 +17,4 @@ settings:
   label: 'Top header block'
   provider: oil_survey
   label_display: '0'
-visibility:
-  request_path:
-    id: request_path
-    pages: '<front>'
-    negate: false
-    context_mapping: {  }
+visibility: {  }

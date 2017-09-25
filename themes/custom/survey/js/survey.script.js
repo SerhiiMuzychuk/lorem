@@ -128,5 +128,14 @@ Drupal.behaviors.ss5 = {
 
 })(jQuery); 
 
+(function ($) {
+// To understand behaviors, see https://drupal.org/node/756722#behaviors
+Drupal.behaviors.ss6 = {
+  attach: function(context, settings) {
+  $document.ready(function() {
+        console.log($('#edit-field-monthly').niceSelect('update'));
+      });
+}}
 
+})(jQuery); 
 

@@ -57,7 +57,7 @@
 }
 
 .btn-primary {
-	background-color: #5a2ef7 !important;
+	background-color: #1377d5 !important;
 	opacity: 1;
 }
 
@@ -274,8 +274,8 @@ input, textarea, select, .uneditable-input {
 }
 
 #wizard-steps {
-    position: absolute;
-    top: 20px;
+    position: fixed;
+    top: 110px;
     left: 50%;
     width: 50px;
     margin-left: -50px;
@@ -286,7 +286,7 @@ input, textarea, select, .uneditable-input {
 }
 
 #wizard-steps strong {
-    color: #5a2ef7;
+    color: #1377d5;
     font-weight: normal;
 }
 
@@ -302,7 +302,7 @@ input, textarea, select, .uneditable-input {
 }
 
 .btn-primary {
-    background-color: #5a2ef7 !important;
+    background-color: #1377d5 !important;
     opacity: 1;
 }
 
@@ -339,7 +339,7 @@ p {
 }
 
 .wizard-container h2 {
-    color: #5a2ef7;
+    color: #1377d5;
     font-weight: 700;
     padding: 50px 0;
 }
@@ -426,7 +426,7 @@ input[type="text"], input[type="password"] {
 
 .pill-wrapper h2 {
   margin-top: 150px;
-  color: #5a2ef7;
+  color: #1377d5;
   font-weight: 700;
   padding: 50px 0;
   font-size: 30px;
@@ -471,7 +471,7 @@ input[type="text"], input[type="password"] {
 }
 
 .pill-wrapper h2 {
-    color: #5a2ef7;
+    color: #1377d5;
     font-weight: 700;
     padding: 50px 0;
 }
@@ -495,9 +495,16 @@ input[type="text"], input[type="password"] {
 } 
 
 .tab-content h2 {
-    color: #5a2ef7;
-    font-weight: 700;
-    padding: 50px 0;
+  color: #1377d5;
+  font-weight: 700;
+  padding: 88px 0;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+
+.pager li > a:hover {
+  background-color: #1377d5 !important;
+  color: white;
 }
 
 #step11, #step12, #step13, #step14 {
@@ -538,8 +545,11 @@ input[type="text"], input[type="password"] {
 }
 
 .footer-wizard {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.42857143;
+  top: 100px;
+  position: fixed;
+  top: 120px;
 }
 
 #tab4 .row .col-md-3 {
@@ -549,9 +559,14 @@ input[type="text"], input[type="password"] {
 .footer-wizard .pager li > a {
   display: inline-block;
   padding: 5px 14px;
-  border: 1px solid #5a2ef7;
+  border: 1px solid #1377d5;
   border-radius: 3px;
+  margin-left: 10px;
+}
 
+.footer-wizard .pager li > a:hover {
+  cursor: pointer;
+  color: white;
 }
 
 #user-register-form .footer-wizard .previous a {
@@ -573,7 +588,7 @@ input[type="text"], input[type="password"] {
   border: 1px solid #555;
   cursor: pointer;
   margin: 10px 1px;
-  background-color: #5a2ef7 !important;
+  background-color: #1377d5 !important;
   font-size: 22px;
   padding: 8px 30px;
 }
@@ -613,10 +628,13 @@ input[type="text"], input[type="password"] {
 }*/
 
 #rootwizard .progress .progress-bar {
-  background-color: #5a2ef7;
+  background-color: #1377d5 !important;
+  background-color: #1377d5;
 }
 
 #rootwizard .progress {
+  z-index: 101;
+  position: fixed;
   height: 10px;
   margin-bottom: 0px;
   overflow: hidden;
@@ -625,6 +643,7 @@ input[type="text"], input[type="password"] {
   -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
   box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
   width: 100%;
+  margin-top: 60px;
 }
 
 #rootwizard .navbar #wLogo {
@@ -636,11 +655,14 @@ input[type="text"], input[type="password"] {
 }
  
 #rootwizard .navbar {
-  position: relative;
+  z-index: 99;
+  position: fixed;
   min-height: 100px;
   margin-bottom: 0px;
   border: 1px solid transparent;
   background-color: #fff;
+  margin-top: -30px !important;
+  padding-top: 31px;
 }
 /*
 .js .layout-container header {
@@ -652,16 +674,13 @@ input[type="text"], input[type="password"] {
   font-size: 26px;
 }
 
-.js body {
-  background-color: #fff;
-}
 
 #user-register-form #edit-submit {
   color: #fff;
   border: 1px solid #555;
   cursor: pointer;
   margin: 10px 1px;
-  background-color: #5a2ef7 !important;
+  background-color: #1377d5 !important;
   font-size: 14px;
   padding: 5px 22px;
   border-radius: 3px;
@@ -743,7 +762,7 @@ input[type="text"], input[type="password"] {
 #user-register-form div.js-form-type-select:nth-child(1) {
   float: left;
   display: inline-grid;
-  width: auto;
+  width: 100%;
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
@@ -851,8 +870,7 @@ input[type="text"], input[type="password"] {
 }
 
 #user-register-form div.js-form-type-select:nth-child(1) > span:nth-child(3) {
-  margin-top: 15px;
-  margin-left: 70px;
+  width: 100% !important;
 }
 
 #user-register-form div.category-block:nth-child(2) > span:nth-child(3) {
@@ -1020,7 +1038,7 @@ input[type="text"], input[type="password"] {
     border: none;
     font-size: 3vw;
     font-weight: 700;
-    color: #5a2ef7;
+    color: #1377d5;
     height: 100px;
     width: 90%;
     margin: 0 auto;
@@ -1083,7 +1101,7 @@ input[type="text"], input[type="password"] {
 .btn-modal .fa {
   width: 24px;
   height: 24px;
-  color: #5a2ef7;
+  color: #1377d5;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   text-rendering: auto;
@@ -1272,10 +1290,13 @@ body > div > main > div > div > div:nth-child(1) > div > ul > li:nth-child(2) {
   font-size: 22px;
 }
 
+.front #block-footerblock {
+  background: none !important;
+}
+
 #block-footerblock {
-  margin-top: 50px;
+  margin-top: 10px;
   padding-top: 50px;
-  padding-bottom: 50px;
   background-color: #f7f7f7;
 }
 
@@ -1288,15 +1309,207 @@ body > div > main > div > div > div:nth-child(1) > div > ul > li:nth-child(2) {
 
 #block-footer ul li {
   list-style: none;
-  width: 40px;
-  margin-left: 40px;
+  margin-left: 20px;
   display: inline-block;
   float: left;
 }
 
 #block-footer ul {
-  margin-left: -80px;
+  width: 100%;
+   float: right;
+  margin-right: 0px;
 }
+
+.header-menu {
+  margin-right: 0;
+}
+
+.pager #edit-submit {
+  display: inline-block;
+  padding: 5px 14px;
+  border: 1px solid #1377d5;
+  border-radius: 3px;
+  margin-left: 10px;
+  color: #1377d5;
+  background-color: white;
+}
+
+.pager #edit-submit:hover {
+  color: white;
+  background-color: #1377d5;
+}
+
+.fieldset-legend {
+  font-size: 18px;
+}
+
+.fieldset-wrapper {
+  font-size: 12px;
+  text-align: left;
+  margin-left: 35%;
+}
+
+#edit-mytable-0 {
+  display: none;
+}
+
+#edit-mytable-1 {
+  display: none;
+}
+
+#edit-mytable-2 {
+  display: none;
+}
+
+#edit-mytable-3 {
+  display: none;
+}
+
+#edit-mytable .select-all {
+  display: none;
+}
+
+#edit-mytable > thead:nth-child(1) > tr:nth-child(1) > th:nth-child(2) {
+  display: none;
+}
+
+#edit-mytable .tabledrag-toggle-weight-wrapper {
+  display: none;
+}
+
+#edit-mytable .drag-previous {
+  cursor: pointer;
+}
+
+#edit-mytable .table-select {
+  z-index: 10;
+}
+
+#edit-mytable .tabledrag-handle {
+  position: absolute;
+  display: block;
+  margin-left: 10px;
+  z-index: 5;
+  cursor: pointer;
+}
+
+#edit-mytable .messages--warning {
+  display: none !important;
+}
+
+a.tabledrag-handle .handle {
+  background-image: url('/themes/custom/survey/images/footerArrow.png') !important;
+  margin: -4px;
+  height: 20px;
+  width: 23px;
+}
+
+
+abbr.warning:nth-child(3) {
+  display: none;
+}
+
+#edit-mytable .tabledrag-handle {
+  position: inherit;
+}
+
+.tab-content .messages--warning {
+  display: none !important;
+}
+
+.tab-content .tabledrag-toggle-weight-wrapper {
+  display: none !important;
+}
+
+.table-rank {
+  border-bottom: 1px solid #e5e5e5;
+  width: 65%;
+  margin-left: 17.5%;
+}
+
+.tab-content tr.draggable:nth-child(1) > td:nth-child(2) {
+  float: left;
+  margin-left: 3px;
+}
+
+.tab-content tr.draggable:nth-child(2) > td:nth-child(2) {
+  float: left;
+  margin-left: 3px;
+}
+
+.tab-content tr.draggable:nth-child(3) > td:nth-child(2) {
+  float: left;
+  margin-left: 3px;
+}
+
+.tab-content tr.draggable:nth-child(4) > td:nth-child(2) {
+  float: left;
+  margin-left: 3px;
+}
+
+#edit-mytable {
+  margin-left: 45%;
+}
+
+.tab-content fieldset {
+  width: 65%;
+  margin-left: 17.5%;
+  margin-right: 17.5%;
+}
+
+#contact-message-feedback-form #edit-preview {
+  display: none;
+}
+
+tr.draggable:nth-child(1) > td:nth-child(2) {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.42857143;
+}
+
+tr.draggable:nth-child(2) > td:nth-child(2) {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.42857143;
+}
+
+tr.draggable:nth-child(3) > td:nth-child(2) {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.42857143;
+}
+
+tr.draggable:nth-child(4) > td:nth-child(2) {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.42857143;
+}
+
+table-rank {
+  width: 65%;
+  margin-left: 17.5%;
+}
+
+#edit-mytable {
+  margin-left: 39%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

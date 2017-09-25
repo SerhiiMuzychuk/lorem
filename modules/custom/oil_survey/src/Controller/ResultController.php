@@ -69,8 +69,6 @@ class ResultController extends ControllerBase {
    if ($result == 7) {
     $output = t('The best choice for you will be IP385, Growth/Culture based Method group, Standard SPEED OF TEST');
    }
-   
-
     return array(
       '#theme' => 'page_result',
       '#text' =>  $output, 

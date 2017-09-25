@@ -1,6 +1,6 @@
 uuid: 5e301ab0-6023-4e43-b56f-b30fa562e00e
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - oil_survey
@@ -21,6 +21,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: /first-step
     negate: false
     context_mapping: {  }

@@ -5,6 +5,7 @@ question.form:
     _title: 'Questionary'
   requirements:
     _permission: 'access content'
+    
 oil_survey.resultpage:
   # Указываем путь роута, с лидирующим слешем.
   path: '/result'
@@ -17,6 +18,7 @@ oil_survey.resultpage:
     # Мы будем показывать страницу только тем, у кого есть права на просмотр
     # содержимого.
     _permission: 'access content'
+
 background.form:
   path: '/back'
   defaults:

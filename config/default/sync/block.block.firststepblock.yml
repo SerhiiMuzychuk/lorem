@@ -1,0 +1,31 @@
+uuid: 4a991069-d00f-4a07-91fe-eea4ee7c561c
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:e4f28e5f-4504-4b6e-a1af-95018f76ad89'
+  module:
+    - block_content
+    - system
+  theme:
+    - survey
+id: firststepblock
+theme: survey
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:e4f28e5f-4504-4b6e-a1af-95018f76ad89'
+settings:
+  id: 'block_content:e4f28e5f-4504-4b6e-a1af-95018f76ad89'
+  label: 'First step block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /first-step
+    negate: false
+    context_mapping: {  }

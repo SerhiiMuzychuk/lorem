@@ -24,14 +24,15 @@
  */
 #}
 <!DOCTYPE html>
-<html{{ html_attributes }}>
+<html class="bagr" {{ html_attributes }} style="background: url('{{ back }}');">
   <head>
     <head-placeholder token="{{ placeholder_token|raw }}">
     <title>{{ head_title|safe_join(' | ') }}</title>
     <css-placeholder token="{{ placeholder_token|raw }}">
     <js-placeholder token="{{ placeholder_token|raw }}">
   </head>
-  <body class="front" {{ attributes }} style="background: url('{{ back }}');">
+  
+  <body class="front" {{ attributes }}>
     {#
       Keyboard navigation/accessibility link to main content section in
       page.html.twig.

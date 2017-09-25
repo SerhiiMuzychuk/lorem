@@ -1,0 +1,12 @@
+uuid: 688fe532-4c83-4460-9d8b-61a96166a936
+langcode: en
+status: true
+dependencies: {  }
+id: examples
+label: Examples
+description: ''
+use_admin_theme: false
+path: /examples
+access_logic: and
+access_conditions: {  }
+parameters: {  }

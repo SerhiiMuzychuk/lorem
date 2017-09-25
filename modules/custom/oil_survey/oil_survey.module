@@ -16,17 +16,41 @@ use Drupal\Component\Utility\Html;
 
 
 
+/**
+ * Do a bit of processing for the password_confirm element.
+ * Original processing happens in expand_password_confirm()
+ */
+
 
 function oil_survey_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
-	
+
 	if ($form_id == 'user_register_form') {
 	  $form['actions']['submit']['#submit'][] = 'oil_survey_contact_submit';
 	  $form['actions']['submit']['#value'] = t('Next step');
     $form['account']['mail']['#description'] = t('');
     $form['account']['pass']['#description'] = t('');
+    $form['account']['mail']['#attributes']['placeholder'] = t('please fill...');
+  }
+}
+
+ function register_alter_form_alter(&$form, &$form_state, $form_id) {
+  switch ($form_id) {
+     case 'user_register_form':
+       // Here we need to provide an extra #process handler to allow us to modify
+       // the password element that FAPI expands.
+       $form['account']['pass']['#process'][] = array('form_process_password_confirm', 'register_alter_password_confirm');
+       kint($form);
+       break;
+   }
   
-	}
 	
+}
+
+function register_alter_password_confirm($element) {
+       $element['pass1']['#title'] = t("Psssssssassword");
+   $element['pass2']['#title'] = t("Repsssssssssssseat password");
+    return $element;
+
 }
 
 function oil_survey_contact_submit($form, \Drupal\Core\Form\FormStateInterface &$form_state) {

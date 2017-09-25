@@ -2,26 +2,12 @@
   Drupal.behaviors.mybehavior = {
     attach: function (context, settings) {
       $(document).ready(function() {
-        // var $validator = $("#question-form").validate({
-        //   rules: {
-        //     radiofield: {
-        //       required: true,
-        //     },
-            
-        //   }
-        // });
         $('#rootwizard').bootstrapWizard({onNext: function(tab, navigation, index) {
-          // var $valid = $("#question-form").valid();
-          // if(!$valid) {
-          //   $validator.focusInvalid();
-          //   return false;
-          // }
 
            if(index==1) {
 
             var hasError = false;
-                // $('#step1').removeClass('has-error');
-                  var radios5 = document.getElementsByName("question1");
+            var radios5 = document.getElementsByName("question1");
             var formValid = false;
 
             var i = 0;
@@ -42,10 +28,8 @@
               hasError = false
             }
 
-              var hasError = false;
-                
-                // $('#step1').removeClass('has-error');
-                  var radios = document.getElementsByName("question3");
+            var hasError = false;
+            var radios = document.getElementsByName("question3");
             var formValid = false;
 
             var i = 0;
@@ -65,13 +49,10 @@
             else {
               hasError = false
             }
-             
-          
-            // return formValid;
+            
 
-              var hasError = false;
-                // $('#step1').removeClass('has-error');
-                  var radios1 = document.getElementsByName("question2");
+            var hasError = false;
+            var radios1 = document.getElementsByName("question2");
             var formValid = false;
 
             var i = 0;
@@ -93,7 +74,7 @@
             }
             
              
-            // return formValid;
+
             var hasError = false;
                 // $('#step1').removeClass('has-error');
             var radios2 = document.getElementsByName("question5");
@@ -116,23 +97,7 @@
             else {
               hasError = false
             }
-             
-            
-            // var radios1 = document.getElementsByName("question3");
-            
-
-            // var i = 0;
-            // while (!formValid && i < radios1.length) {
-            //     if (radios1[i].checked) formValid = true;
-            //     i++;        
-            // }
-
-            // if (!formValid) alert("Must check some option!");
-            // return formValid = true;
-                
-               
-
-
+                           
             return formValid;
 
           }
@@ -142,9 +107,7 @@
       
           if(index==2) {
             var hasError = false;
-                
-                // $('#step1').removeClass('has-error');
-                  var radios2 = document.getElementsByName("question6");
+            var radios2 = document.getElementsByName("question6");
             var formValid = false;
 
             var i = 0;
@@ -166,10 +129,8 @@
             }
 
            
-              var hasError = false;
-                
-                // $('#step1').removeClass('has-error');
-                  var radios = document.getElementsByName("question7");
+            var hasError = false;
+            var radios = document.getElementsByName("question7");
             var formValid = false;
 
             var i = 0;
@@ -190,8 +151,6 @@
               hasError = false
             }
              
-          
-            // return formValid;
 
               var hasError = false;
                 // $('#step1').removeClass('has-error');
@@ -216,8 +175,7 @@
               hasError = false
             }
             
-             
-            // return formValid;
+            
             var hasError = false;
                 // $('#step1').removeClass('has-error');
             var radios2 = document.getElementsByName("question9");
@@ -242,7 +200,6 @@
             }
             if ('#edit-question10-0')
             var hasError = false;
-                // $('#step1').removeClass('has-error');
             var radios2 = document.getElementsByName("question10");
             var formValid = false;
 
@@ -254,7 +211,6 @@
 
             if (!formValid) {
               $('#edit-question10-0').addClass('has-error');
-              // $("#edit-question10-0").after('<br><div  class="alert alert-danger">Please enter your Last Name.</div>');
               hasError = true;
               formValid =true;
               return true;
@@ -264,44 +220,6 @@
               hasError = false
             }
 
-            //    var hasError = false;
-            //     // $('#step1').removeClass('has-error');
-            // var radios2 = document.getElementsByID("#edit-question10-1");
-            // var formValid = false;
-
-            // var i = 0;
-            // while (!formValid && i < radios2.length) {
-            //     if (radios2[i].checked) formValid = true;
-            //     i++;        
-            // }
-
-            // if (!formValid) {
-            //   $('#edit-question10-0').addClass('has-error');
-            //   $("#edit-question10-0").after('<br><div  class="alert alert-danger">Please enter your Last Name.</div>');
-            //   hasError = true;
-            //   return true;
-            // }
-
-            // else {
-            //   hasError = false
-            // }
-
-
-
-             
-             
-            
-            // var radios1 = document.getElementsByName("question3");
-            
-
-            // var i = 0;
-            // while (!formValid && i < radios1.length) {
-            //     if (radios1[i].checked) formValid = true;
-            //     i++;        
-            // }
-
-            // if (!formValid) alert("Must check some option!");
-            // return formValid = true;
             if(hasError == true) { return false; }    
                
 
@@ -312,7 +230,6 @@
       if(index==3) {
             var hasError = false;
                 
-                // $('#step1').removeClass('has-error');
                   var radios = document.getElementsByName("question11");
             var formValid = false;
 
@@ -433,150 +350,9 @@
               hasError = false
             }
 
-            
-           
-                
-               
-
-
             return formValid;
       }
 
-      // if(index==4) {
-      //       var hasError = false;
-                
-      //           // $('#step1').removeClass('has-error');
-      //             var radios11 = document.getElementsByName("question16");
-      //       var formValid = false;
-
-      //       var i = 0;
-      //       while (!formValid && i < radios11.length) {
-      //           if (radios11[i].checked) formValid = true;
-      //           i++;        
-      //       }
-
-      //       if (!formValid) {
-      //         $('#edit-question16-0').addClass('has-error');
-      //         $("#edit-question16-0").after('<br><div  class="alert alert-danger">Please enter your Last Name.</div>');
-      //         hasError = true;
-      //       }
-
-      //       else {
-      //         hasError = false
-      //       }
-
-           
-      //         var hasError = false;
-                
-      //           // $('#step1').removeClass('has-error');
-      //             var radios = document.getElementsByName("question17");
-      //       var formValid = false;
-
-      //       var i = 0;
-      //       while (!formValid && i < radios.length) {
-      //           if (radios[i].checked) formValid = true;
-      //           i++;        
-      //       }
-
-      //       if (!formValid) {
-      //         $('#edit-question17-0').addClass('has-error');
-      //         $("#edit-question17-0").after('<br><div  class="alert alert-danger">Please enter your Last Name.</div>');
-      //         hasError = true;
-      //       }
-
-      //       else {
-      //         hasError = false
-      //       }
-             
-          
-      //       // return formValid;
-
-      //         var hasError = false;
-      //           // $('#step1').removeClass('has-error');
-      //             var radios1 = document.getElementsByName("question18");
-      //       var formValid = false;
-
-      //       var i = 0;
-      //       while (!formValid && i < radios1.length) {
-      //           if (radios1[i].checked) formValid = true;
-      //           i++;        
-      //       }
-
-      //         if (!formValid) {
-      //         $('#edit-question18-0').addClass('has-error');
-      //         $("#edit-question18-0").after('<br><div  class="alert alert-danger">Please enter your Last Name.</div>');
-      //         hasError = true;
-      //       }
-
-      //       else {
-      //         hasError = false
-      //       }
-            
-             
-      //       // return formValid;
-      //       var hasError = false;
-      //           // $('#step1').removeClass('has-error');
-      //       var radios2 = document.getElementsByName("question19");
-      //       var formValid = false;
-
-      //       var i = 0;
-      //       while (!formValid && i < radios2.length) {
-      //           if (radios2[i].checked) formValid = true;
-      //           i++;        
-      //       }
-
-      //       if (!formValid) {
-      //         $('#edit-question19-0').addClass('has-error');
-      //         $("#edit-question19-0").after('<br><div  class="alert alert-danger">Please enter your Last Name.</div>');
-      //       }
-
-      //       else {
-      //         hasError = false
-      //       }
-             
-      //       var hasError = false;
-                
-      //           // $('#step1').removeClass('has-error');
-      //             var radios11 = document.getElementsByName("question20");
-      //       var formValid = false;
-
-      //       var i = 0;
-      //       while (!formValid && i < radios11.length) {
-      //           if (radios11[i].checked) formValid = true;
-      //           i++;        
-      //       }
-
-      //       if (!formValid) {
-      //         $('#edit-question20-0').addClass('has-error');
-      //         $("#edit-question20-0").after('<br><div  class="alert alert-danger">Please enter your Last Name.</div>');
-      //         hasError = true;
-      //       }
-
-      //       else {
-      //         hasError = false
-      //       }
-
-            
-      //       // var radios1 = document.getElementsByName("question3");
-            
-
-      //       // var i = 0;
-      //       // while (!formValid && i < radios1.length) {
-      //       //     if (radios1[i].checked) formValid = true;
-      //       //     i++;        
-      //       // }
-
-      //       // if (!formValid) alert("Must check some option!");
-      //       // return formValid = true;
-                
-               
-
-
-      //       return formValid;
-      // }
-
- 
-      // Set the name for the next tab
       
  
     }, onTabShow: function(tab, navigation, index) {
@@ -702,31 +478,23 @@
               hasError = false
             }
 
-            
-            // var radios1 = document.getElementsByName("question3");
-            
-
-            // var i = 0;
-            // while (!formValid && i < radios1.length) {
-            //     if (radios1[i].checked) formValid = true;
-            //     i++;        
-            // }
-
-            // if (!formValid) alert("Must check some option!");
-            // return formValid = true;
-                
-               
-
-
+        
             return formValid;
 
         });
 
-    //   if(!$('#tab1').hasClass('active')) {
-    //     $('#back').addClass('hero');
+      
+      
+    
+      $("#block-about-2").addClass('container');
+      $("#block-examplesblock").addClass('container');
+      $("#contact-message-feedback-form").addClass('container');
+      $("#edit-pass-pass1").attr("placeholder", "•••••••");
+      $("#edit-pass-pass2").attr("placeholder", "•••••••");
+
       
       $('#tab1 #back').click(function() {
-        document.location.href = '/user/logout';
+        document.location.href = '/first-step';
       });
 
       $('#edit-question9-0').click(function(){

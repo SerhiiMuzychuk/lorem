@@ -25,9 +25,9 @@ class ContentBlock extends BlockBase {
    */
   public function build() {
 //    $node = \Drupal::entityTypeManager()->getStorage('node')->load(1);
-    $menu2 = Block::load('views_block__frontpage_main_content_block_1');
+    $menu2 = Block::load('firststepblock');
     $prod_menu2 = \Drupal::entityTypeManager()->getViewBuilder('block')->view($menu2);
-
+    
     
     return array(
       '#theme' => 'hslider_block',

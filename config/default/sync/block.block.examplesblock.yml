@@ -1,0 +1,31 @@
+uuid: 157b269e-8f76-4202-bcc2-8ba7e7d2f22e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8600c142-89f0-449f-9261-a603413dab43'
+  module:
+    - block_content
+    - system
+  theme:
+    - survey
+id: examplesblock
+theme: survey
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:8600c142-89f0-449f-9261-a603413dab43'
+settings:
+  id: 'block_content:8600c142-89f0-449f-9261-a603413dab43'
+  label: 'Examples block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /examples
+    negate: false
+    context_mapping: {  }

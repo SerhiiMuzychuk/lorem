@@ -18,45 +18,25 @@ function survey_theme($existing, $type, $theme, $path) {
 
 function survey_preprocess_page(&$variables) {
   /** @var User $account */
-  $val = \Drupal::state()->get('image');
-  
-  $file = \Drupal\file\Entity\File::load($val[0]);
-    $path = $file->getFileUri();
-     $url = \Drupal\image\Entity\ImageStyle::load('background')->buildUrl($path);
-    $variables['background'] = $url;
-   
-  // $user = user_loadc(\Drupal::currentUser()->id())->get('field_full_name')->value;
-  // $variables['userfullname'] = $user;
-  // $account = $variables['elements']['#user'];
-  // kint($account->get('field_full_name')->value);
-  // $variables['username'] = $hello = $account->get('field_full_name')->value;
+  // $val = \Drupal::state()->get('image');
+  // $file = \Drupal\file\Entity\File::load($val[0]);
+  // $path = $file->getFileUri();
+  // $url = \Drupal\image\Entity\ImageStyle::load('background')->buildUrl($path);
+  // $variables['background'] = $url;
 }
 
 function survey_preprocess_html(&$variables) {
   /** @var User $account */
-  $val = \Drupal::state()->get('image');
-  
+  $val = \Drupal::state()->get('image');  
   $file = \Drupal\file\Entity\File::load($val[0]);
-    $path = $file->getFileUri();
-     $url = \Drupal\image\Entity\ImageStyle::load('background')->buildUrl($path);
-    $variables['back'] = $url;
-   
-  // $user = user_loadc(\Drupal::currentUser()->id())->get('field_full_name')->value;
-  // $variables['userfullname'] = $user;
-  // $account = $variables['elements']['#user'];
-  // kint($account->get('field_full_name')->value);
-  // $variables['username'] = $hello = $account->get('field_full_name')->value;
+  $file->setPermanent();
+  $file->save();
+  $path = $file->getFileUri();
+  $url = \Drupal\image\Entity\ImageStyle::load('background')->buildUrl($path);
+  $variables['back'] = $url; 
+
 }
 
-// function survey_preprocess_page(&$variables) {
-//   /** @var User $account */
-  
-  
-//   kint($variables);
-//   // $account = $variables['elements']['#user'];
-//   // kint($account->get('field_full_name')->value);
-//   // $variables['username'] = $hello = $account->get('field_full_name')->value;
-// }
 
 function survey_preprocess_form_background_form(&$variables) {
   /** @var User $account */

@@ -16,6 +16,7 @@ module:
   datetime: 0
   dblog: 0
   devel: 0
+  disable_messages: 0
   dynamic_page_cache: 0
   editor: 0
   email_registration: 0
@@ -30,6 +31,7 @@ module:
   kint: 0
   layout_plugin: 0
   link: 0
+  link_class: 0
   menu_ui: 0
   node: 0
   oil_survey: 0
