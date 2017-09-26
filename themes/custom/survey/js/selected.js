@@ -51,6 +51,7 @@ Drupal.behaviors.ss2 = {
      $("#edit-question18 input").asCheck();
      $("#edit-question19 input").asCheck();
      $("#edit-question20 input").asCheck();
+     
 }}
 
 })(jQuery); 

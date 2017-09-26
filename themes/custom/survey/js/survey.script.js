@@ -8,6 +8,14 @@ Drupal.behaviors.ss5 = {
   	}
     );
 
+    $('#block-topheaderblock-2 .header-mobile-menu').click(function() {
+      $('#block-topheaderblock-2 .header-menu').toggleClass('help');
+      $('#block-topheaderblock-2 #hel-hel').toggleClass('active');
+      $('.lorem-title').toggleClass('active');
+    }
+    );
+   
+
     $('#edit-question3-4').click(function() {
   		$('#edit-question3 #edit-text').addClass('active');
   	}
