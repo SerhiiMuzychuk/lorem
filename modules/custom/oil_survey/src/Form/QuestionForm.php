@@ -136,9 +136,9 @@ public function buildForm(array $form, FormStateInterface $form_state) {
       '#required' => true,    
     );
 
-    // $form['question1']['text'] = array(
-    //   '#type' => 'textfield',
-    // );
+    $form['question1']['text'] = array(
+      '#type' => 'textfield',
+    );
 
     $form['question2'] = array(
       '#type' => 'radios',

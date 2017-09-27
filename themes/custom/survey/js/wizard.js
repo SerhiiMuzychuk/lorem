@@ -484,8 +484,17 @@
         });
 
       
-      
+   
+        // $('.js-form-item-question1-3 .iCheck-helper').click(function() {
+        //   $('#edit-question1-text').toggleClass('qwasasas');
+        // });
+        //  $('#question-form .icheckbox_square input').click(function() {
+        //   $('#question-form #edit-question1-text').addClass('helllo1');
+        //  });
+         
     
+   
+
       $("#block-about-2").addClass('container');
       $("#block-examplesblock").addClass('container');
       $("#contact-message-feedback-form").addClass('container');

@@ -1,11 +1,14 @@
 global-lib:
   css:
     theme:
+      stylesheets/_all.css: {}
       stylesheets/survey.style.css: {}
       stylesheets/survey.question.css: {}
       stylesheets/select2.min.css: {}
       stylesheets/asCheck.min.css: {}
       stylesheets/jquery.formstyler.css: {}
+      stylesheets/blue.css: {}
+      stylesheets/prettyCheckable.css: {}
 
   js:
     js/survey.script.js: {}
@@ -13,6 +16,9 @@ global-lib:
     js/select2.min.js: {}
     js/selected.js: {}
     js/jquery-asCheck.min.js: {}
+    js/icheck.min.js: {}
+    js/prettyCheckable.min.js: {}
+
 
     
     
