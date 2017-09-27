@@ -10,7 +10,6 @@
 
 <div id="rootwizard">
   <div class="navbar">
-  <a href="{{ base_url }}" id="wLogo">Lorem Survey</a>
 
     <div class="navbar-inner">
       <div class="container">
@@ -34,9 +33,11 @@
         <div class="row">
           <div class="form container">
             {{ form.question1 }}
+            {{ form.text1 }}
             {{ form.question2 }}
             {{ form.question3 }}
-          <h4 class="table-rank">Rank the following factors in order of importance to your operation: </h1>
+            {{ form.text3 }}
+          <h4 class="table-rank">Rank the following factors in order of importance to your operation: </h4>
             {{ form.mytable }}
            	{{ form.question5 }}
         </div>
@@ -61,6 +62,7 @@
             {{ form.question6 }}
             {{ form.question7 }}
             {{ form.question8 }}
+            {{ form.text8 }}
             {{ form.question9 }}
             {{ form.question10 }}
           </div>
@@ -86,6 +88,7 @@
           {{ form.question12 }}
           {{ form.question13 }}
           {{ form.question14 }}
+          {{ form.text14 }}
           {{ form.question15 }}
            <!-- <div class="alert1-danger">Please enter your Last Name</div> -->
         </div>
@@ -108,9 +111,11 @@
         <div class="form container">
           {{ form.question16 }}
           {{ form.question17 }}
+          {{ form.text17 }}
           {{ form.question18 }}
           {{ form.question19 }}
           {{ form.question20 }}
+          {{ form.text20 }}
         </div>
       </div>
       <div class="footer-wizard">

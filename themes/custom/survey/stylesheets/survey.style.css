@@ -433,6 +433,10 @@ footer #block-footer ul {
 	width: 100%;
 }
 
+#rootwizard .navbar-inner ul li a {
+	cursor: unset;
+}
+
 .front .bg-fon {
 	background: none !important;
 }
@@ -653,10 +657,10 @@ main {
 }
 
 #block-examplesblock {
-	margin-top: 40px;
+  margin-top: 40px;
   height: 300px;
-  margin-bottom: 40px;
-  padding-bottom: 31%;
+  margin-bottom: 0;
+  padding-bottom: 0 !important;
 }
 
 #block-examplesblock img {
@@ -731,8 +735,8 @@ html.bagr {
 	border-bottom: none !important;		
 }
 
-#edit-question1-text {
-	display: none !important;
+#contact-message-feedback-form > div.category-block.js-form-item.form-item.js-form-type-checkbox.form-item-copy.js-form-item-copy {
+  display: none;
 }
 
 /*html,
@@ -742,27 +746,137 @@ body {
    height:100% !important;
 }*/
 
+#block-footerblock {
+	padding-top: 0;
+}
+
+.front #block-footerblock {
+	padding-top: 50px;
+}
+
 .layout-container {
-  min-height: calc(100% - 30px);
+  min-height: 100%;
   position:relative;
 }
 
-header {
-   padding-bottom:10px;
+#question-form .js-form-type-textfield {
+  width: 40%; 
+  margin: 0 auto;
+  display: block;
 }
 
 main {
   padding:10px;
-  padding-bottom:160px;
+  padding-bottom: 160px;
+}
+
+
+.front .layout-container {
+  min-height: unset;
+  position:relative;
+}
+
+.front main {
+	padding-bottom: 15% !important;
+	padding-top: 200px;
+	margin-top: 0;
 }
 
 footer {
-	position:absolute;
-   bottom: 0;
-   width: 100%;
-   height: 160px;
-   margin: 0;
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+  height: 160px;
+  margin: 0;
 }
+
+
+
+.front main {
+	padding: unset;
+	padding-bottom: 0;
+}
+
+.front footer {
+	height: unset;
+}
+
+.form-item-text #edit-text {
+	display: none;
+}
+
+.form-item-text #edit-text.hejsa {
+	display: block;
+}
+
+.form-item-text1 {
+	width: 40%;
+	margin: 0 auto;
+	display: block;
+}
+
+.form-item-text1 input {
+	width: 80%;
+	margin-right: 20%;
+	float: left;
+}
+
+.form-item-text3 input {
+	width: 80%;
+	margin-right: 20%;
+	float: left;
+}
+
+.form-item-text8 input {
+	width: 80%;
+	margin-right: 20%;
+	float: left;
+}
+
+.form-item-text14 input {
+	width: 80%;
+	margin-right: 20%;
+	float: left;
+}
+
+.form-item-text17 input {
+	width: 80%;
+	margin-right: 20%;
+	float: left;
+}
+
+.form-item-text20 {
+	width: 40%;
+	margin: 0 auto;
+	display: block;
+}
+
+.form-item-text8 {
+	width: 40%;
+	margin: 0 auto;
+	display: block;
+}
+
+.form-item-text14 {
+	width: 40%;
+	margin: 0 auto;
+	display: block;
+}
+
+.form-item-text17 {
+	width: 40%;
+	margin: 0 auto;
+	display: block;
+}
+
+.form-item-text20 {
+	width: 40%;
+	margin: 0 auto;
+	display: block;
+}
+
+
+
 
 
 
@@ -793,9 +907,11 @@ footer {
 	padding-right: 15px;
 	padding-left: 15px;
 	padding-top: 40px;
-	padding-bottom: 0;
+	padding-bottom: 100px;
 	margin-right: auto;
 	margin-left: auto;
+	height: 100%;
+
 }
 
 
@@ -1352,6 +1468,7 @@ footer {
 	#edit-pass-pass2 {
 		width: 100%;
 		border-radius: 3px;
+		font-weight: 500;
 	}
 
 	.account-pass {
@@ -1361,6 +1478,7 @@ footer {
 	#edit-pass-pass1 {
 		width: 100%;
 		border-radius: 3px;
+		font-weight: 500;
 	}
 
 	#edit-field-company-0-value {
@@ -1368,38 +1486,35 @@ footer {
 		border-radius: 3px;
 	}
 
-/*	#block-about-2 {
-	margin-top: 0;
-	padding-top: 10px;
-}
-
-
-	#contact-message-feedback-form {
-		margin-bottom: 0;
-		padding-bottom: 0;
-		margin-top: 0;
-		padding-top: 10px;
-
+	#user-register-form #edit-mail {
+		font-weight: 500;
 	}
 
-	#block-about-2 {
-		margin-top: 0;
-		margin-bottom: 0;
-		padding-bottom: 0;
-		margin-bottom: 0;
+	main {
+		padding-bottom: 20px;
 	}
 
-	#block-examplesblock {
-		margin-bottom: 0;
-		margin-top: 0;
-		padding-right: 15px;
-		padding-left: 15px;
-		padding-top: 10px;
-		padding-bottom: 0;
-		margin-right: auto;
-		margin-left: auto;
-	}*/
+	body {
+	  height: unset !important;
+	}
 
+	html {
+		height: unset !important;
+	}
+
+	#question-form .js-form-type-textfield {
+	  width: 80%; 
+	  margin: 0 auto;
+	  display: block;
+	}
+
+	.form-item-question3 .option {
+		max-width: 80%;
+	}
+
+	div.form-item-question3:nth-child(5) > label:nth-child(4) {
+		display: none;
+	}
 }
 /*
 @media (max-width: 1100px) and (min-width: 480px) {

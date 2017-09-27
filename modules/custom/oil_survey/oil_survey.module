@@ -23,7 +23,6 @@ use Drupal\Component\Utility\Html;
 
 
 function oil_survey_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
-
 	if ($form_id == 'user_register_form') {
 	  $form['actions']['submit']['#submit'][] = 'oil_survey_contact_submit';
 	  $form['actions']['submit']['#value'] = t('Next step');
@@ -31,6 +30,11 @@ function oil_survey_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $for
     $form['account']['pass']['#description'] = t('');
     $form['account']['mail']['#attributes']['placeholder'] = t('please fill...');
   }
+
+  if ($form_id == 'contact_message_feedback_form') {
+    $form['name']['#plain_text'] = t('');
+  }
+
 }
 
  function register_alter_form_alter(&$form, &$form_state, $form_id) {
@@ -54,7 +58,8 @@ function register_alter_password_confirm($element) {
 }
 
 function oil_survey_contact_submit($form, \Drupal\Core\Form\FormStateInterface &$form_state) {
-  $url = Url::fromUri('http://drupalvm.dev/questionary');
+  $host = \Drupal::request()->getHost();
+  $url = Url::fromUri('http://' . $host . '/questionary');
   $form_state->setRedirectUrl($url);
 }
 

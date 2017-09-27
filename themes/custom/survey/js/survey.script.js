@@ -171,7 +171,7 @@ Drupal.behaviors.ss5 = {
 Drupal.behaviors.ss6 = {
   attach: function(context, settings) {
   $document.ready(function() {
-        console.log($('#edit-field-monthly').niceSelect('update'));
+      ($('#edit-field-monthly').niceSelect('update'));
       });
 }}
 

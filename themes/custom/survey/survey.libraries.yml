@@ -5,19 +5,21 @@ global-lib:
       stylesheets/survey.style.css: {}
       stylesheets/survey.question.css: {}
       stylesheets/select2.min.css: {}
-      stylesheets/asCheck.min.css: {}
-      stylesheets/jquery.formstyler.css: {}
-      stylesheets/blue.css: {}
-      stylesheets/prettyCheckable.css: {}
+      stylesheets/jquery-labelauty.css: {}
+      # stylesheets/asCheck.min.css: {}
+      # stylesheets/jquery.formstyler.css: {}
+      # stylesheets/blue.css: {}
+      # stylesheets/prettyCheckable.css: {}
 
   js:
     js/survey.script.js: {}
     js/wizard.js: {}
     js/select2.min.js: {}
     js/selected.js: {}
-    js/jquery-asCheck.min.js: {}
-    js/icheck.min.js: {}
-    js/prettyCheckable.min.js: {}
+    js/jquery-labelauty.js: {}
+    # js/jquery-asCheck.min.js: {}
+    # js/icheck.min.js: {}
+    # js/prettyCheckable.min.js: {}
 
 
     
@@ -32,7 +34,7 @@ bootstrap:
     js/bootstrap-toggle.min.js: {}
     js/jquery.bootstrap.wizard.js: {}
     js/jquery.bootstrap.wizard.min.js: {}
-    js/jquery.formstyler.min.js: {}
+    # js/jquery.formstyler.min.js: {}
  
    
 

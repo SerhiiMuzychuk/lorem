@@ -136,8 +136,17 @@ public function buildForm(array $form, FormStateInterface $form_state) {
       '#required' => true,    
     );
 
-    $form['question1']['text'] = array(
+    $form['text1'] = array(
       '#type' => 'textfield',
+      '#attributes' =>  array('placeholder' => t('please fill...')),
+      '#states' => array(
+    // Only show this field when the 'toggle_me' checkbox is enabled.
+      'visible' => array(
+        ':input[name="question1[3]"]' => array('checked' => TRUE),
+        
+          ),
+        ),
+      '#required' => false,
     );
 
     $form['question2'] = array(
@@ -164,9 +173,17 @@ public function buildForm(array $form, FormStateInterface $form_state) {
     '#required' => TRUE,
     );
 
-    // $form['question3']['text'] = array(
-    //   '#type' => 'textfield',
-    // );
+    $form['text3'] = array(
+      '#type' => 'textfield',
+      '#attributes' =>  array('placeholder' => t('please fill...')),
+      '#states' => array(
+    // Only show this field when the 'toggle_me' checkbox is enabled.
+        'visible' => array(
+          ':input[name="question3"]' => array('value' => 4),
+        ),
+      ),
+      '#required' => false,
+    );
 
     // $form['question4'] = array(
     //   '#type' => 'weight',
@@ -228,9 +245,17 @@ public function buildForm(array $form, FormStateInterface $form_state) {
       )
     );
 
-    // $form['question8']['text'] = array(
-    //   '#type' => 'textfield',
-    // );
+    $form['text8'] = array(
+      '#type' => 'textfield',
+      '#attributes' =>  array('placeholder' => t('please fill...')),
+      '#states' => array(
+    // Only show this field when the 'toggle_me' checkbox is enabled.
+        'visible' => array(
+          ':input[name="question8"]' => array('value' => 5),
+        ),
+      ),
+      '#required' => false,
+    );
    
     $form['question9'] = array(
     '#type' => 'radios',
@@ -289,12 +314,20 @@ public function buildForm(array $form, FormStateInterface $form_state) {
       t('Annually'),
       t('Every 2 years'),
       t('Other (Please Specify)'),
-      )
+      ),
     );
 
-    // $form['question14']['text'] = array(
-    //   '#type' => 'textfield',
-    // );
+    $form['text14'] = array(
+      '#type' => 'textfield',
+      '#attributes' =>  array('placeholder' => t('please fill...')),
+      '#states' => array(
+    // Only show this field when the 'toggle_me' checkbox is enabled.
+        'visible' => array(
+          ':input[name="question14"]' => array('value' => 5),
+        ),
+      ),
+      '#required' => false,
+    );
 
     $form['question15'] = array(
     '#type' => 'radios',
@@ -332,8 +365,28 @@ public function buildForm(array $form, FormStateInterface $form_state) {
       )
     );
 
+    $form['text17'] = array(
+      '#type' => 'textfield',
+      '#attributes' =>  array('placeholder' => t('please fill...')),
+      '#states' => array(
+    // Only show this field when the 'toggle_me' checkbox is enabled.
+        'visible' => array(
+          ':input[name="question17"]' => array('value' => 4),
+        ),
+      ),
+      '#required' => false,
+    );
+
     // $form['question17']['text'] = array(
     //   '#type' => 'textfield',
+    //   '#attributes' =>  array('placeholder' => t('please fill...')),
+    //   '#states' => array(
+    // // Only show this field when the 'toggle_me' checkbox is enabled.
+    //     'visible' => array(
+    //       ':input[name="question17[4]"]' => array('checked' => TRUE),
+    //     ),
+    //   ),
+    //   '#required' => false,
     // );
 
     $form['question18'] = array(
@@ -349,6 +402,8 @@ public function buildForm(array $form, FormStateInterface $form_state) {
       t('Not Sure'),
       )
     );
+
+
 
     $form['question19'] = array(
     '#type' => 'radios',
@@ -371,11 +426,21 @@ public function buildForm(array $form, FormStateInterface $form_state) {
       t('Not Important'),
       t('Other (Please Specify)'),
       )
+
     );
 
-    // $form['question20']['text'] = array(
-    //   '#type' => 'textfield',
-    // );
+
+    $form['text20'] = array(
+      '#type' => 'textfield',
+      '#attributes' =>  array('placeholder' => t('please fill...')),
+      '#states' => array(
+    // Only show this field when the 'toggle_me' checkbox is enabled.
+        'visible' => array(
+          ':input[name="question20"]' => array('value' => 5),
+        ),
+      ),
+      '#required' => false,
+    );
 
     
 
