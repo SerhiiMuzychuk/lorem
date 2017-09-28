@@ -678,6 +678,32 @@ main {
   margin-right: 5%;
 }
 
+.tab-content fieldset legend span.has-error {
+	color: red
+}
+
+#contact-message-feedback-form #edit-name {
+	width: 100%;
+}
+
+#contact-message-feedback-form #edit-mail {
+	width: 100%;
+}
+
+/*
+#contact-message-feedback-form {
+	width: 40%;
+	min-height: 100%;
+	float: left;
+	margin-left: 10%;
+}
+
+#block-contacttext {
+	width: 40%;
+float: right;
+margin-right: 10%;
+}*/
+
 .front .bg-image {
 	position: relative;
 }
@@ -695,8 +721,7 @@ html.bagr {
 }
 
 .result-text {
-	margin-top: 100px;
-	margin-bottom: 17%;
+	padding-top: 40px;
 }
 
 .result-text .result-main {
@@ -739,12 +764,12 @@ html.bagr {
   display: none;
 }
 
-/*html,
+html,
 body {
    margin:0;
    padding:0;
-   height:100% !important;
-}*/
+   height: calc(100% - 14px);
+}
 
 #block-footerblock {
 	padding-top: 0;
@@ -1248,8 +1273,8 @@ footer {
 	}
  	
  	#contact-message-feedback-form label {
- 		width: 90%;
- 		margin-left: 5%;
+ 		width: 80%;
+ 		margin-left: 10%;
  	}
 	main {
 		position: unset !important;
@@ -1490,6 +1515,10 @@ footer {
 		font-weight: 500;
 	}
 
+	#contact-message-feedback-form #edit-submit {
+		margin-left: 5%;
+	}
+
 	main {
 		padding-bottom: 20px;
 	}
@@ -1515,7 +1544,41 @@ footer {
 	div.form-item-question3:nth-child(5) > label:nth-child(4) {
 		display: none;
 	}
+
+	#contact-message-feedback-form #edit-mail input {
+		width: 90%
+	}
+
+	#edit-subject-0-value {
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	.form-item-subject-0-value > label:nth-child(1) {
+		margin-left: 10% !important;
+		width: 80%;
+	}
+
+	#contact-message-feedback-form label {
+		margin-left: 5%;
+	}
+
+	
+
+	#contact-message-feedback-form #edit-message-0-value {
+		width: 80% !important;
+		margin-left: 10%;
+	}
+
+	#contact-message-feedback-form #edit-submit {
+		margin-left: 5%;
+	}
+
+	#contact-message-feedback-form .js-form-type-textarea > label:nth-child(1) {
+		margin-left: 10% !important;
+	}
 }
+
 /*
 @media (max-width: 1100px) and (min-width: 480px) {
 	.bg-image {

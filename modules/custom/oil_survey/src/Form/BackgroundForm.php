@@ -39,7 +39,7 @@ class BackgroundForm extends FormBase {
   public function buildForm(array $form, FormStateInterface $form_state) {
 
     $form['img'] = [
-      '#title' => 'Hello',
+      '#title' => 'Change background image',
       '#type' => 'managed_file',
       '#upload_location' => 'public://',
       '#default_value' => \Drupal::state()->get('image'),

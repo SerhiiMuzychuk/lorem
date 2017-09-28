@@ -1,0 +1,6 @@
+background.form.admin:
+  title: 'Background image settings'
+  description: 'example of how to make an admin settings page link'
+  parent: system.admin_config
+  route_name: background.form
+  weight: 100

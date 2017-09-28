@@ -20,7 +20,7 @@ oil_survey.resultpage:
     _permission: 'access content'
 
 background.form:
-  path: '/back'
+  path: '/background-image'
   defaults:
     _form: '\Drupal\oil_survey\Form\BackgroundForm'
     _title: 'Questionary'

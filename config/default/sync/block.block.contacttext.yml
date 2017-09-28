@@ -1,0 +1,31 @@
+uuid: e44ba7f6-219a-4074-b2b1-bc05b23001ce
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:4b6d9b03-61b1-4498-ad0e-b42ebf0d01fa'
+  module:
+    - block_content
+    - system
+  theme:
+    - survey
+id: contacttext
+theme: survey
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:4b6d9b03-61b1-4498-ad0e-b42ebf0d01fa'
+settings:
+  id: 'block_content:4b6d9b03-61b1-4498-ad0e-b42ebf0d01fa'
+  label: 'Contact text'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact
+    negate: false
+    context_mapping: {  }
