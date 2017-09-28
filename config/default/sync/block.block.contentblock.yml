@@ -10,7 +10,7 @@ dependencies:
 id: contentblock
 theme: survey
 region: content
-weight: 0
+weight: -12
 provider: null
 plugin: content_block
 settings:

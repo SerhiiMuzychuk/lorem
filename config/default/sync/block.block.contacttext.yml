@@ -12,7 +12,7 @@ dependencies:
 id: contacttext
 theme: survey
 region: content
-weight: 0
+weight: -3
 provider: null
 plugin: 'block_content:4b6d9b03-61b1-4498-ad0e-b42ebf0d01fa'
 settings:

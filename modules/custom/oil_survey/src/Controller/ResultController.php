@@ -22,6 +22,10 @@ namespace Drupal\oil_survey\Controller;
  */
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\oil_survey\Form\QuestionForm; 
+use Drupal\Core\Block\BlockBase;
+use Drupal\Core\core\modules\user\src\Form;
+use \Drupal\Core\Form\FormBase;
+use Drupal\block\Entity\Block;
 /**
  * Объявляем наш класс-контроллер.
  */
@@ -69,9 +73,18 @@ class ResultController extends ControllerBase {
    if ($result == 7) {
     $output = t('The best choice for you will be IP385, Growth/Culture based Method group, Standard SPEED OF TEST');
    }
+
+   $feedback = Block::load('sendresulttoemail');
+  $block = \Drupal::entityTypeManager()->getViewBuilder('block')->view($feedback);
+
+   // $form = \Drupal::formBuilder()->getForm('Drupal\oil_survey\Form\FeedbackForm');
+
+   \Drupal::state()->set('help', $output);
     return array(
       '#theme' => 'page_result',
-      '#text' =>  $output, 
+      '#text' =>  $output,
+      '#feedback' => $block, 
+      // '#form' => $form,
     );
   }
 

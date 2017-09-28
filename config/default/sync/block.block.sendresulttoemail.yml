@@ -1,0 +1,26 @@
+uuid: 7ca11758-d2eb-403f-b472-84714d585516
+langcode: en
+status: false
+dependencies:
+  module:
+    - feedback_form
+    - system
+  theme:
+    - survey
+id: sendresulttoemail
+theme: survey
+region: content
+weight: -1
+provider: null
+plugin: send_result_email
+settings:
+  id: send_result_email
+  label: 'Send result to email'
+  provider: feedback_form
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /result
+    negate: false
+    context_mapping: {  }

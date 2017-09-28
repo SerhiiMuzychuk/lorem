@@ -12,7 +12,7 @@ dependencies:
 id: examplesblock
 theme: survey
 region: content
-weight: 0
+weight: -11
 provider: null
 plugin: 'block_content:8600c142-89f0-449f-9261-a603413dab43'
 settings:

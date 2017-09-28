@@ -179,6 +179,12 @@ Drupal.behaviors.ss2 = {
     $('.form-item-text #edit-text').removeClass('hejsa');
   });
 
+
+  $('#feedback-form #edit-submit').click(function() {
+      $('#feedback-form #edit-submit').addClass('hidden');
+      $('.send-newsletter').addClass('open');
+    });
+
 }}
 
 })(jQuery); 

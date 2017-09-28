@@ -14,9 +14,18 @@ function survey_theme($existing, $type, $theme, $path) {
 
 
   ];
+
+}
+
+function survey_preprocess_comment_alert_mail($variables) {
+  $val = \Drupal::state()->get('help');
+  print_r($variables);
+  $variables['message'] = $val;
 }
 
 function survey_preprocess_page(&$variables) {
+  
+
   /** @var User $account */
   // $val = \Drupal::state()->get('image');
   // $file = \Drupal\file\Entity\File::load($val[0]);

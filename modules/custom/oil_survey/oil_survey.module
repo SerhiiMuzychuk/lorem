@@ -16,13 +16,10 @@ use Drupal\Component\Utility\Html;
 
 
 
-/**
- * Do a bit of processing for the password_confirm element.
- * Original processing happens in expand_password_confirm()
- */
-
-
 function oil_survey_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'contact_message_feedback_form') {
+  }
+
 	if ($form_id == 'user_register_form') {
 	  $form['actions']['submit']['#submit'][] = 'oil_survey_contact_submit';
 	  $form['actions']['submit']['#value'] = t('Next step');
@@ -38,7 +35,6 @@ function oil_survey_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $for
     $form['mail']['#type'] = 'textfield';
     $form['name']['#value'] = t('');
     $form['mail']['#value'] = t('');
-
   }
 
 }
@@ -46,11 +42,9 @@ function oil_survey_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $for
  function register_alter_form_alter(&$form, &$form_state, $form_id) {
   switch ($form_id) {
      case 'user_register_form':
-       // Here we need to provide an extra #process handler to allow us to modify
-       // the password element that FAPI expands.
        $form['account']['pass']['#process'][] = array('form_process_password_confirm', 'register_alter_password_confirm');
        
-   }
+  }
   
 	
 }
@@ -58,7 +52,7 @@ function oil_survey_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $for
 function register_alter_password_confirm($element) {
        $element['pass1']['#title'] = t("Psssssssassword");
    $element['pass2']['#title'] = t("Repsssssssssssseat password");
-    return $element;
+return $element;
 
 }
 
@@ -70,16 +64,14 @@ function oil_survey_contact_submit($form, \Drupal\Core\Form\FormStateInterface &
 
 
 function oil_survey_theme($existing, $type, $theme, $path) {
-  // if (!\Drupal::currentUser()->id()) {
-  //   $form = Drupal::formBuilder()->getForm(Drupal\user\Form\UserLoginForm::class) ; 
-  //   $render = Drupal::service('renderer');
-  //   $variables['login_form'] = $render->renderPlain($form);
-    
-  // }
+  
   return array(
+    
     'page_result' => array(
       'variables' => array(
         'text' => null,
+        'form' => null,
+        'feedback' => null,
         ),
       'template' => 'page_result',
     ),   

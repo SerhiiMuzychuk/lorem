@@ -12,7 +12,7 @@ dependencies:
 id: frontpage
 theme: survey
 region: content
-weight: 0
+weight: -10
 provider: null
 plugin: 'block_content:c7b4f0ca-3bc4-4583-986b-19234b5559c0'
 settings:

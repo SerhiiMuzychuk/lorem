@@ -12,7 +12,7 @@ dependencies:
 id: firststepblock
 theme: survey
 region: content
-weight: 0
+weight: -2
 provider: null
 plugin: 'block_content:e4f28e5f-4504-4b6e-a1af-95018f76ad89'
 settings:

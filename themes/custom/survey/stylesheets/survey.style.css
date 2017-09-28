@@ -594,7 +594,6 @@ main {
 	display: inline-grid;
 	border-radius: 3px;
 	border: 1px solid #1377d5;
-	margin-top: 10px;
 }
 
 #contact-message-feedback-form #edit-mail {
@@ -764,6 +763,54 @@ html.bagr {
   display: none;
 }
 
+.send-res {
+	float: left;
+	width: 50%;
+	text-align: center;
+	font-size: 16px;
+}
+
+.send-mes {
+	color: #3ccf3c;
+	text-align: center;
+	font-size: 16px;
+}
+
+body > div > main > div > div > div[aria-label="yes"] {
+	color: green;
+}
+
+.again-button {
+	width: 60%;
+}
+
+#feedback-form #edit-submit {
+	float: right;
+	padding: 5px 22px;
+	border: 1px solid #555;
+	margin: 0;
+	margin-top: 40px;
+}
+
+.layout-content > div:nth-child(1) > div:nth-child(2) > h2.visually-hidden {
+	color: green;
+	text-align: center;
+}
+	
+div.throbber {
+	display: none !important;
+}
+
+
+.send-newsletter {
+	display: none;
+	color: #3ccf3c;
+}
+
+.send-newsletter.open {
+	display: block;
+}
+
 html,
 body {
    margin:0;
@@ -771,9 +818,37 @@ body {
    height: calc(100% - 14px);
 }
 
+.again-button {
+	display: block;
+	width: 200px;
+	text-align: center;
+	background-color: ;
+	color: #fff;
+	border: 1px solid #555;
+	cursor: pointer;
+	margin: 10px 1px;
+	background-color: #1377d5 !important;
+	font-size: 14px;
+	padding: 5px 22px;
+	border-radius: 3px;
+	margin: 0;
+	margin-top: 20px;
+}
+
+.again-button:hover {
+	color: white !important;
+}
+
 #block-footerblock {
 	padding-top: 0;
 }
+
+/*body > div > main > div > div > div:nth-child(2) {
+	color: green;
+	text-align: center;
+	font-size: 20px;
+	padding-top: 10px;
+}*/
 
 .front #block-footerblock {
 	padding-top: 50px;
@@ -795,6 +870,14 @@ main {
   padding-bottom: 160px;
 }
 
+.first-low {
+	line-height: 28px;
+}
+
+.first-height {
+	padding-top: 5px;
+	line-height: 28px;
+}
 
 .front .layout-container {
   min-height: unset;
@@ -949,7 +1032,7 @@ footer {
 	.front main {
 		padding-top: 70px;
     height: 100%;
-    min-height: 684px !important;
+    min-height: 680px !important;
 	}	
 
 	.container {
@@ -978,7 +1061,7 @@ footer {
 	.front main {
 		padding-top: 0px;
     height: 100%;
-    min-height: 347px !important;
+    min-height: 400px !important;
 	}	
 
 	.front .lorem-title {
@@ -1016,6 +1099,12 @@ footer {
 	.container {
 		width: 1300px !important;
 	}
+
+	.front main {
+		padding-top: 70px;
+    height: 100%;
+    min-height: 785px !important;
+	}	
 
 	.bg-image {
 		background-position-y: -452px;
@@ -1577,6 +1666,37 @@ footer {
 	#contact-message-feedback-form .js-form-type-textarea > label:nth-child(1) {
 		margin-left: 10% !important;
 	}
+
+	.send-res {
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	#feedback-form #edit-submit {
+		width: 74.1%;
+		margin-right: 16%;
+	}
+	
+	.result-congr {
+		line-height: 33px;
+	}
+
+	.result-main {
+		line-height: 33px;
+	}
+
+	.lorem-title {
+		padding-bottom: 7px;
+	}
+
+	.result-info {
+		line-height: 33px;
+	}
+
+	.result-risk {
+		line-height: 33px;
+	}
+
 }
 
 /*
