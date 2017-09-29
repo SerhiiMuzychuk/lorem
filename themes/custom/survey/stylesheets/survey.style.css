@@ -1169,6 +1169,14 @@ body.front {
 		width: 1300px !important;
 	}
 
+		html.bagr {
+		height: 100%;
+	}
+
+		body.front {
+			height: 100%;
+		}
+
 	.front main {
 		padding-top: 70px;
     height: 100%;
