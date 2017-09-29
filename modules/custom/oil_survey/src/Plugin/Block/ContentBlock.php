@@ -24,7 +24,6 @@ class ContentBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-//    $node = \Drupal::entityTypeManager()->getStorage('node')->load(1);
     $menu2 = Block::load('firststepblock');
     $prod_menu2 = \Drupal::entityTypeManager()->getViewBuilder('block')->view($menu2);
     

@@ -2,8 +2,8 @@
  
 namespace Drupal\feedback_form\Form;
  
-use Drupal\Core\Form\FormBase;                   // Базовый класс Form API
-use Drupal\Core\Form\FormStateInterface;              // Класс отвечает за обработку данных
+use Drupal\Core\Form\FormBase;                   
+use Drupal\Core\Form\FormStateInterface;              
 use Drupal\node\Entity\Node;
 
  
@@ -18,12 +18,7 @@ class FeedbackForm extends FormBase {
 	public function buildForm(array $form, FormStateInterface $form_state) {
 	$config = $this->config('simple.settings');
   $form['#prefix'] = '<div id="my-form-wrapper-id">';
-  $form['#suffix'] = '</div>';
- 	// $form['title'] = [
- 	// 	'#type' => 'textfield',
-  //   '#placeholder' => t('Email address')
- 	// ];
- 	
+  $form['#suffix'] = '</div>'; 	
 
  	$form['actions']['submit'] = [
  		'#type' => 'submit',
@@ -51,24 +46,17 @@ class FeedbackForm extends FormBase {
 
 
   public function validateForm(array &$form, FormStateInterface $form_state) {
-  	// $title = $form_state->getValue('title');
-  	// // $body = $form_state->getValue('body');
 
-  	// $title = htmlspecialchars($title);
-   //  kint($title);
-  	// $body = htmlspecialchars($body);
   }
 
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
     $mail = $user->get('mail')->value;
     $tit = $mail;
-    // $bod = $form_state->getValue('body');
-        $node = Node::create(array(
+    $node = Node::create(array(
       'nid' => null,
       'type' => 'feedback',
       'title' => $tit,
-      // 'field_feed' => $bod,
       'uid' => 1,
       'status' => 0,
     ));
@@ -80,9 +68,7 @@ class FeedbackForm extends FormBase {
     $ajax_response = new AjaxResponse();
     $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
     $mail = $user->get('mail')->value;
-    $tit = $mail;
-    // $bod = $form_state->getValue('body');
-    
+    $tit = $mail;    
     $node = Node::create(array(
       'nid' => null,
       'type' => 'feedback',
@@ -91,7 +77,7 @@ class FeedbackForm extends FormBase {
       'uid' => 1,
       'status' => 0,
     ));
-   $node->save();
+    $node->save();
     return $ajax_response; 
   }
 

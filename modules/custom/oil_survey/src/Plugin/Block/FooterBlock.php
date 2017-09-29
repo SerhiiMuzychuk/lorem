@@ -25,7 +25,6 @@ class FooterBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-//    $node = \Drupal::entityTypeManager()->getStorage('node')->load(1);
     $menu = Block::load('footer');
     $prod_menu = \Drupal::entityTypeManager()->getViewBuilder('block')->view($menu);
 

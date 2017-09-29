@@ -7,16 +7,10 @@ question.form:
     _permission: 'access content'
     
 oil_survey.resultpage:
-  # Указываем путь роута, с лидирующим слешем.
   path: '/result'
-  # Значения по умолчанию
   defaults:
-    # Функция контроллера отвечающая за содержимое.
     _controller: '\Drupal\oil_survey\Controller\ResultController::Result'
-  # В данном разделе указываются необходимые требования для роута.
   requirements:
-    # Мы будем показывать страницу только тем, у кого есть права на просмотр
-    # содержимого.
     _permission: 'access content'
 
 background.form:

@@ -72,10 +72,6 @@ class BackgroundForm extends FormBase {
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     kint($form_state->getValue('img'));
-    // $img = $form_state->getValue('img')[0];
-    // $file = \Drupal\file\Entity\File::load($img[0]);
-    // $path = $file->getFileUri();
-    // $url = \Drupal\image\Entity\ImageStyle::load('medium')->buildUrl($path);
     \Drupal::state()->set('image', $form_state->getValue('img'));
   }
 

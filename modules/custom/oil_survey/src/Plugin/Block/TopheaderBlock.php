@@ -45,7 +45,6 @@ class TopheaderBlock extends BlockBase {
         'footer' => $prod_menu,
         'background' => $url,
       ),
-      // '#logs' => array('log_form' => $log_form),
     );
   }
   

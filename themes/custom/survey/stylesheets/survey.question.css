@@ -67,9 +67,9 @@
 }
 
 #user-register-form .btn:not(.btn-link):not(.btn-flat), #user-register-form .btn-default:not(.btn-link):not(.btn-flat) {
-    background-color: transparent;
-    color: rgba(0, 0, 0, 0.84);
-    border: 1px solid #555;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.84);
+  border: 1px solid #555;
 }
 
 .btn {
@@ -126,10 +126,6 @@ input, textarea, select, .uneditable-input {
 #block-whooosh-local-tasks, #block-whooosh-local-tasks--2, #block-whooosh-local-tasks--3, #block-whooosh-local-tasks--4 {
 	display: none;
 }
-
-/*#step1 label, #step2 label, #step3 label, #step4 label  {
-	display: none;
-}*/
 
 #step12 .row #block-whooosh-content--2 #step1 {
 	display: none;
@@ -244,134 +240,132 @@ input, textarea, select, .uneditable-input {
 }
 
 .pill-wrapper, .wizard-footer {
-    position: fixed;
-    top: 0;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 
 .pill-wrapper {
-    background-color: #fff;
-    width: 100%;
-    height: 70px;
-    position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 70px;
+  position: relative;
 }
 
 .carousel, .item, .active {
-    height: 100%;
+  height: 100%;
 }
 
 .terms-condition {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 
 #wizard-steps {
-    position: fixed;
-    z-index: 1000;
+  position: fixed;
+  z-index: 1000;
 }
 
 #wizard-steps {
-    position: fixed;
-    top: 110px;
-    left: 50%;
-    width: 50px;
-    margin-left: -50px;
-    z-index: 999;
-    text-align: center;
-    color: #666;
-    margin: 0;
+  position: fixed;
+  top: 110px;
+  left: 50%;
+  width: 50px;
+  margin-left: -50px;
+  z-index: 999;
+  text-align: center;
+  color: #666;
+  margin: 0;
 }
 
 #wizard-steps strong {
-    color: #1377d5;
-    font-weight: normal;
+  color: #1377d5;
+  font-weight: normal;
 }
 
-
-
 .btn.go-to-home {
-    cursor: pointer;
-    margin-right: 10px;
+  cursor: pointer;
+  margin-right: 10px;
 }
 
 .btn {
-    text-transform: none!important;
+  text-transform: none!important;
 }
 
 .btn-primary {
-    background-color: #1377d5 !important;
-    opacity: 1;
+  background-color: #1377d5 !important;
+  opacity: 1;
 }
 
 .btn {
-    border-radius: 30px;
+  border-radius: 30px;
 }
 
 a:hover, a:focus {
-    color: #109CFF;
+  color: #109CFF;
 }
 
 a {
-    color: #2CA8FF;
+  color: #2CA8FF;
 }
 
 .pill-wrapper .nav-pills {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .pill-wrapper ul {
-    list-style: none;
+  list-style: none;
 }
 
 p {
-    font-size: 16px;
-    line-height: 1.6180em;
+  font-size: 16px;
+  line-height: 1.6180em;
 }
 
 .wizard-container h2 {
-    margin-top: 150px;
+  margin-top: 150px;
 }
 
 .wizard-container h2 {
-    color: #1377d5;
-    font-weight: 700;
-    padding: 50px 0;
+  color: #1377d5;
+  font-weight: 700;
+  padding: 50px 0;
 }
 
 #board-title-page-board-view, h2, h1 {
-    word-wrap: break-word;
+  word-wrap: break-word;
 }
 
 
 
 #step13 {
-    height: 700px;
+  height: 700px;
 }
 
 .wizard-card .tab-pane {
-    max-width: 960px;
-    margin: 0 auto;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 #wizardProfile input[type="email"], #wizardProfile input[type="text"], #wizardProfile input[type="password"] {
-    border: solid 1px #c8c8c8;
-    background-image: none;
-    padding: 15px 10px;
-    height: 100%;
-    line-height: 100%;
-    position: relative;
+  border: solid 1px #c8c8c8;
+  background-image: none;
+  padding: 15px 10px;
+  height: 100%;
+  line-height: 100%;
+  position: relative;
 }
 
 input.form-control {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 input[type="text"], input[type="password"] {
-    border: solid 1px #d7d7d7;
-    padding-left: 10px;
+  border: solid 1px #d7d7d7;
+  padding-left: 10px;
 }
 
 .tab-content #edit-mail {
@@ -430,65 +424,63 @@ input[type="text"], input[type="password"] {
 }
 
 .nav-pills li a {
-    text-indent: -999999px;
-    padding: 1px 0;
-    line-height: 2px;
+  text-indent: -999999px;
+  padding: 1px 0;
+  line-height: 2px;
 }
 
 .nav-pills > li a {
-    border: 0 !important;
-    text-transform: uppercase;
-    /*background-color: #f1f1f1;*/
-    color: #FFFFFF !important;
-    font-size: 12px;
+  border: 0 !important;
+  text-transform: uppercase;
+  color: #FFFFFF !important;
+  font-size: 12px;
 }
 
 .nav-pills > li > a {
-    border-radius: 0;
+  border-radius: 0;
 }
 
 .nav-pills > li + li {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .nav-pills > li {
-    text-align: center;
+  text-align: center;
 }
 
 .nav-pills > li + li {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .nav-pills > li + li {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .pill-warpper h2 {
-    margin-top: 150px;
+  margin-top: 150px;
 }
 
 .pill-wrapper h2 {
-    color: #1377d5;
-    font-weight: 700;
-    padding: 50px 0;
+  color: #1377d5;
+  font-weight: 700;
+  padding: 50px 0;
 }
 
 .pill-wrapper p {
-    font-size: 16px;
-    line-height: 1.6180em;
+  font-size: 16px;
+  line-height: 1.6180em;
 }
 
 .pill-wrapper {
-    background-color: #fff;
-    width: 100%;
-    height: 70px;
-    
+  background-color: #fff;
+  width: 100%;
+  height: 70px;    
 }
 
 #user-register-form .pill-wrapper, #user-register-form .wizard-footer {
-    position: fixed;
-    top: 0;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 } 
 
 .tab-content h2 {
@@ -604,25 +596,6 @@ input[type="text"], input[type="password"] {
   z-index: 1000;
 }
 
-/*.navbar-header .navbar-brand > img {
-  display: none;
-}*/
-
-/*#user-register-form #step2 #edit-field-date-wrapper {
-  padding-left: 30px;
-  height: 100%;
-  width: 40%;
-  text-align: center;
-  position: unset;
-  display: inline-block;
-  border-radius: 2px;
-  border: 0;
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
-  background-color: #fff;
-  margin-bottom: 20px;
-  padding-bottom: 50px;
-  padding-top: 10px;
-}*/
 
 #rootwizard .progress .progress-bar {
   background-color: #1377d5 !important;
@@ -662,11 +635,6 @@ input[type="text"], input[type="password"] {
   padding-top: 31px;
   min-width: 100%;
 }
-/*
-.js .layout-container header {
-  z-index: 2;
-  background-color: #fff;
-}*/
 
 #rootwizard .nav > li > a:focus, .nav > li a:hover {
   background-color: white !important;
@@ -675,7 +643,6 @@ input[type="text"], input[type="password"] {
 .tab-content #wizard-steps {
   font-size: 26px;
 }
-
 
 #user-register-form #edit-submit {
   color: #fff;
@@ -740,9 +707,6 @@ input[type="text"], input[type="password"] {
   display: block;
   padding: 15px;
   color: rgba(0, 0, 0, 0.84);
-  /*margin-left: 40px;
-  margin-right: 80px;
-  margin-bottom: 20px;*/
 }
 
 #user-register-form #edit-field-date-0-value {
@@ -838,13 +802,7 @@ input[type="text"], input[type="password"] {
   text-align: center;
 }
 
-
-#edit-field-date-wrapper {
-  /*max-width: 430px;*/
-}
-
 .fieldset-wrapper {
-/*  max-width: 325px !important;*/
   margin: auto;
 }
 
@@ -858,8 +816,6 @@ input[type="text"], input[type="password"] {
   margin-bottom: 20px;
   margin-right: 10px;
 }
-
-
 
 #user-register-form div.category-block:nth-child(3) {
   float: left;
@@ -912,11 +868,6 @@ input[type="text"], input[type="password"] {
   color: red;
   float: left;
 }
-/*
-.alert1-danger.has-error {
-  margin-top: 10px;
-  display: block;
-}*/
 
 .alert-danger.has-error {
   margin-top: 10px;
@@ -938,127 +889,126 @@ input[type="text"], input[type="password"] {
 }
 
 .btn-modal {
-    background: url(themes/custom/whooosh/images/search.png);
-    color: transparent;
-    opacity: .7;
-    width: 20px;
-    height: 26px;
-    background-position: center;
-    border: none;
-  }
+  background: url(themes/custom/whooosh/images/search.png);
+  color: transparent;
+  opacity: .7;
+  width: 20px;
+  height: 26px;
+  background-position: center;
+  border: none;
+}
 
 
-  .modal-content {
-    height: 150% !important;
-    width: 100%;
-    border-radius: none;
-  }
+.modal-content {
+  height: 150% !important;
+  width: 100%;
+  border-radius: none;
+}
 
-  .modal-body {
-    padding: 75px;
-    margin-left: 100px;
-    margin-right: 100px;
-  }
+.modal-body {
+  padding: 75px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
 
-  .modal-content .modal-header .close {
-    border: none;
-    padding: 0;
-    color: #666;
-    font-family: times, sans-serif;
-    font-size: 40px;
-    font-weight: 300;
-    outline: 1px;
-  }
+.modal-content .modal-header .close {
+  border: none;
+  padding: 0;
+  color: #666;
+  font-family: times, sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  outline: 1px;
+}
 
-  .modal-header {
-    border: none;
-  }
- 
+.modal-header {
+  border: none;
+}
 
-  .search-one .views-exposed-form label {
-    display: none;
-  }
 
-  .search-two .views-exposed-form label {
-    display: none;
-  }
+.search-one .views-exposed-form label {
+  display: none;
+}
 
-  .modal-content .modal-body .tabs {
-    text-align: center;
-    position: relative;
-    top: 45px;
-    z-index: 99;
-  }
+.search-two .views-exposed-form label {
+  display: none;
+}
 
-  .modal-content .modal-body .tabs .board {
-    color: #666;
-    display: inline-block;
-    font-size: 20px;
-    margin: 0 15px;
-  }
+.modal-content .modal-body .tabs {
+  text-align: center;
+  position: relative;
+  top: 45px;
+  z-index: 99;
+}
 
-  .modal-content .modal-body .tabs .users {
-    color: #666;
-    display: inline-block;
-    font-size: 20px;
-    margin: 0 15px;
-  }
+.modal-content .modal-body .tabs .board {
+  color: #666;
+  display: inline-block;
+  font-size: 20px;
+  margin: 0 15px;
+}
 
-  .tabs .users.active span {
-    color: #000;
-    border-bottom: 2px solid #000;
-  }
+.modal-content .modal-body .tabs .users {
+  color: #666;
+  display: inline-block;
+  font-size: 20px;
+  margin: 0 15px;
+}
 
-  .tabs .board.active span {
-    color: #000;
-    border-bottom: 2px solid #000;
-  }
+.tabs .users.active span {
+  color: #000;
+  border-bottom: 2px solid #000;
+}
 
-  .block .block- .block-bootstrap-modal .modal {
-    padding-right: 0;
-  }
+.tabs .board.active span {
+  color: #000;
+  border-bottom: 2px solid #000;
+}
 
-  #views-exposed-form-search-boards-block-search .form-item {
-    width: 75%;
-    margin: 0 auto;
-    position: static;
-    background: url('/themes/custom/whooosh/images/search-icon.png') no-repeat scroll left center / auto 50%;
-  }
+.block .block- .block-bootstrap-modal .modal {
+  padding-right: 0;
+}
 
-  #views-exposed-form-search-users-block-search-users .form-item {
-    width: 75%;
-    margin: 0 auto;
-    position: static;
-    background: url('/themes/custom/whooosh/images/search-icon.png') no-repeat scroll left center / auto 50%;
-  }
+#views-exposed-form-search-boards-block-search .form-item {
+  width: 75%;
+  margin: 0 auto;
+  position: static;
+  background: url('/themes/custom/whooosh/images/search-icon.png') no-repeat scroll left center / auto 50%;
+}
 
-  .pane-board {
-    margin-top: 25px; 
-  }
+#views-exposed-form-search-users-block-search-users .form-item {
+  width: 75%;
+  margin: 0 auto;
+  position: static;
+  background: url('/themes/custom/whooosh/images/search-icon.png') no-repeat scroll left center / auto 50%;
+}
 
-  .modal-body .pane-board input:nth-child(2) {
-    border: none;
-    font-size: 3vw;
-    font-weight: 700;
-    color: #1377d5;
-    height: 100px;
-    width: 90%;
-    margin: 0 auto;
-    display: inline;
-    background-image: none;
-    font-family: "AdelleSansBold";
-    margin-left: 25px;
-    padding-left: 10px !important;
-  }
-  .pane-board .search-two {
-    display: none;
-  }
-  .pane-board .search-one {
-    display: none;
-  } 
+.pane-board {
+  margin-top: 25px; 
+}
 
-.btn-modal {
- 
+.modal-body .pane-board input:nth-child(2) {
+  border: none;
+  font-size: 3vw;
+  font-weight: 700;
+  color: #1377d5;
+  height: 100px;
+  width: 90%;
+  margin: 0 auto;
+  display: inline;
+  background-image: none;
+  font-family: "AdelleSansBold";
+  margin-left: 25px;
+  padding-left: 10px !important;
+}
+.pane-board .search-two {
+  display: none;
+}
+.pane-board .search-one {
+  display: none;
+} 
+
+.btn-modal { 
   bottom: -35px;
   margin-top: -30px;
   position: absolute;
@@ -1109,7 +1059,6 @@ input[type="text"], input[type="password"] {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   font-size: 24px;
-
   background: url('/themes/custom/whooosh/images/search-icon1.png') no-repeat;
 }
 
@@ -1130,8 +1079,6 @@ input[type="text"], input[type="password"] {
   font-size: 24px;
   float: left;
   margin-top: 50px;
-/*  margin-right: 1000px;
-  margin-left: 100px;*/
 }
 
 .modal-body .tabs .views-row span p {
@@ -1243,10 +1190,6 @@ div.views-row:nth-child(8) > div:nth-child(1) > span:nth-child(1) {
 .views-field.views-field-field-las {
   display: inline-block !important;
 }
-
-/*.views-field.views-field-user-picture {
-  display: inline-block !important;
-}*/
 
 
 .views-field.views-field-user-picture .field-content {
@@ -1504,10 +1447,6 @@ tr.draggable:nth-child(4) > td:nth-child(2) {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-
-#edit-mytable {
-  
-}
 
 .tab-content fieldset {
   text-align: left;

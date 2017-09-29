@@ -25,7 +25,7 @@
             '@title' => $params['node_title'],
            ),
           $options);
-        $theme_body = array (
+        $theme_body = array(
           '#theme' => 'comment_alert_mail',
           '#text' => $val,
           '#title' => $params['node_title'],
@@ -51,20 +51,10 @@
   
     $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
     $to = $user->get('mail')->value;
-
-    // dsm($entity);
-    // $params['message'] = 'sdjskdzs';
     $params['node_title'] = 'Oil Compare';
     $langcode = \Drupal::currentUser()->getPreferredLangcode();
     $send = true;
     $result = $mailManager->mail($module, $key, $to, $langcode, $params, NULL, $send);
-
-    // if ($result['result'] !== true) {
-    //   drupal_set_message(t('There was a problem sending your message and it was not sent.'), 'error');
-    // }
-    // else {
-    //   drupal_set_message(t('Ваш отзыв отправлен на проверку администратору.'));
-    // }
   }
 
 
