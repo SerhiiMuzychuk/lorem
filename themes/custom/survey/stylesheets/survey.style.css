@@ -662,6 +662,28 @@ main {
 	position: relative;
 }
 
+#edit-field-monthly-wrapper .flag-dropdown {
+	width: 100%;
+}
+
+#edit-field-city-0-value {
+	border: solid 1px #d7d7d7;
+  padding-left: 10px;
+}
+
+#edit-field-monthly-wrapper .flag-dropdown .country-list {
+	width: 100%;
+}
+
+#edit-field-monthly-0-value {
+	width: 100%;	
+}
+
+#edit-field-monthly-wrapper .intl-tel-input {
+	width: 100%;
+}
+
+
 html.bagr {
 	height: 100%;
 }
@@ -683,6 +705,78 @@ html.bagr {
 	margin-top: 30px;
 	color: #1377d5;
 }
+
+.faqs {
+	width: 50% !important;
+	padding-top: 50px;
+}
+
+.faqs .question1 {
+	width: 80%;
+	float: left;
+	font-size: 22px;
+}
+
+.faqs .show1 {
+	width: 14%;
+	float: left;
+	color: #fff;
+	border: 1px solid #555;
+	cursor: pointer;
+	margin: 10px 1px;
+	background-color: #1377d5 !important;
+	font-size: 14px;
+	padding: 5px 22px;
+	border-radius: 3px;
+	text-align: center;
+}
+
+
+.faqs .answ1 {
+	width: 100%;
+	float: left;
+	display: none;
+	font-size: 22px;
+	color: #1377d5;
+}
+
+.faqs .answ1.active {
+	display: block;
+}
+
+.faqs .question2 {
+	width: 80%;
+	float: left;
+	font-size: 22px;
+}
+
+.faqs .show2 {
+	width: 14%;
+	float: left;
+	color: #fff;
+	border: 1px solid #555;
+	cursor: pointer;
+	margin: 10px 1px;
+	background-color: #1377d5 !important;
+	font-size: 14px;
+	padding: 5px 22px;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.faqs .answ2 {
+	width: 100%;
+	float: left;
+	display: none;
+	font-size: 22px;
+	color: #1377d5;
+}
+
+.faqs .answ2.active {
+	display: block;
+}
+
+
 
 .result-risk {
 	float: left;
@@ -761,13 +855,13 @@ div.throbber {
 .send-newsletter {
 	display: none;
 	color: #338b33;
-	padding-top: 10px;
 }
 
 .send-newsletter.open {
 	display: block;
-	text-align: center;
-	padding-top: 10px;
+	position: absolute;
+	margin-left: 50%;
+	padding-top: 50px;
 }
 
 html,
@@ -874,6 +968,10 @@ footer {
 	display: block;
 }
 
+#edit-field-monthly-wrapper {
+	margin-bottom: 30px;
+}
+
 .form-item-text1 input {
 	width: 80%;
 	margin-right: 20%;
@@ -902,6 +1000,14 @@ footer {
 	width: 80%;
 	margin-right: 20%;
 	float: left;
+}
+
+#edit-field-full-name-wrapper .form-item-field-full-name-0-value {
+	display: inline-grid;
+}
+
+#edit-field-full-name-wrapper .form-item-field-monthly-0-value {
+	display: inline-grid;
 }
 
 .form-item-text20 {
@@ -979,6 +1085,13 @@ footer {
   font-size: 18px;
 }
 
+html.bagr {
+	height: auto;
+}
+
+body.front {
+	height: auto;
+}
 
 
 
@@ -1014,8 +1127,8 @@ footer {
 }
 
 @media (max-width: 1399px) and (min-width: 1100px) {
-	.front main {
-		padding-top: 0px;
+.front main {
+		padding-top: 70px;
     height: 100%;
     min-height: 400px !important;
 	}	
@@ -1230,7 +1343,7 @@ footer {
 		
 	}	
 
-	#block-footer > ul:nth-child(2) > li:nth-child(4) > a:nth-child(1) {
+	#block-footer > ul:nth-child(2) > li:nth-child(5) > a:nth-child(1) {
 		margin-bottom: 10px;
 		border-radius: 0 0 4px 4px;
 		border-bottom: none;
@@ -1415,6 +1528,8 @@ footer {
 
 	.front #block-footerblock {
 		padding: 0;
+		padding-top: 20px !important;
+    padding-bottom: 20px;
 	}
 
 	#block-footerblock {
@@ -1659,6 +1774,98 @@ footer {
 		margin-left: 10%;
 		margin-right: 10%;
 	}
+
+	.result-text .result-main {
+		text-align: center;
+
+	}
+
+	.result-risk {
+		text-align: center;
+	}
+
+	.result-info {
+		text-align: center;
+	}
+
+	.faqs {
+	width: 90% !important;
+	padding-top: 50px;
+}
+
+.faqs .question1 {
+	width: 90%;
+	float: left;
+	font-size: 22px;
+}
+
+.faqs .show1 {
+	width: 90%;
+	float: left;
+	color: #fff;
+	border: 1px solid #555;
+	cursor: pointer;
+	margin: 10px 1px;
+	background-color: #1377d5 !important;
+	font-size: 14px;
+	padding: 5px 22px;
+	border-radius: 3px;
+	text-align: center;
+}
+
+
+.faqs .answ1 {
+	width: 90%;
+	float: left;
+	display: none;
+	font-size: 22px;
+	color: #1377d5;
+}
+
+.faqs .answ1.active {
+	display: block;
+}
+
+.faqs .question2 {
+	width: 90%;
+	float: left;
+	font-size: 22px;
+}
+
+.faqs .show2 {
+	width: 90%;
+	float: left;
+	color: #fff;
+	border: 1px solid #555;
+	cursor: pointer;
+	margin: 10px 1px;
+	background-color: #1377d5 !important;
+	font-size: 14px;
+	padding: 5px 22px;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.faqs .answ2 {
+	width: 90%;
+	float: left;
+	display: none;
+	font-size: 22px;
+	color: #1377d5;
+}
+
+.faqs .answ2.active {
+	display: block;
+}	
+
+#block-footerblock {
+	padding-top: 20px !important;
+	padding-bottom: 10px;
+}
+
+#edit-field-monthly-wrapper {
+	margin-bottom: 30px;
+}
 
 }
 

@@ -1,0 +1,12 @@
+uuid: 16eac8d7-d5d1-4fa4-bab4-cfbe9af5954d
+langcode: en
+status: true
+dependencies: {  }
+id: faqs
+label: FAQs
+description: ''
+use_admin_theme: false
+path: /FAQs
+access_logic: and
+access_conditions: {  }
+parameters: {  }

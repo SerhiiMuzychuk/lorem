@@ -1348,10 +1348,11 @@ body > div > main > div > div > div:nth-child(1) > div > ul > li:nth-child(2) {
 }
 
 a.tabledrag-handle .handle {
-  background-image: url('/themes/custom/survey/images/footerArrow.png') !important;
+  background-image: url('/themes/custom/survey/images/if_move_134218.svg') !important;
   margin: -4px;
   height: 20px;
   width: 23px;
+  background-size: 13px;
 }
 
 

@@ -9,6 +9,8 @@ dependencies:
     - field.field.user.user.field_monthly
     - field.field.user.user.user_picture
   module:
+    - international_phone
+    - telephone
     - user
 _core:
   default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
@@ -23,12 +25,11 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_city:
-    weight: 7
+    weight: 10
     settings:
-      size: 60
       placeholder: 'please fill...'
     third_party_settings: {  }
-    type: string_textfield
+    type: telephone_default
     region: content
   field_company:
     weight: 6
@@ -47,10 +48,10 @@ content:
     type: string_textfield
     region: content
   field_monthly:
-    weight: 3
+    weight: 8
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: InternationalPhoneDefaultWidget
     region: content
 hidden:
   contact: true

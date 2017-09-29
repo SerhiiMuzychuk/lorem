@@ -55,7 +55,7 @@ class ResultController extends ControllerBase {
   $output = t('The best choice for you will be IP385, Growth/Culture based Method group, Standard SPEED OF TEST');
   }
 
-  $feedback = Block::load('sendresulttoemail');
+  $feedback = Block::load('sendresulttoemail_2');
   $block = \Drupal::entityTypeManager()->getViewBuilder('block')->view($feedback);
 
 

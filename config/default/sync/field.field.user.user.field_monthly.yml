@@ -1,23 +1,23 @@
-uuid: d9ea7869-7cb5-429d-bc1f-189b20da45ea
+uuid: 27d8dc3a-4f68-485d-bd9d-e06efd6bf6a7
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.user.field_monthly
   module:
-    - options
+    - international_phone
     - user
 id: user.user.field_monthly
 field_name: field_monthly
 entity_type: user
 bundle: user
-label: 'Monthly income'
+label: 'Dialling code'
 description: ''
 required: false
 translatable: false
 default_value:
   -
-    value: 4
+    value: '+44'
 default_value_callback: ''
 settings: {  }
-field_type: list_integer
+field_type: international_phone

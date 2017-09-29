@@ -21,6 +21,7 @@ function oil_survey_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $for
   }
 
 	if ($form_id == 'user_register_form') {
+    $form['field_monthly']['widget'][0]['value']['#title']= t('Dailling code');    
 	  $form['actions']['submit']['#submit'][] = 'oil_survey_contact_submit';
 	  $form['actions']['submit']['#value'] = t('Next step');
     $form['account']['mail']['#description'] = t('');
@@ -73,7 +74,7 @@ function oil_survey_theme($existing, $type, $theme, $path) {
         'feedback' => null,
         ),
       'template' => 'page_result',
-    ),   
+    ),     
 
     'top_header_block' => array(
       'variables' => array(

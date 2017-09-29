@@ -183,7 +183,16 @@ Drupal.behaviors.ss2 = {
   $('#feedback-form #edit-submit').click(function() {
       $('#feedback-form #edit-submit').addClass('hidden');
       $('.send-newsletter').addClass('open');
-    });
+  });
+
+  $('.show1').click(function() {
+    $('.answ1').toggleClass('active');  
+  });
+
+  $('.show2').click(function() {
+    $('.answ2').toggleClass('active');  
+  });
+
 
 }}
 

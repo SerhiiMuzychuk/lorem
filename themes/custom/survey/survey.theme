@@ -10,9 +10,6 @@ function survey_theme($existing, $type, $theme, $path) {
     'user_register_form' => [
       'render element' => 'form',
     ],
-
-
-
   ];
 
 }
@@ -26,16 +23,10 @@ function survey_preprocess_comment_alert_mail($variables) {
 function survey_preprocess_page(&$variables) {
   
 
-  /** @var User $account */
-  // $val = \Drupal::state()->get('image');
-  // $file = \Drupal\file\Entity\File::load($val[0]);
-  // $path = $file->getFileUri();
-  // $url = \Drupal\image\Entity\ImageStyle::load('background')->buildUrl($path);
-  // $variables['background'] = $url;
 }
 
 function survey_preprocess_html(&$variables) {
-  /** @var User $account */
+
   $val = \Drupal::state()->get('image');  
   $file = \Drupal\file\Entity\File::load($val[0]);
   $file->setPermanent();
@@ -48,11 +39,5 @@ function survey_preprocess_html(&$variables) {
 
 
 function survey_preprocess_form_background_form(&$variables) {
-  /** @var User $account */
-  
-  
-  
-  // $account = $variables['elements']['#user'];
-  // kint($account->get('field_full_name')->value);
-  // $variables['username'] = $hello = $account->get('field_full_name')->value;
+
 }

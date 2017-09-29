@@ -9,7 +9,12 @@
 namespace Drupal\feedback_form\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
-
+/**
+ * @Block(
+ *   id = "sendresulttoemail",
+ *   admin_label = @Translation("Send result to email"),
+ * )
+ */
 
 class SimpleBlockExample extends BlockBase {
 

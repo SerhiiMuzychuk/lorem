@@ -1,0 +1,31 @@
+uuid: a4bcae6c-c482-40d1-bf46-8bf0827f62db
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7d720f7e-1599-4768-a0ef-734e65d7587e'
+  module:
+    - block_content
+    - system
+  theme:
+    - survey
+id: faqs
+theme: survey
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:7d720f7e-1599-4768-a0ef-734e65d7587e'
+settings:
+  id: 'block_content:7d720f7e-1599-4768-a0ef-734e65d7587e'
+  label: FAQs
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /FAQs
+    negate: false
+    context_mapping: {  }

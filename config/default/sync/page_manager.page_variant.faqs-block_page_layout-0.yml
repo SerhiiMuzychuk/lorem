@@ -1,0 +1,25 @@
+uuid: 3c55be9b-47a5-4c97-8c4b-90b974b0dfb6
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.faqs
+  module:
+    - block_page_layout
+id: faqs-block_page_layout-0
+label: 'Block page (with Layout plugin integration)'
+variant: block_page_layout
+variant_settings:
+  blocks: {  }
+  id: block_page_layout
+  uuid: 21f52e7b-0b9a-4421-a596-0b9f00b0bb9f
+  label: null
+  weight: 0
+  page_title: ''
+  layout: front_page
+  layout_settings: {  }
+page: faqs
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }
