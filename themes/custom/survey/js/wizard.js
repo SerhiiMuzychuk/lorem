@@ -97,7 +97,8 @@
             else {
               hasError = false
             }
-                           
+            $('#rootwizard .nav-pills > li:nth-child(1)').addClass('doing');
+
             return formValid;
 
           }
@@ -209,6 +210,7 @@
 
       
           if(index==2) {
+
             var hasError = false;
             var radios2 = document.getElementsByName("question6");
             var formValid = false;
@@ -316,6 +318,7 @@
               $('#edit-question10--wrapper span').addClass('has-error');
               hasError = true;
               formValid =true;
+               $('#rootwizard .nav-pills > li:nth-child(2)').addClass('doing');
               return true;
             }
 
@@ -325,7 +328,7 @@
 
             if(hasError == true) { return false; }    
                
-
+            $('#rootwizard .nav-pills > li:nth-child(2)').addClass('doing');
 
             return formValid;
       }
@@ -447,6 +450,7 @@
               // $("#edit-question13-0").after('<br><div  class="alert alert-danger">Please enter your Last Name.</div>');
               hasError = true;
               formValid = true;
+              $('#rootwizard .nav-pills > li:nth-child(3)').addClass('doing');
               return true;
             }
 
@@ -454,7 +458,7 @@
               hasError = false
             }
             
-
+            $('#rootwizard .nav-pills > li:nth-child(3)').addClass('doing');
             return formValid;
       }
 
@@ -624,6 +628,26 @@
         $('#edit-question13-0').removeClass('has-error');
         formValid = false;
       });
+
+       $('#rootwizard > div.navbar > div > div > ul > li:nth-child(1) > a').click(function(){
+        return false;
+       });
+
+       $('#rootwizard > div.navbar > div > div > ul > li:nth-child(2) > a').click(function(){
+        return false;
+       });
+
+       $('#rootwizard > div.navbar > div > div > ul > li:nth-child(3) > a').click(function(){
+        return false;
+       });
+
+       $('#rootwizard > div.navbar > div > div > ul > li:nth-child(4) > a').click(function(){
+        return false;
+       });
+
+       $('#rootwizard > div.navbar > div > div > ul > li:nth-child(5) > a').click(function(){
+        return false;
+       });
       // $('#tab1')document.getElementById("#edit-submit").style.display = "none";
       
     // }

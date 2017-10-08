@@ -32,6 +32,9 @@ Drupal.behaviors.ss4 = {
 // To understand behaviors, see https://drupal.org/node/756722#behaviors
 Drupal.behaviors.ss2 = {
   attach: function(context, settings) {
+      $('#rootwizard > div.navbar > div > div > ul > li.active > a').click(function(){
+        return false;
+      });
       $('#edit-question1-1').labelauty({ label: false });
       $('#edit-question1-2').labelauty({ label: false });
       $('#edit-question1-3').labelauty({ label: false });

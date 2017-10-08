@@ -54,7 +54,7 @@
 }
 
 .main-frontpage-block {
-	margin-top: 50px;
+	margin-top: 40px;
 	margin-bottom: 20px;
 }
 
@@ -712,13 +712,13 @@ html.bagr {
 }
 
 .faqs .question1 {
-	width: 80%;
+	width: 73%;
 	float: left;
 	font-size: 22px;
 }
 
 .faqs .show1 {
-	width: 14%;
+	width: 26%;
 	float: left;
 	color: #fff;
 	border: 1px solid #555;
@@ -745,13 +745,13 @@ html.bagr {
 }
 
 .faqs .question2 {
-	width: 80%;
+	width: 73%;
 	float: left;
 	font-size: 22px;
 }
 
 .faqs .show2 {
-	width: 14%;
+	width: 26%;
 	float: left;
 	color: #fff;
 	border: 1px solid #555;
@@ -860,8 +860,13 @@ div.throbber {
 .send-newsletter.open {
 	display: block;
 	position: absolute;
-	margin-left: 50%;
+	margin-left: 67%;
 	padding-top: 50px;
+}
+
+
+.main-frontpage-block {
+	margin-bottom: 20px;
 }
 
 html,
@@ -969,7 +974,7 @@ footer {
 }
 
 #edit-field-monthly-wrapper {
-	margin-bottom: 30px;
+	padding-bottom: 20px;
 }
 
 .form-item-text1 input {
@@ -1127,10 +1132,10 @@ body.front {
 }
 
 @media (max-width: 1399px) and (min-width: 1100px) {
-.front main {
-		padding-top: 70px;
-    height: 100%;
-    min-height: 400px !important;
+	.front main {
+		padding-top: 40px;
+	    height: 100%;
+	    min-height: 400px !important;
 	}	
 
 	.front .lorem-title {
@@ -1840,40 +1845,50 @@ body.front {
 	font-size: 22px;
 }
 
-.faqs .show2 {
-	width: 90%;
-	float: left;
-	color: #fff;
-	border: 1px solid #555;
-	cursor: pointer;
-	margin: 10px 1px;
-	background-color: #1377d5 !important;
-	font-size: 14px;
-	padding: 5px 22px;
-	border-radius: 3px;
-	text-align: center;
-}
+	
 
-.faqs .answ2 {
-	width: 90%;
-	float: left;
-	display: none;
-	font-size: 22px;
-	color: #1377d5;
-}
+	.faqs .show2 {
+		width: 90%;
+		float: left;
+		color: #fff;
+		border: 1px solid #555;
+		cursor: pointer;
+		margin: 10px 1px;
+		background-color: #1377d5 !important;
+		font-size: 14px;
+		padding: 5px 22px;
+		border-radius: 3px;
+		text-align: center;
+	}
 
-.faqs .answ2.active {
-	display: block;
-}	
+	.send-newsletter.open {
+		position: relative;
+		padding-top: 94px;
+		margin: 0;
+		text-align: center;
+	}
 
-#block-footerblock {
-	padding-top: 20px !important;
-	padding-bottom: 10px;
-}
 
-#edit-field-monthly-wrapper {
-	margin-bottom: 30px;
-}
+	.faqs .answ2 {
+		width: 90%;
+		float: left;
+		display: none;
+		font-size: 22px;
+		color: #1377d5;
+	}
+
+	.faqs .answ2.active {
+		display: block;
+	}	
+
+	#block-footerblock {
+		padding-top: 20px !important;
+		padding-bottom: 10px;
+	}
+
+	#edit-field-monthly-wrapper {
+		margin-bottom: 30px;
+	}
 
 }
 

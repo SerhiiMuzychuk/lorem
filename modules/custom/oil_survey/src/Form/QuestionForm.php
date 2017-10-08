@@ -264,16 +264,22 @@ public function buildForm(array $form, FormStateInterface $form_state) {
     );
 
     $form['question14'] = array(
-    '#type' => 'radios',
-    '#title' => t('If Routine, how often do you typically dose your fuel with an addtive/Biocide?'),
-    '#options' => array(
-      t('Monthly'),
-      t('Quarterly'),
-      t('Every 6 months'),
-      t('Annually'),
-      t('Every 2 years'),
-      t('Other (Please Specify)'),
-      ),
+      '#type' => 'radios',
+      '#title' => t('If Routine, how often do you typically dose your fuel with an addtive/Biocide?'),
+      '#options' => array(
+        t('Monthly'),
+        t('Quarterly'),
+        t('Every 6 months'),
+        t('Annually'),
+        t('Every 2 years'),
+        t('Other (Please Specify)'),
+        ),
+      '#states' => array(
+          'visible' => array(
+            ':input[name="question13"]' => array('value' => 1),
+          ),
+        ),
+      '#required' => false,
     );
 
     $form['text14'] = array(
