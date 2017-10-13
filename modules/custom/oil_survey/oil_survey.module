@@ -17,11 +17,22 @@ use Drupal\Component\Utility\Html;
 
 
 function oil_survey_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+
   if ($form_id == 'contact_message_feedback_form') {
+    
+  }
+
+  if ($form_id == 'contact_message_feedback_form') {
+    $form['name']['#title'] = 'NAME*';
+    $form['mail']['#title'] = 'EMAIL*';
+    $form['message']['widget'][0]['value']['#title'] = 'HOW CAN WE HELP?*';
+    $form['actions']['submit']['#value'] = 'SEND';
+    $form['subject']['widget']['#required'] = FALSE;
+    $form['subject']['#access'] = FALSE;
   }
 
 	if ($form_id == 'user_register_form') {
-    $form['field_monthly']['widget'][0]['value']['#title']= t('Dailling code');    
+    $form['field_monthly']['widget'][0]['value']['#title']= t('Dialing Code');    
 	  $form['actions']['submit']['#submit'][] = 'oil_survey_contact_submit';
 	  $form['actions']['submit']['#value'] = t('Next step');
     $form['account']['mail']['#description'] = t('');
@@ -40,22 +51,24 @@ function oil_survey_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $for
 
 }
 
+
+
+
  function register_alter_form_alter(&$form, &$form_state, $form_id) {
   switch ($form_id) {
      case 'user_register_form':
-       $form['account']['pass']['#process'][] = array('form_process_password_confirm', 'register_alter_password_confirm');
-       
+       $form['account']['pass']['#process'][] = array('form_process_password_confirm', 'oil_survey_register_alter_password_confirm');
+       break;      
   }
-  
-	
+  	
 }
 
-function register_alter_password_confirm($element) {
-   $element['pass1']['#title'] = t("Psssssssassword");
-   $element['pass2']['#title'] = t("Repsssssssssssseat password");
-return $element;
+function oil_survey_register_alter_password_confirm($element) {
+   $element['pass1']['#title'] = t("Password");
+   $element['pass2']['#title'] = t("");
+   return $element;
+ }
 
-}
 
 function oil_survey_contact_submit($form, \Drupal\Core\Form\FormStateInterface &$form_state) {
   $host = \Drupal::request()->getHost();

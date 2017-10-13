@@ -6,19 +6,23 @@
 {{ form.message }}
 <div class="container">
   <div class="personal-info">
-    <p class="pers">Personal info</p>
+    <p class="pers">Personal information</p>
     {{ form.field_full_name }}
     {{ form.field_company }}
-    {{ form.field_city }}
     {{ form.field_monthly }}
+    {{ form.field_city }}
   </div>
   <div class="account-info">
-    <p class="acc">Account info</p>
+    <p class="acc">Account information</p>
     <div class="account-mail">
       {{ form.account.mail }}
     </div>
     <div class="account-pass">
-      {{ form.account.pass }}
+      {{ form.account.pass.pass1 }}
+      <div class="hello-pass">
+        <label class="label-pass">Confirm Password</label>
+        {{ form.account.pass.pass2 }}
+      </div>
     </div>
   </div>
   <div class="subm-reg">

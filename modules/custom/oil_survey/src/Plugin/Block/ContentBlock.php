@@ -9,6 +9,7 @@ use Drupal\image\Entity\ImageStyle;
 use Drupal\Core\core\modules\user\src\Form;
 use \Drupal\Core\Form\FormBase;
 use Drupal\block\Entity\Block;
+use Drupal\Core\Url;
 
 /**
  * Provides conten block
@@ -26,13 +27,32 @@ class ContentBlock extends BlockBase {
   public function build() {
     $menu2 = Block::load('firststepblock');
     $prod_menu2 = \Drupal::entityTypeManager()->getViewBuilder('block')->view($menu2);
-    
-    
+    $userCurrent = \Drupal::currentUser();
+    if (\Drupal::currentUser()->isAnonymous()) {
+  
+    }
+
+    else {
+      $otput = 'Your credentials are already saved in our database. Want to pass the survey again?';
+      $host = \Drupal::request()->getHost();
+      $url = Url::fromUri('http://' . $host . '/user/logout');
+        $link_options = array(
+          'attributes' => array(
+            'class' => array(
+              'link-logout',
+              'my-second-class',
+            ),
+          ),
+        );
+        $url->setOptions($link_options);
+        $link = \Drupal::l(t('Pass the test again'), $url);
+    }
     return array(
       '#theme' => 'hslider_block',
       '#items' => array(
         'care' => $prod_menu2,
-        
+        'its' => $otput,
+        'link' => $link,
         )
 
     );

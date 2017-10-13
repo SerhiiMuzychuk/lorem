@@ -11,7 +11,7 @@ id: user.user.field_monthly
 field_name: field_monthly
 entity_type: user
 bundle: user
-label: 'Dialling code'
+label: 'Dialing code'
 description: ''
 required: false
 translatable: false

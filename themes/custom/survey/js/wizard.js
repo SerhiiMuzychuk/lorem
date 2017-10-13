@@ -385,33 +385,33 @@
           
             // return formValid;
 
-              var hasError = false;
-                // $('#step1').removeClass('has-error');
+            //   var hasError = false;
+            //     // $('#step1').removeClass('has-error');
                  
              
-            // return formValid;
-            var hasError = false;
-                // $('#step1').removeClass('has-error');
-            var radios2 = document.getElementsByName("question14");
-            var formValid = false;
+            // // return formValid;
+            // var hasError = false;
+            //     // $('#step1').removeClass('has-error');
+            // var radios2 = document.getElementsByName("question14");
+            // var formValid = false;
 
-            var i = 0;
-            while (!formValid && i < radios2.length) {
-                if (radios2[i].checked) formValid = true;
-                i++;        
-            }
+            // var i = 0;
+            // while (!formValid && i < radios2.length) {
+            //     if (radios2[i].checked) formValid = true;
+            //     i++;        
+            // }
 
-            if (!formValid) {
-              $('#edit-question14--wrapper span').addClass('has-error');
-              // $("#edit-question14-0").after('<br><div  class="alert alert-danger">Please enter your Last Name.</div>');
-              hasError = true;
-              formValid = true;
-              return false;
-            }
+            // if (!formValid) {
+            //   $('#edit-question14--wrapper span').addClass('has-error');
+            //   // $("#edit-question14-0").after('<br><div  class="alert alert-danger">Please enter your Last Name.</div>');
+            //   hasError = true;
+            //   formValid = true;
+            //   return false;
+            // }
 
-            else {
-              hasError = false
-            }
+            // else {
+            //   hasError = false
+            // }
              
             var hasError = false;
                 
@@ -605,6 +605,7 @@
       $("#contact-message-feedback-form").addClass('container');
       $("#edit-pass-pass1").attr("placeholder", "please fill...");
       $("#edit-pass-pass2").attr("placeholder", "please fill...");
+      $("#edit-pass-pass2").attr("title", "Confirm Password");
 
       
       $('#tab1 #back').click(function() {

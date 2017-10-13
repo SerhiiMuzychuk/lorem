@@ -196,6 +196,34 @@ Drupal.behaviors.ss2 = {
     $('.answ2').toggleClass('active');  
   });
 
+  $('.show3').click(function() {
+    $('.answ3').toggleClass('active');  
+  });
+
+  $('.show4').click(function() {
+    $('.answ4').toggleClass('active');  
+  });
+
+  $('.show5').click(function() {
+    $('.answ5').toggleClass('active');  
+  });
+
+  $('.show6').click(function() {
+    $('.answ6').toggleClass('active');  
+  });
+
+  $('.show7').click(function() {
+    $('.answ7').toggleClass('active');  
+  });
+
+  $('.show8').click(function() {
+    $('.answ8').toggleClass('active');  
+  });
+
+  $('.show9').click(function() {
+    $('.answ9').toggleClass('active');  
+  });
+
 
 }}
 

@@ -10,9 +10,15 @@ function survey_theme($existing, $type, $theme, $path) {
     'user_register_form' => [
       'render element' => 'form',
     ],
+
+    'contact_message_feedback_form' => [
+      'render element' => 'form',
+    ]
   ];
 
 }
+
+
 
 function survey_preprocess_comment_alert_mail($variables) {
   $val = \Drupal::state()->get('help');
@@ -34,7 +40,6 @@ function survey_preprocess_html(&$variables) {
   $path = $file->getFileUri();
   $url = \Drupal\image\Entity\ImageStyle::load('background')->buildUrl($path);
   $variables['back'] = $url; 
-
 }
 
 
