@@ -189,40 +189,51 @@ Drupal.behaviors.ss2 = {
   });
 
   $('.show1').click(function() {
-    $('.answ1').toggleClass('active');  
+    $('.answ1').toggleClass('active');
+    $('.show1').toggleClass('down');  
   });
 
   $('.show2').click(function() {
-    $('.answ2').toggleClass('active');  
+    $('.answ2').toggleClass('active');
+    $('.show2').toggleClass('down');  
+
   });
 
   $('.show3').click(function() {
-    $('.answ3').toggleClass('active');  
+    $('.answ3').toggleClass('active');
+    $('.show3').toggleClass('down');   
   });
 
   $('.show4').click(function() {
-    $('.answ4').toggleClass('active');  
+    $('.answ4').toggleClass('active');
+    $('.show4').toggleClass('down');   
   });
 
   $('.show5').click(function() {
-    $('.answ5').toggleClass('active');  
+    $('.answ5').toggleClass('active');
+    $('.show5').toggleClass('down');   
   });
 
   $('.show6').click(function() {
-    $('.answ6').toggleClass('active');  
+    $('.answ6').toggleClass('active');
+    $('.show6').toggleClass('down');   
   });
 
   $('.show7').click(function() {
-    $('.answ7').toggleClass('active');  
+    $('.answ7').toggleClass('active');
+    $('.show7').toggleClass('down');   
   });
 
   $('.show8').click(function() {
-    $('.answ8').toggleClass('active');  
+    $('.answ8').toggleClass('active');
+    $('.show8').toggleClass('down');   
   });
 
   $('.show9').click(function() {
-    $('.answ9').toggleClass('active');  
+    $('.answ9').toggleClass('active');
+    $('.show9').toggleClass('down');   
   });
+
 
 
 }}

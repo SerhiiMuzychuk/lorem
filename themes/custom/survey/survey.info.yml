@@ -10,6 +10,6 @@ libraries:
 
 regions:
   header: 'Header'
-  help: 'Help'
+  help: 'sidebar'
   content: 'Content'
   footer: 'Footer'

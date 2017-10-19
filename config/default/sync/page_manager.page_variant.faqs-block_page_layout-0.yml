@@ -4,13 +4,41 @@ status: true
 dependencies:
   config:
     - page_manager.page.faqs
+  content:
+    - 'block_content:basic:704459e1-8c55-4f00-af02-f83fc7bb6992'
+    - 'block_content:basic:7d720f7e-1599-4768-a0ef-734e65d7587e'
   module:
+    - block_content
     - block_page_layout
 id: faqs-block_page_layout-0
 label: 'Block page (with Layout plugin integration)'
 variant: block_page_layout
 variant_settings:
-  blocks: {  }
+  blocks:
+    0532449a-bf9b-4864-94ab-e82e477de8d8:
+      id: 'block_content:7d720f7e-1599-4768-a0ef-734e65d7587e'
+      label: FAQs
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: main
+      weight: 0
+      uuid: 0532449a-bf9b-4864-94ab-e82e477de8d8
+      context_mapping: {  }
+    609a188a-93f9-40ba-8895-35e2d630704e:
+      id: 'block_content:704459e1-8c55-4f00-af02-f83fc7bb6992'
+      label: Faqsbanner
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: sidebar
+      weight: 0
+      uuid: 609a188a-93f9-40ba-8895-35e2d630704e
+      context_mapping: {  }
   id: block_page_layout
   uuid: 21f52e7b-0b9a-4421-a596-0b9f00b0bb9f
   label: null

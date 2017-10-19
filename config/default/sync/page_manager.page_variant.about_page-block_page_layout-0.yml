@@ -4,13 +4,54 @@ status: true
 dependencies:
   config:
     - page_manager.page.about_page
+  content:
+    - 'block_content:basic:8600c142-89f0-449f-9261-a603413dab43'
+    - 'block_content:basic:ab177ca9-69ce-4ad7-9236-62c2a2cdabb6'
+    - 'block_content:basic:d8f448d7-3f6e-4ae3-86f6-9388d29f593b'
   module:
+    - block_content
     - block_page_layout
 id: about_page-block_page_layout-0
 label: 'Block page (with Layout plugin integration)'
 variant: block_page_layout
 variant_settings:
-  blocks: {  }
+  blocks:
+    6c9a9b56-798d-4dee-8e88-0ccb829cf6cd:
+      id: 'block_content:8600c142-89f0-449f-9261-a603413dab43'
+      label: 'Examples block'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: right
+      weight: 0
+      uuid: 6c9a9b56-798d-4dee-8e88-0ccb829cf6cd
+      context_mapping: {  }
+    8c487ea5-90f1-4399-a2e7-d6ece5685f37:
+      id: 'block_content:d8f448d7-3f6e-4ae3-86f6-9388d29f593b'
+      label: About
+      provider: block_content
+      label_display: visible
+      status: true
+      info: ''
+      view_mode: full
+      region: main
+      weight: -10
+      uuid: 8c487ea5-90f1-4399-a2e7-d6ece5685f37
+      context_mapping: {  }
+    f0e94e21-8231-41ab-b498-4c66527b73f1:
+      id: 'block_content:ab177ca9-69ce-4ad7-9236-62c2a2cdabb6'
+      label: Aboutbanner
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: sidebar
+      weight: -9
+      uuid: f0e94e21-8231-41ab-b498-4c66527b73f1
+      context_mapping: {  }
   id: block_page_layout
   uuid: bef6351c-39ad-4a5f-848f-47284149a9ad
   label: null
