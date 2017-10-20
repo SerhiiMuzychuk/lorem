@@ -548,8 +548,11 @@ input[type="text"], input[type="password"] {
   display: inline-block;
   padding: 5px 14px;
   border: 1px solid #1377d5;
-  border-radius: 3px;
+  border-radius: 30px;
   margin-left: 10px;
+  color: white !important;
+  background-color: #1377d5 !important;
+  font-weight: bold;
 }
 
 .footer-wizard .pager li > a:hover {
@@ -1301,10 +1304,10 @@ body > div > main > div > div > div:nth-child(1) > div > ul > li:nth-child(2) {
   display: inline-block;
   padding: 5px 14px;
   border: 1px solid #1377d5;
-  border-radius: 3px;
+  border-radius: 30px;
   margin-left: 10px;
-  color: #1377d5;
-  background-color: white;
+  color: white;
+  background-color: #1377d5;
 }
 
 .pager #edit-submit:hover {
@@ -1313,13 +1316,13 @@ body > div > main > div > div > div:nth-child(1) > div > ul > li:nth-child(2) {
 }
 
 .fieldset-legend {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: bold;
   line-height: 20px; 
 }
 
 .fieldset-wrapper label {
-  font-size: 12px;
+  font-size: 14px;
   text-align: left;
   font-weight: 500;
 }
@@ -1513,7 +1516,6 @@ tr.draggable:nth-child(4) > td:nth-child(2) {
 
   #rootwizard .navbar {
     margin-top: 0 !important;
-    position: absolute;
     opacity: 0;
     min-height: 10px;
   }
@@ -1521,7 +1523,6 @@ tr.draggable:nth-child(4) > td:nth-child(2) {
   .tab-content #wizard-steps {
     position: unset;
     text-align: center;
-    margin-left: 42%;
     margin-top: 0;
   } 
 

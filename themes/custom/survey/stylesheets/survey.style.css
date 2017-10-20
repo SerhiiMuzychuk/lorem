@@ -626,7 +626,7 @@ main {
 }
 
 #contact-message-feedback-form #edit-name input {
-	width: 30%;
+	width: 55%;
 	border-radius: 0 !important;
 	border: 1px solid #1377d5;
 }
@@ -637,7 +637,7 @@ main {
 }
 
 #contact-message-feedback-form #edit-mail input {
-	width: 30%;
+	width: 55%;
 	display: inline-grid;
 	border-radius: 0 !important;
 	border: 1px solid #1377d5;
@@ -677,7 +677,7 @@ main {
 	width: 100%;
 	display: inline-grid;
 	text-align: left;
-	padding-left: 35%;
+	padding-left: 22.5%;
 	color: #1377d5;
 	font-size: 12px;
 }
@@ -689,7 +689,7 @@ main {
 }
 
 #edit-message-0-value {
-  width: 30%;
+  width: 55%;
   resize: none;
   height: 170px;
   border: 1px solid #1377d5;
@@ -705,7 +705,7 @@ main {
 	font-size: 14px;
 	padding: 5px 22px;
 	border-radius: 0;
-	width: 30%;
+	width: 55%;
 	font-weight: bold;
 
 }
@@ -844,7 +844,7 @@ html.bagr {
 
 .banner-title-faq {
 	color: white;
-  margin-left: 5%;
+  margin-left: 20%;
   margin-right: 20%;
   text-align: center;
   padding-top: 20px;
@@ -1273,7 +1273,7 @@ footer {
 	padding: unset;
 	padding-bottom: 0;
 	height: 100%;
-    padding-bottom: 10% !important;
+  padding-bottom: 10% !important;
 }
 
 .front footer {
@@ -1388,16 +1388,65 @@ footer {
 
 .talk-down {
 	color: #1377d5;
-	width: 40%;
+	width: 70%;
 	font-size: 14px;
 }
 
+.for-any {
+	color: #1377d5;
+  font-size: 15px;
+  font-family: Garamond Header;
+  width: 80%;
+}
 
 #contact-message-feedback-form {
 	margin-bottom: 0;
 	padding-bottom: 0;
 	margin-top: 0;
+	width: 40% !important;
+	margin-left: 12.5%;
 	text-align: -webkit-center;
+	padding-top: 5%;
+}
+
+#block-contactinfo {
+	float: right;
+	width: 30%;
+	margin-right: 16.5%;
+	padding-top: 8%;
+	text-align: center;
+}
+
+.text-info-contact {
+  text-transform: uppercase;
+  padding-top: 25px;
+  color: #1377d5;
+  font-weight: bold;
+  font-size: 17px;
+  width: 80%;
+}
+
+.conact-phone {
+	padding-top: 20px;
+	width: 80%;
+	color: #1377d5;
+	font-weight: bold;
+	font-size: 22px;
+}
+ 
+.face-contact img {
+	width: 13%;
+  border-radius: 14px;
+}
+
+.social-contact {
+	padding-top: 20px;
+	width: 80%;
+}
+
+.twit-contact img {
+	width: 13%;
+  border-radius: 14px
 }
 
 #block-about-2 {
@@ -1443,8 +1492,8 @@ body.front {
 	
 
 	.front main {
-	padding-top: 70px;
-    height: 100%;
+		padding-top: 40px;
+	    height: 100%;
 	}	
 
 	#block-frontpage {
@@ -1558,7 +1607,7 @@ body.front {
 		}
 
 	.front main {
-		padding-top: 100px;
+		padding-top: 40px;
     	height: 100%;
 	}	
 
@@ -1871,7 +1920,57 @@ body.front {
 		width: 100%;
 	}
 
+	#block-contactinfo {
+		width: 90% !important;
+		margin-left: 5%;
+	}
+
+	.for-any {
+		color: #1377d5;
+    font-size: 15px;
+    font-family: Garamond Header;
+    width: 90%;
+    margin-left: 20%;
+	}
+
+	.text-info-contact {
+		width: 90%;
+    margin-left: 20%;
+	}
+
+	.text-info-contact {
+		font-size: 11px;
+		padding-top: 5px;
+	}
+
+	.conact-phone {
+		font-size: 14px;
+	} 
+
+	.conact-phone {
+		width: 90%;
+    margin-left: 20%;
+    padding-top: 5px;
+	}
+
+	.main-region {
+		width: 100%;
+	}
+
+	.about-banner {
+		display: none;
+	}	
+
+	.social-contact {
+		width: 90%;
+    margin-left: 20%;
+    padding-top: 5px;
+    padding-bottom: 20px;
+	}
+
 	#contact-message-feedback-form {
+		width: 90% !important;
+		margin-left: 5%;
 		margin-bottom: 0;
 		padding-bottom: 0;
 		margin-top: 0;
@@ -2222,8 +2321,8 @@ body.front {
 	}
 
 	.faqs {
-		width: 90% !important;
-		padding-top: 50px;
+		width: 100% !important;
+		padding-top: 20px;
 	}
 
 	.faqs .question1 {
@@ -2236,14 +2335,8 @@ body.front {
 		width: 90%;
 		float: left;
 		color: #fff;
-		border: 1px solid #555;
 		cursor: pointer;
-		margin: 10px 1px;
-		background-color: #1377d5 !important;
 		font-size: 14px;
-		padding: 5px 22px;
-		border-radius: 3px;
-		text-align: center;
 	}
 
 
@@ -2251,7 +2344,7 @@ body.front {
 		width: 90%;
 		float: left;
 		display: none;
-		font-size: 22px;
+		font-size: 12px;
 		color: #1377d5;
 	}
 
@@ -2265,14 +2358,8 @@ body.front {
 		width: 90%;
 		float: left;
 		color: #fff;
-		border: 1px solid #555;
 		cursor: pointer;
-		margin: 10px 1px;
-		background-color: #1377d5 !important;
 		font-size: 14px;
-		padding: 5px 22px;
-		border-radius: 3px;
-		text-align: center;
 	}
 
 
@@ -2280,7 +2367,7 @@ body.front {
 		width: 90%;
 		float: left;
 		display: none;
-		font-size: 22px;
+		font-size: 12px;
 		color: #1377d5;
 	}
 
@@ -2294,14 +2381,8 @@ body.front {
 		width: 90%;
 		float: left;
 		color: #fff;
-		border: 1px solid #555;
 		cursor: pointer;
-		margin: 10px 1px;
-		background-color: #1377d5 !important;
 		font-size: 14px;
-		padding: 5px 22px;
-		border-radius: 3px;
-		text-align: center;
 	}
 
 
@@ -2309,7 +2390,7 @@ body.front {
 		width: 90%;
 		float: left;
 		display: none;
-		font-size: 22px;
+		font-size: 12px;
 		color: #1377d5;
 	}
 
@@ -2323,14 +2404,8 @@ body.front {
 		width: 90%;
 		float: left;
 		color: #fff;
-		border: 1px solid #555;
 		cursor: pointer;
-		margin: 10px 1px;
-		background-color: #1377d5 !important;
 		font-size: 14px;
-		padding: 5px 22px;
-		border-radius: 3px;
-		text-align: center;
 	}
 
 
@@ -2338,7 +2413,7 @@ body.front {
 		width: 90%;
 		float: left;
 		display: none;
-		font-size: 22px;
+		font-size: 12px;
 		color: #1377d5;
 	}
 
@@ -2352,14 +2427,8 @@ body.front {
 		width: 90%;
 		float: left;
 		color: #fff;
-		border: 1px solid #555;
 		cursor: pointer;
-		margin: 10px 1px;
-		background-color: #1377d5 !important;
 		font-size: 14px;
-		padding: 5px 22px;
-		border-radius: 3px;
-		text-align: center;
 	}
 
 
@@ -2367,7 +2436,7 @@ body.front {
 		width: 90%;
 		float: left;
 		display: none;
-		font-size: 22px;
+		font-size: 12px;
 		color: #1377d5;
 	}
 
@@ -2381,22 +2450,33 @@ body.front {
 		width: 90%;
 		float: left;
 		color: #fff;
-		border: 1px solid #555;
 		cursor: pointer;
-		margin: 10px 1px;
-		background-color: #1377d5 !important;
 		font-size: 14px;
-		padding: 5px 22px;
-		border-radius: 3px;
-		text-align: center;
 	}
 
+	.sub-faq {
+		font-size: 11px !important;
+	} 
+
+	.form-item-pass-pass1 {
+		width: 100%;
+		padding-top: 10px;
+	}
+
+	#edit-field-city-wrapper label {
+		margin-left: 0;
+	}
+
+	.hello-pass {
+		width: 105%;
+		padding-top: 10px;
+	}
 
 	.faqs .answ8 {
 		width: 90%;
 		float: left;
 		display: none;
-		font-size: 22px;
+		font-size: 12px;
 		color: #1377d5;
 	}
 
@@ -2406,18 +2486,16 @@ body.front {
 		font-size: 22px;
 	}
 
+	.faq-text {
+		font-size: 14px;
+	}
+
 	.faqs .show8 {
 		width: 90%;
 		float: left;
 		color: #fff;
-		border: 1px solid #555;
 		cursor: pointer;
-		margin: 10px 1px;
-		background-color: #1377d5 !important;
 		font-size: 14px;
-		padding: 5px 22px;
-		border-radius: 3px;
-		text-align: center;
 	}
 
 
@@ -2425,7 +2503,7 @@ body.front {
 		width: 90%;
 		float: left;
 		display: none;
-		font-size: 22px;
+		font-size: 12px;
 		color: #1377d5;
 	}
 
@@ -2439,14 +2517,8 @@ body.front {
 		width: 90%;
 		float: left;
 		color: #fff;
-		border: 1px solid #555;
 		cursor: pointer;
-		margin: 10px 1px;
-		background-color: #1377d5 !important;
 		font-size: 14px;
-		padding: 5px 22px;
-		border-radius: 3px;
-		text-align: center;
 	}
 
 
@@ -2454,12 +2526,13 @@ body.front {
 		width: 90%;
 		float: left;
 		display: none;
-		font-size: 22px;
+		font-size: 12px;
 		color: #1377d5;
 	}
 
 	.faqs .answ1.active {
 		display: block;
+		font-size: 12px;
 	}
 
 .faqs .question2 {
@@ -2469,19 +2542,12 @@ body.front {
 }
 
 	
-
 	.faqs .show2 {
 		width: 90%;
 		float: left;
 		color: #fff;
-		border: 1px solid #555;
 		cursor: pointer;
-		margin: 10px 1px;
-		background-color: #1377d5 !important;
 		font-size: 14px;
-		padding: 5px 22px;
-		border-radius: 3px;
-		text-align: center;
 	}
 
 	.send-newsletter.open {
@@ -2496,7 +2562,7 @@ body.front {
 		width: 90%;
 		float: left;
 		display: none;
-		font-size: 22px;
+		font-size: 12px;
 		color: #1377d5;
 	}
 
@@ -2510,7 +2576,8 @@ body.front {
 	}
 
 	#edit-field-monthly-wrapper {
-		margin-bottom: 30px;
+
+		margin-bottom: -15px;
 	}
 
 }

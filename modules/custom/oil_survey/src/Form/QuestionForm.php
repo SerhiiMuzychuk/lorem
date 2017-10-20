@@ -176,7 +176,7 @@ public function buildForm(array $form, FormStateInterface $form_state) {
 
     $form['question6'] = array(
     '#type' => 'radios',
-    '#title' => t('Is it imperative for you to be able to differentiate between the types of contaminants that may be present in your fuel sample (such as bacteria, yeasts and moulds etc)?'),
+    '#title' => t('Do you need to be able to differentiate between the specific types of microbial contaminants that may be present in your fuel (such as bacteria, yeasts and moulds etc)?'),
     '#options' => array(
       t('Yes'),
       t('No'),
@@ -305,7 +305,7 @@ public function buildForm(array $form, FormStateInterface $form_state) {
 
     $form['question16'] = array(
     '#type' => 'radios',
-    '#title' => t('If Routine, how often do you typically dose your fuel with an addtive/Biocide?'),
+    '#title' => t('In which of the following regions is/will your testing be carried out?'),
     '#options' => array(
       t('Europe'),
       t('Russia & CIS'),
