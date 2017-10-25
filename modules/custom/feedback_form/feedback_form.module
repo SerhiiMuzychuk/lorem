@@ -13,18 +13,16 @@
    * Implements hook_mail().
    */
   function feedback_form_mail($key, &$message, $params) {
-    $val = \Drupal::state()->get('help');
+    $val['help'] = \Drupal::state()->get('help');
+    $val['full_name'] = \Drupal::state()->get('full_name');
     $options = array (
       'langcode' => $message['langcode'],
     );
     switch ($key) {
       case 'comment_alert_mail':
         $message['headers']['Content-Type'] = 'text/html; charset=UTF-8; format=flowed; delsp=yes';
-        $message['from'] = \Drupal::config('system.site')->get('mail');
-        $message['subject'] = t('@title ', array(
-            '@title' => $params['node_title'],
-           ),
-          $options);
+        $message['from'] = "info@comparefueltestkits.com";
+        $message['subject'] = "Your Fuel Test Kit Recommendation";
         $theme_body = array(
           '#theme' => 'comment_alert_mail',
           '#text' => $val,
@@ -48,7 +46,7 @@
     $key = 'comment_alert_mail';
     $mailManager = \Drupal::service('plugin.manager.mail');
     $module = 'feedback_form';
-  
+
     $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
     $to = $user->get('mail')->value;
     $params['node_title'] = 'Oil Compare';

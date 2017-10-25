@@ -1,7 +1,9 @@
-<div class="container">
-	<h3 class="result-res">Here is the result.</h3>
-	<div class="result-main" style="color: #1377d5;">
-		{{ text }}
-	</div>
-	<h4 class="result-risk"> Never forget the risk of encountering microbial contamination! </h4>
+<div style="padding: 15px; border: 1px solid #E3E3E3; background-color: #F8F8F8;">
+<p>Dear <strong>{{ text.full_name }}</strong>, Thank you for using CompareFuelTestKits.com!</p>
+<p>We hope you were satisfied with your recommendation result. If you require any further assistance or would like to speak to us about your result, you can contact us any time via <a href="http://comparefueltestkits.com">support@comparefueltestkits.com</a>. Thanks for choosing CompareFuelTestKits.com!</p>
+<h3 class="result-res">Here is the result.</h3>
+  <div class="result-main" style="color: #1377d5;">
+    {{ text.help }}
+  </div>
+  <h4 class="result-risk"> Never forget the risk of encountering microbial contamination! </h4>
 </div>
