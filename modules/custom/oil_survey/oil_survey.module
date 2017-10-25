@@ -17,11 +17,6 @@ use Drupal\Component\Utility\Html;
 
 
 function oil_survey_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
-
-  if ($form_id == 'contact_message_feedback_form') {
-    
-  }
-
   if ($form_id == 'contact_message_feedback_form') {
     $form['name']['#title'] = 'NAME*';
     $form['mail']['#title'] = 'EMAIL*';
@@ -32,7 +27,7 @@ function oil_survey_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $for
   }
 
 	if ($form_id == 'user_register_form') {
-    $form['field_monthly']['widget'][0]['value']['#title']= t('Dialing Code');    
+    $form['field_monthly']['widget'][0]['value']['#title']= t('Dialing Code');
 	  $form['actions']['submit']['#submit'][] = 'oil_survey_contact_submit';
 	  $form['actions']['submit']['#value'] = t('START');
     $form['account']['mail']['#description'] = t('');
@@ -48,7 +43,6 @@ function oil_survey_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $for
     $form['name']['#value'] = t('');
     $form['mail']['#value'] = t('');
   }
-
 }
 
 
@@ -58,9 +52,9 @@ function oil_survey_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $for
   switch ($form_id) {
      case 'user_register_form':
        $form['account']['pass']['#process'][] = array('form_process_password_confirm', 'oil_survey_register_alter_password_confirm');
-       break;      
+       break;
   }
-  	
+
 }
 
 function oil_survey_register_alter_password_confirm($element) {
@@ -74,12 +68,14 @@ function oil_survey_contact_submit($form, \Drupal\Core\Form\FormStateInterface &
   $host = \Drupal::request()->getHost();
   $url = Url::fromUri('http://' . $host . '/questionary');
   $form_state->setRedirectUrl($url);
+  $name = $form_state->getValue('field_full_name')['value'];
+  $val = \Drupal::state()->set('full_name', $name);
 }
 
 
 function oil_survey_theme($existing, $type, $theme, $path) {
-  
-  return array(    
+
+  return array(
     'page_result' => array(
       'variables' => array(
         'text' => null,
@@ -87,15 +83,15 @@ function oil_survey_theme($existing, $type, $theme, $path) {
         'feedback' => null,
         ),
       'template' => 'page_result',
-    ),     
+    ),
 
     'top_header_block' => array(
       'variables' => array(
         'items' => null,
         ),
       'template' => 'top_header_block',
-    ),         
-    
+    ),
+
     'hslider_block' => array(
       'variables' => array(
         'items' => null,
