@@ -68,7 +68,7 @@ function oil_survey_contact_submit($form, \Drupal\Core\Form\FormStateInterface &
   $host = \Drupal::request()->getHost();
   $url = Url::fromUri('http://' . $host . '/questionary');
   $form_state->setRedirectUrl($url);
-  $name = $form_state->getValue('field_full_name')['value'];
+  $name = $form_state->getValue('field_full_name')[0]['value'];
   $val = \Drupal::state()->set('full_name', $name);
 }
 
