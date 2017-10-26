@@ -105,7 +105,7 @@ public function buildForm(array $form, FormStateInterface $form_state) {
         'class' => array('mytable-order-weight')
       ),
     );
-     
+
     $form['question1'] = array(
       '#type' => 'checkboxes',
       '#title' => t('What type of fuel(s) are you testing/looking to test?'),
@@ -115,7 +115,7 @@ public function buildForm(array $form, FormStateInterface $form_state) {
         t('Marine Gas Oil'),
         t('Other (please specify)'),
         ),
-      '#required' => true,    
+      '#required' => true,
     );
 
     $form['text1'] = array(
@@ -124,7 +124,7 @@ public function buildForm(array $form, FormStateInterface $form_state) {
       '#states' => array(
       'visible' => array(
         ':input[name="question1[3]"]' => array('checked' => TRUE),
-        
+
           ),
         ),
       '#required' => false,
@@ -181,7 +181,7 @@ public function buildForm(array $form, FormStateInterface $form_state) {
       t('Yes'),
       t('No'),
       )
-    ); 
+    );
 
     $form['question7'] = array(
     '#type' => 'radios',
@@ -215,7 +215,7 @@ public function buildForm(array $form, FormStateInterface $form_state) {
       ),
       '#required' => false,
     );
-   
+
     $form['question9'] = array(
     '#type' => 'radios',
     '#title' => t('Do you have access to take samples/drain water from the bottom of your tanks?'),
@@ -405,7 +405,7 @@ public function buildForm(array $form, FormStateInterface $form_state) {
    * {@inheritdoc}
    */
   public function validateForm(array &$form, FormStateInterface $form_state) {
-    
+
   }
 
   /**
@@ -414,7 +414,7 @@ public function buildForm(array $form, FormStateInterface $form_state) {
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
-    $microb = true; 
+    $microb = true;
     $fuelstat = true;
     $hylite = true;
     $easicult = true;
@@ -427,7 +427,7 @@ public function buildForm(array $form, FormStateInterface $form_state) {
     $immunoassay[] = array($fuelstat);
     $atp[] =array($hylite, $luminultra, $fuelsnap);
 
-    $microb2 = 100; 
+    $microb2 = 100;
     $fuelstat2 = 100;
     $hylite2 = 100;
     $easicult2 = 100;
@@ -435,7 +435,7 @@ public function buildForm(array $form, FormStateInterface $form_state) {
     $ips2 = 100;
     $san2 = 100;
     $fuelsnap2 = 100;
-   
+
     $growth2[] = array($microb2, $easicult2, $ips2, $san2);
     $immunoassay2[] = array($fuelstat2);
     $atp2[] = array($hylite2, $luminultra2, $fuelsnap2);
@@ -445,7 +445,7 @@ public function buildForm(array $form, FormStateInterface $form_state) {
     $ss = 15;
     $s = 5;
     $o = 0;
-  
+
     switch($form_state->getValue('questio1')) {
       case 0:
         $info0 = t("Doesn't really impact result, but provides useful information relating to user's risk of encountering microbial contamination");
@@ -458,9 +458,9 @@ public function buildForm(array $form, FormStateInterface $form_state) {
         break;
       case 3:
         $info0 = t("Doesn't really impact result, but provides useful information relating to user's risk of encountering microbial contamination");
-        break;  
+        break;
     }
-     
+
     switch($form_state->getValue('question2')) {
       case 0:
         $microb2 = $microb2 + $v;
@@ -477,19 +477,19 @@ public function buildForm(array $form, FormStateInterface $form_state) {
         $luminultra2 = 0;
         $ips = false;
         $luminultra = false;
-        break;  
+        break;
     }
-        
+
     switch($form_state->getValue('question3')) {
       case 0:
         $microb2 = $microb2 + $v;
         $easicult2 = $easicult2 + $v;
         $ips2 = $ips2 + $v;
-        $san2 = $san2 + $v; 
+        $san2 = $san2 + $v;
         $microb = true;
         $easicult = true;
         $ips = true;
-        $san = true;             
+        $san = true;
         # code...
         break;
       case 1:
@@ -501,7 +501,7 @@ public function buildForm(array $form, FormStateInterface $form_state) {
         $easicult = true;
         $ips = true;
         $san = true;
-        break; 
+        break;
       case 2:
         $fuelstat2 = $fuelstat2 + $v;
         $hylite2 = $hylite2 + $v;
@@ -521,10 +521,10 @@ public function buildForm(array $form, FormStateInterface $form_state) {
         $easicult = true;
         $ips = true;
         $san = true;
-        break;  
+        break;
     }
-      
-    foreach ($form_state->getValue('mytable')[0] as $key => $value) {  
+
+    foreach ($form_state->getValue('mytable')[0] as $key => $value) {
       switch ($value) {
         case -10:
           $microb2 = $microb2 + $ss;
@@ -536,7 +536,7 @@ public function buildForm(array $form, FormStateInterface $form_state) {
           $ips = true;
           $san = true;
           break;
-        
+
         case -9:
           $microb2 = $microb2 + $v;
           $easicult2 = $easicult2 + $v;
@@ -559,8 +559,8 @@ public function buildForm(array $form, FormStateInterface $form_state) {
           break;
         }
       }
-      
-      foreach ($form_state->getValue('mytable')[1] as $key => $value) {  
+
+      foreach ($form_state->getValue('mytable')[1] as $key => $value) {
         switch ($value) {
           case -10:
               $fuelstat2 = $fuelstat2 + $ss;
@@ -572,7 +572,7 @@ public function buildForm(array $form, FormStateInterface $form_state) {
               $fuelsnap2 = $fuelsnap2 + $ss;
               $fuelsnap = true;
             break;
-          
+
           case -9:
             $fuelstat2 = $fuelstat2 + $v;
             $fuelstat = true;
@@ -594,9 +594,9 @@ public function buildForm(array $form, FormStateInterface $form_state) {
             $fuelsnap = true;
             break;
         }
-      }    
-      
-      foreach ($form_state->getValue('mytable')[2] as $key => $value) {  
+      }
+
+      foreach ($form_state->getValue('mytable')[2] as $key => $value) {
         switch ($value) {
           case -10:
             $easicult2 = $easicult2 + $ss;
@@ -606,7 +606,7 @@ public function buildForm(array $form, FormStateInterface $form_state) {
             $microb2 = $microb2 + $ss;
             $microb = true;
             break;
-          
+
           case -9:
             $easicult2 = $easicult2 + $v;
             $easicult = true;
@@ -625,8 +625,8 @@ public function buildForm(array $form, FormStateInterface $form_state) {
             break;
         }
       }
-      
-      foreach ($form_state->getValue('mytable')[3] as $key => $value) {  
+
+      foreach ($form_state->getValue('mytable')[3] as $key => $value) {
         switch ($value) {
           case -10:
             $easicult2 = $easicult2 + $ss;
@@ -636,7 +636,7 @@ public function buildForm(array $form, FormStateInterface $form_state) {
             $microb2 = $microb2 + $ss;
             $microb = true;
             break;
-          
+
           case -9:
             $easicult2 = $easicult2 + $v;
             $easicult = true;
@@ -653,25 +653,25 @@ public function buildForm(array $form, FormStateInterface $form_state) {
             $microb2 = $microb2 + $s;
             $microb = true;
             break;
-        }      
+        }
       }
 
-    
-    
+
+
 
     switch($form_state->getValue('question5')) {
       case 0:
         $fuelstat2 = $fuelstat2 + $v;
-        $fuelstat = true; 
+        $fuelstat = true;
         break;
       case 1:
         $fuelstat2 = 0;
-        $fuelstat = false;   
+        $fuelstat = false;
         break;
     }
 
-    
-    
+
+
     switch($form_state->getValue('question6')) {
       case 0:
         $microb2  = 0;
@@ -694,7 +694,7 @@ public function buildForm(array $form, FormStateInterface $form_state) {
         $fuelsnap2 = 0;
         $fuelsnap = false;
         $san2 = 0;
-        $san = false;  
+        $san = false;
         break;
     }
 
@@ -709,9 +709,9 @@ public function buildForm(array $form, FormStateInterface $form_state) {
         $ips = true;
         break;
     }
- 
 
-    
+
+
     switch($form_state->getValue('question12')) {
       case 0:
       $info = t('Results when using Rapid Methods can be affected when traces of Biocide are present in a sample');
@@ -746,7 +746,7 @@ public function buildForm(array $form, FormStateInterface $form_state) {
     }
 
 
-    
+
     switch($form_state->getValue('question15')) {
       case 0:
         $microb2 = $microb2 + $v;
@@ -760,7 +760,7 @@ public function buildForm(array $form, FormStateInterface $form_state) {
         break;
     }
 
- 
+
 
     switch($form_state->getValue('question16')) {
       case 0:
@@ -804,7 +804,7 @@ public function buildForm(array $form, FormStateInterface $form_state) {
         break;
     }
 
-    
+
     switch($form_state->getValue('question18')) {
       case 0:
         $microb2 = $microb2 + $v;
@@ -839,7 +839,7 @@ public function buildForm(array $form, FormStateInterface $form_state) {
         $fuelsnap = true;
         break;
     }
-    
+
     switch($form_state->getValue('question19')) {
       case 1:
         $hylite2 = 0;
@@ -852,11 +852,11 @@ public function buildForm(array $form, FormStateInterface $form_state) {
       case 2:
         $info4 = t('Must inform user that HY-LiTE, Luminultra and Fuelsnap must be kept refigerated at all times');
         break;
-      
+
     }
 
 
-   
+
     switch($form_state->getValue('question20')) {
       case 0:
         $ips2 = $ips2 + $v;
@@ -887,52 +887,51 @@ public function buildForm(array $form, FormStateInterface $form_state) {
       'microb' => $microb2,
       'hylite' =>$hylite2,
       'easicult' => $easicult2,
-      'fuelstat' => $fuelstat2,  
+      'fuelstat' => $fuelstat2,
       'ips' => $ips2
     );
-   
-    $key = array_search(max($items), $items);
 
-    if ($key == 'fuelstat') {
-      $hello = '0';
-      
-    } 
+    $items_duplicate = $items;
+    $max = max($items_duplicate);
+    $result = [];
+    foreach ($items_duplicate as $key => $value) {
+      if ($value == $max) {
+        $result[] = $key;
+      }
+    }
 
-    if ($key == 'luminultra') {
-      $hello = '1';
-      
-    } 
+    if (in_array('fuelstat', $result)) {
+      $number[] = '0';
+    }
 
-    if ($key == 'san') {
-      $hello = '2';
-       
-    } 
+    if (in_array('luminultra', $result)) {
+      $number[] = '1';
+    }
 
-    if ($key == 'fuelsnap') {
-      $hello = '3';
-            } 
+    if (in_array('san', $result)) {
+      $number[] = '2';
+    }
 
-    if ($key == 'microb') {
-      $hello = '4';
-       
-    } 
+    if (in_array('fuelsnap', $result)) {
+      $number[] = '3';
+    }
 
-    if ($key == 'hylite') {
-      $hello = '5';
-       
-    } 
+    if (in_array('microb', $result)) {
+      $number[] = '4';
+    }
 
-    if ($key == 'easicult') {
-      $hello = '6';
-            } 
+    if (in_array('hylite', $result)) {
+      $number[] = '5';
+    }
 
-    if ($key == 'ips') {
-      $hello = '7';
-       
-    } 
-    
-    $form_state->setRedirect('oil_survey.resultpage', ['query' => $hello]);
- 
+    if (in_array('easicult', $result)) {
+      $number[] = '6';
+    }
+
+    if (in_array('ips', $result)) {
+      $number[] = '7';
+
+    }
+    $form_state->setRedirect('oil_survey.resultpage', ['query' => $number]);
   }
-
 }

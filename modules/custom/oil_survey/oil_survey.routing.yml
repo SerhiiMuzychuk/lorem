@@ -5,7 +5,7 @@ question.form:
     _title: 'Questionary'
   requirements:
     _permission: 'access content'
-    
+
 oil_survey.resultpage:
   path: '/result'
   defaults:

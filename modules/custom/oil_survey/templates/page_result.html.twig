@@ -1,16 +1,33 @@
 <div class="result-text">
 	<div class="container">
-		<h3 class="result-congr"> Congratulations! You have passed the test for the best oil selection, which is right for you.</h3> 
-		<h3 class="result-res">Here is the result.</h3>
+		<h3 class="result-congr">Thanks for using CompareFuelTestKits.com! Based on your information, we would recommend the following product(s):</h3>
 		<div class="result-main">
-			{{ text }}.
-		</div>
-		<h4 class="result-risk"> Never forget the risk of encountering microbial contamination! </h4>
-		<h4 class="result-info">I hope you are happy with the result. Thank you for choosing our site.</h4>
-			<div class="send-res">
-				<a class="again-button" href="/user/logout">Pass the test again</a>
+			<div class="items">
+			{% for items in text %}
+			<div class="elements-result">
+				<img src="{{ items.image }}" width="300px" height="200px">
+				<p>{{ items.text }}.</p>
 			</div>
-			<p class="send-newsletter">Result is sent to your mail </p>
+			{% endfor %}
+			</div>
+			<div class="main-reason">
+				<h5>Here are the main reasons why:</h5>
+				<li>You selected Reliability as your top priority</li>
+				<li>You are looking for a Fully Quantitative Result</li>
+				<li>You selected IP Standard Test Method as your most important accreditation</li>
+			</div>
+		</div>
+		<div class="sidebar-menu">
+			<select>
+				{% for item in text|keys %}
+					<option value="{{ item + 1 }}">Best choice {{ item + 1 }}</option>
+				{% endfor %}
+			</select>
+		</div>
+			<div class="send-res">
+				<p>We hope you find our recommendation useful. If you have gathered all the information you were looking for, simply click the <strong>I am Done</strong> button below. Alternatively, if you would like to be contacted with more details of the product(s) recommended above (including pricing and availability), please click the <strong>Send me Info</strong> button and we will make sure you are contacted shortly. Thank you for using CompareFuelTestKits.com!</p>
+			</div>
+			<a class="again-button" href="/user/logout">I am Done</a>
 			<div class="feedback-res">
 				{{ feedback }}
 			</div>

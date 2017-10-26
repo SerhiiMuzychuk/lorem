@@ -1,12 +1,12 @@
 <?php
- 
+
 namespace Drupal\feedback_form\Form;
- 
-use Drupal\Core\Form\FormBase;                   
-use Drupal\Core\Form\FormStateInterface;              
+
+use Drupal\Core\Form\FormBase;
+use Drupal\Core\Form\FormStateInterface;
 use Drupal\node\Entity\Node;
 
- 
+
 /**
  * @see \Drupal\Core\Form\FormBase
  */
@@ -14,15 +14,15 @@ class FeedbackForm extends FormBase {
   public function getFormId() {
   	return 'feedback_form';
  }
- 
+
 	public function buildForm(array $form, FormStateInterface $form_state) {
 	$config = $this->config('simple.settings');
   $form['#prefix'] = '<div id="my-form-wrapper-id">';
-  $form['#suffix'] = '</div>'; 	
+  $form['#suffix'] = '</div>';
 
  	$form['actions']['submit'] = [
  		'#type' => 'submit',
- 		'#value' => $this->t('Send result to mail'),
+ 		'#value' => $this->t('Send me Info'),
     '#attributes' => [
         'class' => [
             'btn',
@@ -61,14 +61,14 @@ class FeedbackForm extends FormBase {
       'status' => 0,
     ));
    $node->save();
- 
+
   }
 
   public function viewNode(array &$form, FormStateInterface $form_state) {
     $ajax_response = new AjaxResponse();
     $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
     $mail = $user->get('mail')->value;
-    $tit = $mail;    
+    $tit = $mail;
     $node = Node::create(array(
       'nid' => null,
       'type' => 'feedback',
@@ -78,9 +78,9 @@ class FeedbackForm extends FormBase {
       'status' => 0,
     ));
     $node->save();
-    return $ajax_response; 
+    return $ajax_response;
   }
 
-  
+
 
 }

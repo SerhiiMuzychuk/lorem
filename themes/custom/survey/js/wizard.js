@@ -13,14 +13,14 @@
             var i = 0;
             while (!formValid && i < radios.length) {
                 if (radios[i].checked) formValid = true;
-                i++;        
+                i++;
             }
 
             if (formValid) {
               $('#edit-question1--wrapper').addClass('has-error');
               // $("#edit-question1-1").after('<br><div  class="alert alert-danger">Please enter your Last Name.</div>');
               hasError = true;
-            
+
               return false;
             }
 
@@ -35,7 +35,7 @@
             var i = 0;
             while (!formValid && i < radios.length) {
                 if (radios[i].checked) formValid = true;
-                i++;        
+                i++;
             }
 
             if (!formValid) {
@@ -50,7 +50,7 @@
               $('#edit-question3--wrapper span').removeClass('has-error');
               hasError = false
             }
-            
+
 
             var hasError = false;
             var radios = document.getElementsByName("question2");
@@ -59,7 +59,7 @@
             var i = 0;
             while (!formValid && i < radios.length) {
                 if (radios[i].checked) formValid = true;
-                i++;        
+                i++;
             }
 
             if (!formValid) {
@@ -73,7 +73,7 @@
             else {
               hasError = false
             }
-             
+
 
             var hasError = false;
                 // $('#step1').removeClass('has-error');
@@ -83,7 +83,7 @@
             var i = 0;
             while (!formValid && i < radios2.length) {
                 if (radios2[i].checked) formValid = true;
-                i++;        
+                i++;
             }
 
             if (!formValid) {
@@ -114,7 +114,7 @@
       //       var i = 0;
       //       while (!formValid && i < radios2.length) {
       //           if (radios2[i].checked) formValid = true;
-      //           i++;        
+      //           i++;
       //       }
 
       //       if (!formValid) {
@@ -129,7 +129,7 @@
       //         hasError = false
       //       }
 
-           
+
       //       var hasError = false;
       //       var radios = document.getElementsByName("question2");
       //       var formValid = false;
@@ -137,7 +137,7 @@
       //       var i = 0;
       //       while (!formValid && i < radios.length) {
       //           if (radios[i].checked) formValid = true;
-      //           i++;        
+      //           i++;
       //       }
 
       //       if (!formValid) {
@@ -151,7 +151,7 @@
       //       else {
       //         hasError = false
       //       }
-             
+
 
       //         var hasError = false;
       //           // $('#step1').removeClass('has-error');
@@ -161,7 +161,7 @@
       //       var i = 0;
       //       while (!formValid && i < radios1.length) {
       //           if (radios1[i].checked) formValid = true;
-      //           i++;        
+      //           i++;
       //       }
 
       //         if (!formValid) {
@@ -175,8 +175,8 @@
       //       else {
       //         hasError = false
       //       }
-            
-            
+
+
       //       var hasError = false;
       //           // $('#step1').removeClass('has-error');
       //       var radios2 = document.getElementsByName("question5");
@@ -185,7 +185,7 @@
       //       var i = 0;
       //       while (!formValid && i < radios2.length) {
       //           if (radios2[i].checked) formValid = true;
-      //           i++;        
+      //           i++;
       //       }
 
       //       if (!formValid) {
@@ -196,10 +196,10 @@
       //         return true;
       //       }
 
-            
 
-      //       if(hasError == true) { return false; }    
-               
+
+      //       if(hasError == true) { return false; }
+
 
 
       //       return formValid;
@@ -208,7 +208,7 @@
 
 
 
-      
+
           if(index==2) {
 
             var hasError = false;
@@ -218,7 +218,7 @@
             var i = 0;
             while (!formValid && i < radios2.length) {
                 if (radios2[i].checked) formValid = true;
-                i++;        
+                i++;
             }
 
             if (!formValid) {
@@ -233,7 +233,7 @@
               hasError = false
             }
 
-           
+
             var hasError = false;
             var radios = document.getElementsByName("question7");
             var formValid = false;
@@ -241,7 +241,7 @@
             var i = 0;
             while (!formValid && i < radios.length) {
                 if (radios[i].checked) formValid = true;
-                i++;        
+                i++;
             }
 
             if (!formValid) {
@@ -255,7 +255,7 @@
             else {
               hasError = false
             }
-             
+
 
               var hasError = false;
                 // $('#step1').removeClass('has-error');
@@ -265,7 +265,7 @@
             var i = 0;
             while (!formValid && i < radios1.length) {
                 if (radios1[i].checked) formValid = true;
-                i++;        
+                i++;
             }
 
               if (!formValid) {
@@ -279,8 +279,8 @@
             else {
               hasError = false
             }
-            
-            
+
+
             var hasError = false;
                 // $('#step1').removeClass('has-error');
             var radios2 = document.getElementsByName("question9");
@@ -289,7 +289,7 @@
             var i = 0;
             while (!formValid && i < radios2.length) {
                 if (radios2[i].checked) formValid = true;
-                i++;        
+                i++;
             }
 
             if (!formValid) {
@@ -311,7 +311,7 @@
             var i = 0;
             while (!formValid && i < radios2.length) {
                 if (radios2[i].checked) formValid = true;
-                i++;        
+                i++;
             }
 
             if (!formValid) {
@@ -326,8 +326,8 @@
               hasError = false
             }
 
-            if(hasError == true) { return false; }    
-               
+            if(hasError == true) { return false; }
+
             $('#rootwizard .nav-pills > li:nth-child(2)').addClass('doing');
 
             return formValid;
@@ -335,14 +335,14 @@
 
       if(index==3) {
             var hasError = false;
-                
+
                   var radios = document.getElementsByName("question11");
             var formValid = false;
 
             var i = 0;
             while (!formValid && i < radios.length) {
                 if (radios[i].checked) formValid = true;
-                i++;        
+                i++;
             }
 
             if (!formValid) {
@@ -357,9 +357,9 @@
               hasError = false
             }
 
-           
+
               var hasError = false;
-                
+
                 // $('#step1').removeClass('has-error');
                   var radios = document.getElementsByName("question12");
             var formValid = false;
@@ -367,7 +367,7 @@
             var i = 0;
             while (!formValid && i < radios.length) {
                 if (radios[i].checked) formValid = true;
-                i++;        
+                i++;
             }
 
             if (!formValid) {
@@ -381,14 +381,14 @@
             else {
               hasError = false
             }
-             
-          
+
+
             // return formValid;
 
             //   var hasError = false;
             //     // $('#step1').removeClass('has-error');
-                 
-             
+
+
             // // return formValid;
             // var hasError = false;
             //     // $('#step1').removeClass('has-error');
@@ -398,7 +398,7 @@
             // var i = 0;
             // while (!formValid && i < radios2.length) {
             //     if (radios2[i].checked) formValid = true;
-            //     i++;        
+            //     i++;
             // }
 
             // if (!formValid) {
@@ -412,9 +412,9 @@
             // else {
             //   hasError = false
             // }
-             
+
             var hasError = false;
-                
+
                 // $('#step1').removeClass('has-error');
                   var radios11 = document.getElementsByName("question15");
             var formValid = false;
@@ -422,7 +422,7 @@
             var i = 0;
             while (!formValid && i < radios11.length) {
                 if (radios11[i].checked) formValid = true;
-                i++;        
+                i++;
             }
 
             if (!formValid) {
@@ -442,7 +442,7 @@
             var i = 0;
             while (!formValid && i < radios1.length) {
                 if (radios1[i].checked) formValid = true;
-                i++;        
+                i++;
             }
 
               if (!formValid) {
@@ -457,13 +457,13 @@
             else {
               hasError = false
             }
-            
+
             $('#rootwizard .nav-pills > li:nth-child(3)').addClass('doing');
             return formValid;
       }
 
-      
- 
+
+
     }, onTabShow: function(tab, navigation, index) {
       var $total = navigation.find('li').length;
       var $current = index+1;
@@ -475,7 +475,7 @@
       $('.footer-wizard #edit-submit').click(function(){
 
         var hasError = false;
-                
+
                 // $('#step1').removeClass('has-error');
                   var radios11 = document.getElementsByName("question16");
             var formValid = false;
@@ -483,7 +483,7 @@
             var i = 0;
             while (!formValid && i < radios11.length) {
                 if (radios11[i].checked) formValid = true;
-                i++;        
+                i++;
             }
 
             if (!formValid) {
@@ -495,9 +495,9 @@
               hasError = false
             }
 
-           
+
               var hasError = false;
-                
+
                 // $('#step1').removeClass('has-error');
                   var radios = document.getElementsByName("question17");
             var formValid = false;
@@ -505,7 +505,7 @@
             var i = 0;
             while (!formValid && i < radios.length) {
                 if (radios[i].checked) formValid = true;
-                i++;        
+                i++;
             }
 
             if (!formValid) {
@@ -516,8 +516,8 @@
             else {
               hasError = false
             }
-             
-          
+
+
             // return formValid;
 
               var hasError = false;
@@ -528,7 +528,7 @@
             var i = 0;
             while (!formValid && i < radios1.length) {
                 if (radios1[i].checked) formValid = true;
-                i++;        
+                i++;
             }
 
               if (!formValid) {
@@ -539,8 +539,8 @@
             else {
               hasError = false
             }
-            
-             
+
+
             // return formValid;
             var hasError = false;
                 // $('#step1').removeClass('has-error');
@@ -550,7 +550,7 @@
             var i = 0;
             while (!formValid && i < radios2.length) {
                 if (radios2[i].checked) formValid = true;
-                i++;        
+                i++;
             }
 
             if (!formValid) {
@@ -560,9 +560,9 @@
             else {
               hasError = false
             }
-             
+
             var hasError = false;
-                
+
                 // $('#step1').removeClass('has-error');
                   var radios11 = document.getElementsByName("question20");
             var formValid = false;
@@ -570,7 +570,7 @@
             var i = 0;
             while (!formValid && i < radios11.length) {
                 if (radios11[i].checked) formValid = true;
-                i++;        
+                i++;
             }
 
             if (!formValid) {
@@ -583,22 +583,22 @@
               hasError = false
             }
 
-        
+
             return formValid;
 
         });
 
-      
-   
+
+
         // $('.js-form-item-question1-3 .iCheck-helper').click(function() {
         //   $('#edit-question1-text').toggleClass('qwasasas');
         // });
         //  $('#question-form .icheckbox_square input').click(function() {
         //   $('#question-form #edit-question1-text').addClass('helllo1');
         //  });
-         
-    
-   
+
+
+
 
       $("#block-about-2").addClass('container');
       $("#block-examplesblock").addClass('container');
@@ -607,7 +607,7 @@
       $("#edit-pass-pass2").attr("placeholder", "please fill...");
       $("#edit-pass-pass2").attr("title", "Confirm Password");
 
-      
+
       $('#tab1 #back').click(function() {
         document.location.href = '/first-step';
       });
@@ -650,7 +650,7 @@
         return false;
        });
       // $('#tab1')document.getElementById("#edit-submit").style.display = "none";
-      
+
     // }
     //    $('.hero').click(function() {
     //     document.location.href = '/node';
@@ -660,8 +660,38 @@
         // document.location.href = '/node';
         // });
       // return false;
-      
+
+        // $(document).ready(function(){
+        //   var btn = $(document).find('.sidebar-menu select option:selected').text();
+        //   $(btn).change(function(){
+        //     $('.elements-result').css('display', 'none');
+        //     console.log(btn);
+        //   });
+        // });
+$(document).find('.sidebar-menu select').on('change', function (e) {
+    var optionSelected = $("option:selected", this);
+    var valueSelected = $("option:selected", this).text();
+    if (valueSelected == "Best choice 2") {
+      $('.items div:nth-child(1)').css('display', 'none');
+      $('.items div:nth-child(2)').css('display', 'block');
+      $('.items div:nth-child(3)').css('display', 'none');
+    }
+    if (valueSelected == "Best choice 1") {
+      $('.items div:nth-child(1)').css('display', 'block');
+      $('.items div:nth-child(2)').css('display', 'none');
+      $('.items div:nth-child(3)').css('display', 'none');
+    }
+    if (valueSelected == "Best choice 3") {
+      $('.items div:nth-child(1)').css('display', 'none');
+      $('.items div:nth-child(2)').css('display', 'none');
+      $('.items div:nth-child(3)').css('display', 'block');
+    }
+
+});
+
+
+
     }
   };
 })(jQuery, Drupal, drupalSettings);
- 
+

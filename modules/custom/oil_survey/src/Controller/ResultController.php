@@ -7,7 +7,7 @@
 namespace Drupal\oil_survey\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
-use Drupal\oil_survey\Form\QuestionForm; 
+use Drupal\oil_survey\Form\QuestionForm;
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\core\modules\user\src\Form;
 use \Drupal\Core\Form\FormBase;
@@ -23,47 +23,44 @@ class ResultController extends ControllerBase {
   $output = array();
 
   $result = \Drupal::request()->query->get('query');
-  if ($result == 0) {
-  $output = 'The best choice for you will be Fuelstat resinae PLUS, Immunoassay Device group, Rapid SPEED OF TEST';
+  if (in_array(0, $result)) {
+  $output[] = ['text' => 'Fuelstat resinae PLUS, Immunoassay Device group, Rapid SPEED OF TEST', 'image' => ['#markup' => '/' . drupal_get_path('theme', 'survey') . '/images/fuelstat.jpg']];
   }
 
-  if ($result == 1) {
-  $output = 'The best choice for you will be Luminultra, ATP Measurement Tool type, Rapid SPEED OF TEST. However, do not forget about that Luminultra should be kept refigerated at all times';
+  if (in_array(1, $result)) {
+  $output[] = ['text' => 'Luminultra, ATP Measurement Tool type, Rapid SPEED OF TEST. However, do not forget about that Luminultra should be kept refigerated at all times', 'image' => ['#markup' => '/' . drupal_get_path('theme', 'survey') . '/images/LuminUltra.jpg']];
   }
 
-  if ($result == 2) {
-  $output = 'The best choice for you will be San-Ai Biochecker, Growth/Culture based Method type, Standard SPEED OF TEST';
+  if (in_array(2, $result)) {
+  $output[] = ['text' => 'San-Ai Biochecker, Growth/Culture based Method type, Standard SPEED OF TEST', 'image' => ['#markup' => '/' . drupal_get_path('theme', 'survey') . '/images/San-ai.Biocheker.jpg']];
   }
 
-  if ($result == 3) {
-  $output = 'The best choice for you will be Fuelsnap, ATP Measurement Tool type, Rapid SPEED OF TEST. However, do not forget about that Fuelsnap should be kept refigerated at all times';
+  if (in_array(3, $result)) {
+  $output[] = ['text' => 'Fuelsnap, ATP Measurement Tool type, Rapid SPEED OF TEST. However, do not forget about that Fuelsnap should be kept refigerated at all times', 'image' => ['#markup' => '/' . drupal_get_path('theme', 'survey') . '/images/fuelsnap.jpg']];
   }
 
-  if ($result == 4) {
-  $output = 'The best choice for you will be MicrobMonitor2, Growth/Culture based Method type, Standard SPEED OF TEST';
+  if (in_array(4, $result)) {
+  $output[] = ['text' => 'MicrobMonitor2, Growth/Culture based Method type, Standard SPEED OF TEST', 'image' => ['#markup' => '/' . drupal_get_path('theme', 'survey') . '/images/microb2.jpg']];
   }
 
-  if ($result == 5) {
-  $output = 'The best choice for you will be HY-LiTE, ATP Measurement Tool type, Rapid SPEED OF TEST. However, do not forget about that HY-LiTE should be kept refigerated at all times';
+  if (in_array(5, $result)) {
+  $output[] = ['text' => 'HY-LiTE, ATP Measurement Tool type, Rapid SPEED OF TEST. However, do not forget about that HY-LiTE should be kept refigerated at all times', 'image' => ['#markup' => '/' . drupal_get_path('theme', 'survey') . '/images/Hy-lite.jpg']];
   }
 
-  if ($result == 6) {
-  $output = t('The best choice for you will be Easicult Combi, Growth/Culture based Method group, Standard SPEED OF TEST');
+  if (in_array(6, $result)) {
+  $output[] = ['text' => 'Easicult Combi, Growth/Culture based Method group, Standard SPEED OF TEST', 'image' => ['#markup' => '/' . drupal_get_path('theme', 'survey') . '/images/Easicult_Combi.jpg']];
   }
 
-  if ($result == 7) {
-  $output = t('The best choice for you will be IP385, Growth/Culture based Method group, Standard SPEED OF TEST');
+  if (in_array(7, $result)) {
+  $output[] = ['text' => 'IP385, Growth/Culture based Method group, Standard SPEED OF TEST', 'image' => ['#markup' => '/' . drupal_get_path('theme', 'survey') . '/images/IP.png']];
   }
-
   $feedback = Block::load('sendresulttoemail_2');
   $block = \Drupal::entityTypeManager()->getViewBuilder('block')->view($feedback);
-
-
    \Drupal::state()->set('help', $output);
     return array(
       '#theme' => 'page_result',
       '#text' =>  $output,
-      '#feedback' => $block, 
+      '#feedback' => $block,
     );
   }
 
