@@ -2832,4 +2832,8 @@ body.front {
     width: 32%;
   }
 
+  .sidebar-menu {
+    padding-top: 1%;
+  }
+
 }
