@@ -1106,6 +1106,7 @@ html.bagr {
 	width: 50%;
 	text-align: center;
 	font-size: 18px;
+  height: 190px;
 }
 
 .send-mes {
@@ -1132,7 +1133,6 @@ html.bagr {
 	padding: 5px 22px;
 	border-radius: 3px;
 	margin: 0;
-	margin-top: 50px;
 }
 
 
@@ -1178,7 +1178,6 @@ body {
 	padding: 5px 22px;
 	border-radius: 3px;
 	margin: 0;
-	margin-top: 50px;
 }
 
 .again-button:hover {
@@ -1267,6 +1266,9 @@ footer {
   margin: 0;
 }
 
+.result footer {
+  position: relative;
+}
 
 .front main {
 	padding: unset;
@@ -1468,7 +1470,6 @@ footer {
 }
 
 .feedback-res {
-  float: left;
   width: 50%;
   text-align: center;
   font-size: 18px;
@@ -2589,15 +2590,246 @@ body.front {
   display: none;
 }
 
+.items div p {
+  padding-top: 2vw;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 18px;
+}
 
+.result-congr h3 {
+  margin-top: -25px;
+  font-size: 20px;
+}
 
+.result-main{
+  display: flex;
+}
 
+.result-main .items {
+  width: 44%;
+  text-align: center;
+  box-shadow: 5px 6px 20px #cbcbcb;
+  padding: 5%;
+  border-radius: 6px;
+}
 
+.main-reason {
+  color: white;
+  height: fit-content;
+  padding: 2%;
+  background-color: grey;
+  border: 1px solid #cbcbcb;
+  position: relative;
+  left: 15%;
+}
 
+.main-reason li {
+  font-size: 16px;
+  padding-top: 10px;
+  margin-left: 15px;
+}
 
+.main-reason h5 {
+  font-size: 20px;
+}
 
+.send-res {
+  width: 100%;
+  float: none;
+  padding-top: 2%;
+  margin-top: 2%;
+  background-color: grey;
+  color: white;
+}
 
+.send-res p {
+  font-size: 18px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
 
+.sidebar-menu p {
+  font-size: 18px;
+}
 
+.again-button {
+  float: left;
+  width: 10%;
+  position: relative;
+  left: 20%;
+}
 
+.again-button:hover {
+  text-decoration: none;
+}
 
+#feedback-form #edit-submit {
+  width: 20%;
+  float: right;
+  position: relative;
+  right: -52%;;
+}
+
+.send-res strong {
+  color: black;
+}
+
+@keyframes bounceInRight {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.main-reason li:nth-child(2) {
+  animation-name: bounceInRight;
+  animation-duration: 1s;
+}
+
+.main-reason li:nth-child(3) {
+  animation-name: bounceInRight;
+  animation-duration: 2s;
+}
+
+.main-reason li:nth-child(4) {
+  animation-name: bounceInRight;
+  animation-duration: 3s;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+#feedback-form #edit-submit {
+  animation: pulse 1s infinite;
+}
+
+.result footer {
+  background-color: #f7f7f7;
+  padding-top: 0;
+}
+
+.result main {
+  padding: 0;s
+}
+
+@media screen and (max-width: 479px) {
+
+  .result-main {
+    display: table-caption;
+    width: 100%;
+    display: block;
+  }
+
+  .main-reason {
+    left: 0;
+    margin-top: 5%;
+  }
+
+  .result-main .items {
+    width: 100%;
+
+  }
+
+  .send-res {
+    margin: 0;
+    height: 390px;
+    margin-top: 5%;
+  }
+
+  .again-button {
+    width: 25%;
+    left: 11%;
+  }
+
+  #feedback-form #edit-submit {
+    width: 35%;
+    position: relative;
+    left: 0%;
+  }
+
+}
+
+@media screen and (max-width: 378px) {
+  .send-res {
+    height: 465px;
+  }
+
+  .again-button {
+    width: 32%;
+  }
+
+  #feedback-form #edit-submit {
+    width: 45%;
+  }
+
+  .elements-result img {
+    width: 100%;
+  }
+
+  .main-reason li {
+    font-size: 15px;
+  }
+
+}
+
+@media (min-width: 478px) and (max-width: 1030px) {
+  .elements-result img {
+    width: 100%;
+  }
+
+  .result-main {
+    width: 100%;
+    display: inline-flex;
+  }
+
+  .main-reason {
+    width: 50%;
+    margin-left: 4%;
+    left: 0;
+  }
+
+  .send-res {
+    height: 255px;
+  }
+
+  .again-button {
+    width: 14%;
+  }
+
+  #feedback-form #edit-submit {
+    width: 32%;
+  }
+
+}
