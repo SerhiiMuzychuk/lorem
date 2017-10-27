@@ -35,7 +35,7 @@ class ContentBlock extends BlockBase {
     else {
       $otput = 'Your credentials are already saved in our database. Want to pass the survey again?';
       $host = \Drupal::request()->getHost();
-      $url = Url::fromUri('http://' . $host . '/user/logout');
+      $url = Url::fromUri('http://' . $host . '/questionary');
         $link_options = array(
           'attributes' => array(
             'class' => array(

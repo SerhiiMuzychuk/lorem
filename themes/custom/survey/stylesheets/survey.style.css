@@ -212,6 +212,32 @@ html.bagr {
 	padding-top: 15px;
 }
 
+#block-banner .banner {
+	background-image: url('/themes/custom/survey/images/banner.jpg');
+	height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -330px;
+}
+
+.main-region .banner {
+	background-image: url('/themes/custom/survey/images/banner.jpg');
+	height: 230px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -132px;
+  margin-top: 20px;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.main-region .container {
+	width: 100% !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	margin-top: 22px !important;
+}
+
 
 .logo-header #block-sitebranding {
 	display: inline-block;
@@ -539,16 +565,15 @@ main {
 .banner-text {
 	color: white;
   margin-left: 5%;
-  margin-right: 20%;
+  margin-right: 5%;
   font-size: 13px;
 }
 
 .text-number {
   border-top: 1px solid white;
-  margin-left: 5%;
-  margin-right: 5%;
   border-bottom: 1px solid white;
   margin-top: 15px !important;
+  text-align: center;
 }
 
 .about-banner {
@@ -558,11 +583,10 @@ main {
 
 .banner-number {
 	color: white;
-  margin-left: 12%;
-  margin-right: 15%;
   font-size: 22px;
   margin-bottom: 15px !important;
   margin-top: 15px !important;
+  text-align: center;
 }
 
 .banner-link {
@@ -1407,14 +1431,14 @@ footer {
 	width: 40% !important;
 	margin-left: 12.5%;
 	text-align: -webkit-center;
-	padding-top: 5%;
+	padding-top: 2%;
 }
 
 #block-contactinfo {
 	float: right;
 	width: 30%;
 	margin-right: 16.5%;
-	padding-top: 8%;
+	padding-top: 5%;
 	text-align: center;
 }
 
@@ -1594,6 +1618,10 @@ body.front {
 }*/
 
 @media (min-width: 1500px) {
+	#block-banner .banner {
+		height: 230px;
+	}
+
 	.container {
 		width: 1300px !important;
 	}
@@ -1619,6 +1647,26 @@ body.front {
 }
 
 @media screen and (max-width: 479px) {
+
+	#block-banner .banner {
+		background-image: url('/themes/custom/survey/images/banner.jpg');
+		height: 100px;
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  background-position-y: -32px;
+	}
+
+	.main-region .banner {
+		background-image: url('/themes/custom/survey/images/banner.jpg');
+		height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -32px;
+    margin-top: 20px;
+    padding: 0 !important;
+    margin: 0 !important;
+	}
+
 	.talk {
 		color: #1377d5;
 		width: 95%;
@@ -1767,6 +1815,7 @@ body.front {
 
 	.front main {
 		position: relative;
+		padding-bottom: 40% !important;
 	}
 
 	main {
@@ -1958,7 +2007,11 @@ body.front {
 	}
 
 	.about-banner {
-		display: none;
+		width: 100%;
+	}
+
+	.sidebar-region {
+		width: 100%;
 	}
 
 	.social-contact {
