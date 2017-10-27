@@ -2648,6 +2648,10 @@ body.front {
   padding-right: 8%;
 }
 
+  .sidebar-menu {
+    padding-top: 1%;
+  }
+
 .sidebar-menu p {
   font-size: 18px;
 }
@@ -2830,10 +2834,6 @@ body.front {
 
   #feedback-form #edit-submit {
     width: 32%;
-  }
-
-  .sidebar-menu {
-    padding-top: 1%;
   }
 
 }
