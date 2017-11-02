@@ -111,6 +111,8 @@ Drupal.behaviors.ss2 = {
         $('#question-form #edit-question1-text').addClass('tesld');
       });
 
+      $('.front .layout-content').addClass('container');
+
      // $("#edit-question2 input").labelauty();
      // $("#edit-question3 input").labelauty(); 
      // $("#edit-question5 input").labelauty();

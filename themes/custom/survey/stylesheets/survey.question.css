@@ -662,6 +662,7 @@ input[type="text"], input[type="password"] {
   font-size: 14px;
   padding: 5px 22px;
   border-radius: 3px;
+  font-weight: bold;
 }
 
 #user-register-form #edit-field-date-0-value .visually-hidden {
